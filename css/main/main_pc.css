@@ -75,7 +75,6 @@
   width: 0;
   height: 3px;
   background-color: #be161e;
-  transition: all 350ms;
 }
 
 #gnb > ul > li.active > a > span::after {
