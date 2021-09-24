@@ -12,7 +12,9 @@ new Swiper('#visual .swiper', {
 });
 
 new Swiper('#main .product .swiper', {
-  // autoplay: true,
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
   breakpoints: {
 
