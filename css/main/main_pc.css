@@ -424,7 +424,7 @@
 
 #main .benefit ul li {
   float: left;
-  width: 33.33%;
+  width: calc(100% / 3);
 }
 
 #main .benefit ul li img {
@@ -442,4 +442,163 @@
   font-size: 14px;
   line-height: 22px;
   opacity: 0.7;
+}
+
+/* REWARD */
+#main .reward {
+  padding: 75px 0 200px;
+  overflow: hidden;
+}
+
+#main .reward .left {
+  float: left;
+  width: 30%;
+  position: relative;
+}
+
+#main .reward .left .text-group {
+  display: inline-block;
+  border: 5px solid #222;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#main .reward .left .text-group .title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+#main .reward .left .text-group .title em {
+  font-size: 52px;
+}
+
+#main .reward .left .text-group .description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+}
+
+#main .reward .left .text-group a.btn {
+  margin-top: 25px;
+  width: 100px;
+  font-size: 13px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #222;
+}
+
+#main .reward .right {
+  float: right;
+  width: 70%;
+}
+
+#main .reward .right ul {
+  overflow: hidden;
+}
+
+#main .reward .right ul li {
+  float: left;
+  width: calc(100% / 3);
+  /* margin-top: 35px; */
+  margin-bottom: 35px;
+}
+
+#main .reward .right ul li .number {
+  font-size: 16px;
+  color: #96603d;
+  opacity: 0.4;
+}
+
+#main .reward .right ul li .title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+#main .reward .right ul li .description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666;
+}
+
+#main .service-menu {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+}
+
+#main .service-menu li {
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  height: 160px;
+  padding: 30px;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#main .service-menu li::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  transition: width 350ms;
+}
+
+#main .service-menu li:hover::after {
+  width: 80px;
+}
+
+#main .service-menu li img {
+  display: inline-block;
+}
+
+#main .service-menu li.reserve {
+  background-color: #907354;
+}
+
+#main .service-menu li.save-point {
+  background-color: #434343;
+}
+
+#main .service-menu li.delivery {
+  background-color: #c30606;
+}
+
+#main .service-menu li a {
+  overflow: hidden;
+}
+
+#main .service-menu li a .text-group {
+  float: left;
+}
+
+#main .service-menu li a .text-group .description {
+  margin-top: 5px;
+}
+
+#main .service-menu li a .icon {
+  float: right;
+  position: absolute;
+  right: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top 350ms;
+}
+
+#main .service-menu li:hover a .icon {
+  top: 43%;
 }
