@@ -221,3 +221,57 @@
   border: 1px solid #fff;
   border-radius: 50%;
 }
+
+/* MAIN */
+#main {
+  background-color: #fff;
+}
+
+#main .inner {
+  padding: 140px 0 200px 0;
+}
+
+/* CF */
+#main .cf {
+  position: relative;
+}
+
+#main .cf::after {
+  content: '';
+  position: absolute;
+  right: -200px;
+  bottom: -200px;
+  width: 320px;
+  height: 381px;
+  background: url("../../img/main_cf_obj.jpg") no-repeat center/cover;
+}
+
+#main .cf .text-group {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #222;
+}
+
+#main .cf .text-group .title {
+  padding-top: 52px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 1px;
+}
+
+#main .cf .text-group .sub-title {
+  padding-top: 18px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+#main .cf .text-group .description {
+  padding-top: 30px;
+  color: #666;
+  font-size: 15px;
+  line-height: 25px;
+}
