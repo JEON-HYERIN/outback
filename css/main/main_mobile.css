@@ -480,8 +480,7 @@ br.only-pc {
 
 /* REWARD */
 #main .reward {
-  /* padding: 75px 0 200px; */
-  padding-top: 75px;
+  padding: 40px 15px 0;
   overflow: hidden;
 }
 
