@@ -50,16 +50,22 @@
 </head>
 <body>
   <div id="wrapper">
-    <a href="#main" class="skip-nav">본문 바로가기</a>
+    <a href="#main" id="skip-nav">본문 바로가기</a>
 
     <!-- HEADER -->
     <header id="header">
       <div class="inner">
         <h1>
           <a href="./index.html">
-            <img src="./img/header_logo.png" alt="OUTBACK STEAKHOUSE" / >
+            <img src="./img/header_logo.png" alt="OUTBACK STEAKHOUSE" class="pc" / >
+            <img src="./img/header_logo_m.png" alt="OUTBACK STEAKHOUSE" class="mobile" / >
           </a>
         </h1>
+        <div class="menu mobile">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
         
         <!-- NAV -->
         <nav id="gnb">
@@ -141,10 +147,10 @@
               <div class="swiper-slide slide4"></div>
             </div>
 
-            <div class="swiper-prev">
+            <div class="swiper-prev pc">
               <img src="./img/visual_prev.png" alt="이전" />
             </div>
-            <div class="swiper-next">
+            <div class="swiper-next pc">
               <img src="./img/visual_next.png" alt="다음" />
             </div>
             <div class="swiper-pagination"></div>
@@ -158,11 +164,13 @@
           <!-- CF -->
           <section class="cf">
             <h2 class="ir-hidden">OUTBACK CF</h2>
-            <div class="youtube__area">
-              <iframe width="676" height="380" src="https://www.youtube.com/embed/oNZZ1Xr6OjI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="youtube__wrapper">
+              <div class="youtube__area">
+                <iframe width="676" height="380" src="https://www.youtube.com/embed/oNZZ1Xr6OjI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
             </div>
             <div class="text-group">
               <div class="title">
@@ -440,6 +448,10 @@
           </ul>
         </div>
       </footer>
+
+      <button id="arrow-up" class="invisible">
+        <img src="./img/btn_top.gif" alt="top" />
+      </button>
   </div>
 </body>
 </html>
