@@ -362,7 +362,7 @@ br.only-pc {
 
 #main .product .swiper {
   height: 266px;
-  padding: 40px 0 50px 0;
+  padding: 40px 0 50px;
 }
 
 #main .product .swiper .swiper-slide .text-group {
@@ -516,7 +516,6 @@ br.only-pc {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  width: 400px;
   text-align: right;
 }
 
@@ -529,7 +528,7 @@ br.only-pc {
 
 #main .reward .left .text-group .btns .btn {
   display: inline-block !important;
-  width: 45%;
+  width: 200px;
   line-height: 37px;
   font-size: 13px;
   margin-left: 5px;
@@ -782,4 +781,64 @@ br.only-pc {
 
 #arrow-up img {
   border-radius: 50%;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  /* VISUAL */
+  #visual .swiper {
+    max-height: 600px;
+  }
+  /* CF */
+  #main .cf .text-group .title {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+
+  #main .cf .text-group .sub-title {
+    font-size: 16px;
+  }
+
+  #main .cf .text-group .description {
+    padding-top: 10px;
+  }
+
+  /* PRODUCT */
+  #main .product {
+    padding: 30px 0 30px;
+  }
+
+  #main .product .swiper {
+    padding: 20px 0 25px;
+  }
+
+  #main .product .swiper .swiper-slide .text-group {
+    width: auto;
+  }
+
+  #main .product .swiper .swiper-slide .text-group .title {
+    font-size: 30px;
+  }
+
+  #main .product .swiper .swiper-slide .image {
+    width: 35%;
+  }
+
+  /* REWARD */
+  #main .reward .left .text-group .description {
+    margin: 10px 0;
+  }
+
+  #main .reward .left .text-group .btns {
+    position: static;
+    transform: translateY(0);
+    text-align: left;
+  }
+
+  #main .reward .left .text-group .btns .btn {
+    width: 100px;
+  }
+
+  #main .reward .right ul li {
+    width: calc(100% / 2 - 10px);
+  }
 }
