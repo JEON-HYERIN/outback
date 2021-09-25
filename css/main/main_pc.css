@@ -110,15 +110,15 @@ br.only-m {
   position: absolute;
   top: 100px;
   padding: 28px 30px;
-  background: rgba(0,0,0,0.6);
-  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  transition: opacity 350ms;
+  height: 0;
+  transition: 300ms;
   z-index: 9;
 }
 
 #gnb > ul > li.active:hover > .sub-menu {
-  visibility: visible;
+  height: auto;
   opacity: 1;
 }
 
@@ -790,13 +790,12 @@ br.only-m {
   overflow: hidden;
   box-shadow: 4px 4px 10px rgb(0 0 0 / 15%);
   opacity: 1;
-  pointer-events: auto;
-  transition: opacity 350ms;
+  transition: 350ms;
 }
 
 #arrow-up.invisible {
+  height: 0;
   opacity: 0;
-  pointer-events: none;
 }
 
 #arrow-up img {
