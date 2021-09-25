@@ -41,7 +41,6 @@ openBtn.addEventListener('click', function () {
 });
 
 closeBtn.addEventListener('click', function () {
-  header.classList.add('red');
   gnbEl.classList.remove('open');
   topMenu.classList.remove('open');
   openBtn.classList.remove('hidden');
@@ -51,7 +50,7 @@ closeBtn.addEventListener('click', function () {
 // 헤더영역 
 const header = document.querySelector('#header');
 window.addEventListener('scroll', function () {
-  if(window.pageYOffset > 1) {
+  if(window.pageYOffset > 1 && closeBtn.classList.contains('hidden')) {
     header.classList.add('red');
   } else {
     header.classList.remove('red');
@@ -62,10 +61,6 @@ window.addEventListener('scroll', function () {
   } else {
     arrowUpBtn.classList.add('invisible');
   }
-
-  if(openBtn.classList.contains('hidden')) {
-    header.classList.remove('red');
-  }
 });
 
-console.log(openBtn.classList.contains('hidden'))
+console.log(closeBtn.classList.contains('hidden'))
