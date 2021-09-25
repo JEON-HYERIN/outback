@@ -43,12 +43,8 @@ new Swiper('#main .reward .swiper', {
   loop: true,
   slidesPerView: 2,
   spaceBetween: 20,
-  navigation: {
-    prevEl: '.swiper-prev',
-    nextEl: '.swiper-next'
-  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
-  }
+  },
 });
