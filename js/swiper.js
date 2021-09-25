@@ -18,7 +18,7 @@ new Swiper('#main .product .swiper', {
   loop: true,
   breakpoints: {
 
-    320: {
+    280: {
       slidesPerView: 1,
     },
     850.1: {
