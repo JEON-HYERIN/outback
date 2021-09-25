@@ -835,6 +835,10 @@ br.only-pc {
     width: 100px;
   }
 
+  #main .reward .right .swiper {
+    padding: 20px 0 30px;
+  }
+
   /* FOOTER */
   #footer {
     font-size: 12px;
