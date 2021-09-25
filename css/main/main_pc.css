@@ -115,11 +115,13 @@ br.only-m {
   height: 0;
   transition: 300ms;
   z-index: 9;
+  pointer-events: none;
 }
 
 #gnb > ul > li.active:hover > .sub-menu {
   height: auto;
   opacity: 1;
+  pointer-events: auto;
 }
 
 #gnb > ul > li > .sub-menu > li > a {
@@ -579,6 +581,7 @@ br.only-m {
   font-size: 14px;
   color: #fff;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 #main .service-menu li::after {
@@ -594,10 +597,6 @@ br.only-m {
 
 #main .service-menu li:hover::after {
   width: 80px;
-}
-
-#main .service-menu li img {
-  display: inline-block;
 }
 
 #main .service-menu li.reserve {

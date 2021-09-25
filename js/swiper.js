@@ -36,3 +36,16 @@ new Swiper('#main .product .swiper', {
     clickable: true
   }
 });
+
+// new Swiper('#main .reward .swiper', {
+//   autoplay: true,
+//   loop: true,
+//   navigation: {
+//     prevEl: '.swiper-prev',
+//     nextEl: '.swiper-next'
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true
+//   }
+// });

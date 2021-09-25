@@ -1,5 +1,5 @@
 // gnb영역 이벤트 
-const mainMenuLists = document.querySelectorAll('#gnb ul li');
+const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
 // const active = document.querySelector('#gnb ul li.active');
 
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -29,7 +29,7 @@ arrowUpBtn.addEventListener('click', function () {
 // 헤더영역 
 const header = document.querySelector('#header');
 window.addEventListener('scroll', function () {
-  if(window.pageYOffset > 6) {
+  if(window.pageYOffset > 1) {
     header.classList.add('red');
   } else {
     header.classList.remove('red');
