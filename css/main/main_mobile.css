@@ -699,7 +699,6 @@ br.only-pc {
 #footer .info .top {
   padding: 20px 0;
   border-bottom: 1px solid #4b4b4b;
-  line-height: 1.6em;
 }
 
 #footer .info .top span,
@@ -829,10 +828,6 @@ br.only-pc {
 
   #main .reward .left .text-group .btns .btn {
     width: 100px;
-  }
-
-  #main .reward .right ul li {
-    width: calc(100% / 2 - 10px);
   }
 
   /* FOOTER */
