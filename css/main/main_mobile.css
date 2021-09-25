@@ -541,21 +541,21 @@ br.only-pc {
   padding: 30px 0 50px;
 }
 
-#main .reward .right .swiper .swiper-wrapper .swiper-slide .number {
+#main .reward .right .swiper .swiper-slide .number {
   font-size: 16px;
   font-weight: 700;
   color: #c4ab9d;
   opacity: .4;
 }
 
-#main .reward .right .swiper .swiper-wrapper .swiper-slide .title {
+#main .reward .right .swiper .swiper-slide .title {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #222;
 }
 
-#main .reward .right .swiper .swiper-wrapper .swiper-slide .description {
+#main .reward .right .swiper .swiper-slide .description {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.6em;
@@ -825,6 +825,15 @@ br.only-pc {
     margin: 10px 0;
   }
 
+  /* BENEFIT */
+  #main .benefit {
+    font-size: 12px;
+  }
+  
+  #main .benefit ul li {
+    padding: 0 5px;
+  }
+
   #main .reward .left .text-group .btns {
     position: static;
     transform: translateY(0);
@@ -837,6 +846,10 @@ br.only-pc {
 
   #main .reward .right .swiper {
     padding: 20px 0 35px;
+  }
+
+  #main .reward .right .swiper .swiper-slide .description {
+    font-size: 13px;
   }
 
   /* FOOTER */
