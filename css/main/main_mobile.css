@@ -658,7 +658,6 @@ br.only-pc {
 #footer .info .top {
   padding-bottom: 20px;
   border-bottom: 1px solid #4b4b4b;
-  width: 100%;
   line-height: 1.6em;
 }
 
@@ -783,11 +782,13 @@ br.only-pc {
   border-radius: 50%;
 }
 
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
   /* VISUAL */
   #visual .swiper {
     max-height: 600px;
   }
+
   /* CF */
   #main .cf .text-group .title {
     padding-top: 15px;
@@ -812,7 +813,7 @@ br.only-pc {
   }
 
   #main .product .swiper .swiper-slide .text-group {
-    width: auto;
+    width: 55%;
   }
 
   #main .product .swiper .swiper-slide .text-group .title {
@@ -840,5 +841,10 @@ br.only-pc {
 
   #main .reward .right ul li {
     width: calc(100% / 2 - 10px);
+  }
+
+  /* FOOTER */
+  #footer {
+    font-size: 12px;
   }
 }
