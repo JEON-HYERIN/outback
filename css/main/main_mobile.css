@@ -652,7 +652,7 @@ br.only-pc {
 
 #footer .footer-menu li {
   float: left;
-  width: calc(33.33% - 10px);
+  width: 33.33%;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.8);
   line-height: 2em;
@@ -681,6 +681,10 @@ br.only-pc {
 
 #footer .footer-menu li:nth-child(3) + li::before {
   display: none;
+}
+
+#footer .footer-menu li a {
+  display: block;
 }
 
 #footer .info .top {
@@ -714,9 +718,10 @@ br.only-pc {
 }
 
 #footer .info .top a {
+  display: block;
   text-decoration: underline;
   color: #fff;
-  margin-left: 8px;
+  padding: 5px 0;
   opacity: .6;
 }
 
