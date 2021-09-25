@@ -534,34 +534,47 @@ br.only-pc {
   box-sizing: border-box;
 }
 
-#main .reward .right ul {
-  overflow: hidden;
+#main .reward .right .swiper {
+  padding: 30px 0 50px;
 }
 
-#main .reward .right ul li {
-  float: left;
-  width: calc(100% / 3);
-  margin-top: 10px;
-}
-
-#main .reward .right ul li .number {
+#main .reward .right .swiper .swiper-wrapper .swiper-slide .number {
   font-size: 16px;
   color: #96603d;
   opacity: 0.4;
 }
 
-#main .reward .right ul li .title {
+#main .reward .right .swiper .swiper-wrapper .swiper-slide .title {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
   color: #222;
 }
 
-#main .reward .right ul li .description {
+#main .reward .right .swiper .swiper-wrapper .swiper-slide .description {
   margin-top: 10px;
   font-size: 14px;
   line-height: 21px;
   color: #666;
+}
+
+#main .reward .right .swiper .swiper-pagination {
+  bottom: 0;
+}
+
+#main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  opacity: 1;
+  margin: 0 10px;
+  transition: .2s;
+}
+
+#main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  background-color: #b10a11;
 }
 
 #main .service-menu {

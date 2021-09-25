@@ -17,7 +17,6 @@ new Swiper('#main .product .swiper', {
   },
   loop: true,
   breakpoints: {
-
     280: {
       slidesPerView: 1,
     },
@@ -37,15 +36,19 @@ new Swiper('#main .product .swiper', {
   }
 });
 
-// new Swiper('#main .reward .swiper', {
-//   autoplay: true,
-//   loop: true,
-//   navigation: {
-//     prevEl: '.swiper-prev',
-//     nextEl: '.swiper-next'
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true
-//   }
-// });
+new Swiper('#main .reward .swiper', {
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    prevEl: '.swiper-prev',
+    nextEl: '.swiper-next'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
