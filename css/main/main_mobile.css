@@ -723,6 +723,7 @@ br.only-pc {
   left: 50%;
   top: 25px;
   transform: translateX(-50%);
+  width: 100%;
   overflow: hidden;
 }
 
