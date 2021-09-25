@@ -57,16 +57,21 @@
       <div class="inner">
         <h1>
           <a href="./index.html">
-            <img src="./img/header_logo.png" alt="OUTBACK STEAKHOUSE" class="pc" / >
-            <img src="./img/header_logo_m.png" alt="OUTBACK STEAKHOUSE" class="mobile" / >
+            <img src="./img/header_logo.png" alt="OUTBACK STEAKHOUSE" class="pc" />
+            <img src="./img/header_logo_m.png" alt="OUTBACK STEAKHOUSE" class="mobile" />
           </a>
         </h1>
-        <div class="menu mobile">
+        <div class="open-btn mobile">
           <span class="line1"></span>
           <span class="line2"></span>
           <span class="line3"></span>
         </div>
-        
+        <div class="close-btn hidden mobile">
+          <span class="material-icons">
+            close
+          </span>
+        </div>
+
         <!-- NAV -->
         <nav id="gnb">
           <h2 class="ir-hidden">메인 메뉴</h2>
@@ -125,11 +130,26 @@
                 <span>STORE</span>
               </a>
             </li>
+            <li class="mobile">
+              <a href="javascript:void(0)">
+                <span>아웃백 APP</span>
+              </a>
+            </li>
+            <li class="mobile">
+              <a href="javascript:void(0)">
+                <span>아웃백 페이스북</span>
+              </a>
+            </li>
+            <li class="mobile">
+              <a href="javascript:void(0)">
+                <span>공지사항</span>
+              </a>
+            </li>
           </ul>
         </nav>
 
         <ul class="top-menu">
-          <li><a href="javascript:void(0)">고객의 소리</a></li>
+          <li class="pc"><a href="javascript:void(0)">고객의 소리</a></li>
           <li><a href="javascript:void(0)">로그인</a></li>
           <li><a href="javascript:void(0)" class="btn">회원가입</a></li>
         </ul>
