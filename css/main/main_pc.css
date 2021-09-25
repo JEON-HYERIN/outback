@@ -843,7 +843,7 @@ br.only-m {
 }
 
 @media screen and (max-width: 1023px) {
-  
+
   /* HEADER */
   #header .pc {
     display: none !important;
@@ -852,20 +852,24 @@ br.only-m {
   #header .mobile {
     display: block !important;
   }
-  
-  #gnb, 
+
+  #gnb,
   .top-menu {
     display: none;
+  }
+
+  #header {
+    background-color: transparent;
   }
 
   #header.red {
     background-color: #b10a11;
   }
-  
+
   #header .inner {
     height: 56px;
   }
-  
+
   #header h1 {
     position: absolute;
     left: 50%;
@@ -874,7 +878,7 @@ br.only-m {
     width: 70px;
     height: 27px;
   }
-  
+
   #header .menu.mobile {
     position: absolute;
     left: 15px;
@@ -882,7 +886,7 @@ br.only-m {
     width: 23px;
     height: 19px;
   }
-  
+
   #header .menu.mobile span {
     position: absolute;
     left: 0;
@@ -890,15 +894,17 @@ br.only-m {
     border-radius: 2px;
     background-color: #fff;
   }
-  
+
   #header .menu.mobile span.line1 {
     top: 0;
     width: 65%;
   }
+
   #header .menu.mobile span.line2 {
     top: 8px;
     width: 100%;
   }
+
   #header .menu.mobile span.line3 {
     top: 16px;
     width: 85%;
