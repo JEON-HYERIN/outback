@@ -841,3 +841,71 @@ br.only-m {
     right: 15px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  
+  /* HEADER */
+  #header .pc {
+    display: none !important;
+  }
+
+  #header .mobile {
+    display: block !important;
+  }
+  
+  #gnb, 
+  .top-menu {
+    display: none;
+  }
+
+  #header.red {
+    background-color: #b10a11;
+  }
+  
+  #header .inner {
+    height: 56px;
+  }
+  
+  #header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 27px;
+  }
+  
+  #header .menu.mobile {
+    position: absolute;
+    left: 15px;
+    top: 19px;
+    width: 23px;
+    height: 19px;
+  }
+  
+  #header .menu.mobile span {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  
+  #header .menu.mobile span.line1 {
+    top: 0;
+    width: 65%;
+  }
+  #header .menu.mobile span.line2 {
+    top: 8px;
+    width: 100%;
+  }
+  #header .menu.mobile span.line3 {
+    top: 16px;
+    width: 85%;
+  }
+
+  /* VISUAL */
+  #visual {
+    margin-top: 0;
+  }
+}
