@@ -860,6 +860,7 @@ br.only-m {
 
   #header {
     background-color: transparent;
+    transition: .5s;
   }
 
   #header.red {
@@ -868,6 +869,8 @@ br.only-m {
 
   #header .inner {
     height: 56px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
   }
 
   #header h1 {
