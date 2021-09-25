@@ -644,7 +644,7 @@ br.only-pc {
 #footer .inner {
   padding: 25px 15px;
   overflow: hidden;
-  height: 320px;
+  height: 350px;
 }
 
 #footer .info {
@@ -656,7 +656,7 @@ br.only-pc {
 }
 
 #footer .info .top {
-  padding-bottom: 20px;
+  padding: 0 10px 20px;
   border-bottom: 1px solid #4b4b4b;
   line-height: 1.6em;
 }
@@ -693,7 +693,7 @@ br.only-pc {
 }
 
 #footer .info .bottom {
-  padding-top: 20px;
+  padding: 20px 10px 0;
 }
 
 #footer .info .bottom span {
