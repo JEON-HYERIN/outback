@@ -263,7 +263,7 @@ br.only-m {
 }
 
 #main .cf .youtube__wrapper {
-  width: 676px;
+  width: 50%;
   background-color: #000;
 }
 
@@ -799,4 +799,8 @@ br.only-m {
 
 #arrow-up img {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  
 }

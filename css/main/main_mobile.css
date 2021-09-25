@@ -367,9 +367,8 @@ br.only-pc {
 
 #main .product .swiper .swiper-slide .text-group {
   position: absolute;
-  left: 0;
-  width: 45%;
-  margin-left: 15px;
+  left: 15px;
+  z-index: 1;
 }
 
 #main .product .swiper .swiper-slide .text-group .title {
@@ -387,6 +386,7 @@ br.only-pc {
 #main .product .swiper .swiper-slide .text-group .description {
   padding-top: 15px;
   color: #666;
+  max-width: 150px;
 }
 
 #main .product .swiper .swiper-slide .image {
@@ -812,16 +812,8 @@ br.only-pc {
     padding: 20px 0 25px;
   }
 
-  #main .product .swiper .swiper-slide .text-group {
-    width: 55%;
-  }
-
   #main .product .swiper .swiper-slide .text-group .title {
     font-size: 30px;
-  }
-
-  #main .product .swiper .swiper-slide .image {
-    width: 35%;
   }
 
   /* REWARD */
