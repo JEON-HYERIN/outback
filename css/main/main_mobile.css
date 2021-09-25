@@ -43,6 +43,7 @@ br.only-pc {
   width: 100%;
   z-index: 9;
   background-color: transparent;
+  transition: .5s;
 }
 
 #header.red {
@@ -51,6 +52,8 @@ br.only-pc {
 
 #header .inner {
   height: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
 }
 
 #header h1 {
@@ -475,11 +478,9 @@ br.only-pc {
 
 /* REWARD */
 #main .reward {
-  padding: 30px 15px 0;
+  padding: 30px 15px 5px;
   overflow: hidden;
-}
-
-#main .reward .left {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #main .reward .left .text-group {
@@ -487,7 +488,6 @@ br.only-pc {
   padding: 10px;
   border: 2px solid #222;
   border-radius: 10px;
-  box-sizing: border-box;
 }
 
 #main .reward .left .text-group .title {
@@ -540,22 +540,23 @@ br.only-pc {
 
 #main .reward .right .swiper .swiper-wrapper .swiper-slide .number {
   font-size: 16px;
-  color: #96603d;
-  opacity: 0.4;
+  font-weight: 700;
+  color: #c4ab9d;
+  opacity: .4;
 }
 
 #main .reward .right .swiper .swiper-wrapper .swiper-slide .title {
   margin-top: 10px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #222;
 }
 
 #main .reward .right .swiper .swiper-wrapper .swiper-slide .description {
   margin-top: 10px;
   font-size: 14px;
-  line-height: 21px;
-  color: #666;
+  line-height: 1.6em;
+  color: #646464;
 }
 
 #main .reward .right .swiper .swiper-pagination {

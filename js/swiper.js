@@ -37,9 +37,9 @@ new Swiper('#main .product .swiper', {
 });
 
 new Swiper('#main .reward .swiper', {
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
   slidesPerView: 2,
   spaceBetween: 20,
