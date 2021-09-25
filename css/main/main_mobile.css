@@ -479,7 +479,7 @@ br.only-pc {
 
 /* REWARD */
 #main .reward {
-  padding: 40px 15px 0;
+  padding: 30px 15px 0;
   overflow: hidden;
 }
 
@@ -539,11 +539,6 @@ br.only-pc {
   box-sizing: border-box;
 }
 
-#main .reward .right {
-  float: right;
-  width: 70%;
-}
-
 #main .reward .right ul {
   overflow: hidden;
 }
@@ -551,8 +546,7 @@ br.only-pc {
 #main .reward .right ul li {
   float: left;
   width: calc(100% / 3);
-  /* margin-top: 35px; */
-  margin-bottom: 35px;
+  margin-top: 10px;
 }
 
 #main .reward .right ul li .number {
@@ -577,11 +571,12 @@ br.only-pc {
 
 #main .service-menu {
   overflow: hidden;
+  padding: 30px 15px;
 }
 
 #main .service-menu li {
   float: left;
-  width: calc(100% / 2);
+  width: calc(50% - 5px);
   height: 79px;
   padding: 15px 20px 0;
   font-size: 10px;
@@ -599,12 +594,15 @@ br.only-pc {
 
 #main .service-menu li.save-point {
   background-color: #434343;
+  margin-left: 10px;
 }
 
 #main .service-menu li.delivery {
-  background-color: #c30606;
+  position: relative;
   clear: both;
   width: 100%;
+  margin-top: 10px;
+  background-color: #c30606;
 }
 
 #main .service-menu li a {
@@ -615,16 +613,24 @@ br.only-pc {
   float: left;
 }
 
+#main .service-menu li a .text-group .title {
+  max-width: 80px;
+}
+
 #main .service-menu li a .text-group .description {
   margin-top: 5px;
 }
 
 #main .service-menu li a .icon {
   float: right;
+  width: 34px;
 }
 
 #main .service-menu li.delivery a .icon.mobile {
-  display: inline-block !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 115px;
 } 
 
