@@ -170,43 +170,38 @@ br.only-pc {
   position: absolute;
   right: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);
   color: #999;
-  font-size: 30px;
+  font-size: 35px;
   opacity: .5;
+  transition: .5s;
+}
+
+#gnb > ul > li > a > span.material-icons.rotate {
+  color: #b10a11;
+  opacity: 1;
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 #gnb > ul > li > .sub-menu {
   position: absolute;
   left: 0;
-  top: 100px;
   width: 100%;
   padding: 7px 30px;
   background-color: #f8f8f8;
-  visibility: hidden;
   box-sizing: border-box;
-  opacity: 0;
-  transition: opacity 350ms;
   z-index: 9;
-}
-
-#gnb > ul > li.active > .sub-menu {
-  visibility: visible;
-  opacity: 1;
+  display: none;
 }
 
 #gnb > ul > li > .sub-menu.open {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 #gnb > ul > li > .sub-menu > li > a {
+  display: block;
   line-height: 40px;
   font-size: 16px;
-}
-
-#gnb > ul > li > .sub-menu > li + li {
-  
 }
 
 #header .top-menu {
@@ -807,6 +802,10 @@ br.only-pc {
   #gnb,
   #header .top-menu {
     width: 90%;
+  }
+
+  #gnb > ul > li > a > span.material-icons {
+    font-size: 30px;
   }
 
   /* CF */

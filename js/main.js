@@ -2,7 +2,7 @@
 const mainMenu = document.querySelector('#gnb > ul');
 const subMenues = mainMenu.querySelectorAll('.sub-menu');
 const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
-
+const icon = mainMenu.querySelector('span.material-icons');
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
@@ -18,10 +18,21 @@ mainMenuLists.forEach(function (mainMenuList) {
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
-  console.log(event.target)
-  subMenues.forEach(function(subMenu) {
-    if(event.target.dataset.link === subMenu.dataset.filter) {
+  subMenues.forEach(function (subMenu) {
+    if (event.target.dataset.link === subMenu.dataset.filter) {
       subMenu.classList.toggle('open');
+      icon.classList.toggle('rotate');
+      if (subMenu.classList.contains('open')) {
+        gsap.to(subMenu, .2, {
+          opacity: 1,
+          display: 'block',
+        });
+      } else {
+        gsap.to(subMenu, .2, {
+          opacity: 0,
+          display: 'none'
+        });
+      }
     } else {
       return;
     }
@@ -73,3 +84,5 @@ window.addEventListener('scroll', function () {
     arrowUpBtn.classList.add('invisible');
   }
 });
+
+
