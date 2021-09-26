@@ -192,12 +192,9 @@ br.only-pc {
   box-sizing: border-box;
   z-index: 9;
   display: none;
-  height: 0;
-  transition: height 1s;
 }
 
 #gnb > ul > li > .sub-menu.open {
-  height: auto;
   display: block;
 }
 
