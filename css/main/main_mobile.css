@@ -361,8 +361,10 @@ br.only-pc {
 #main .product::after {
   content: '';
   position: absolute;
-  right: -70px;
-  bottom: -80px;
+  /* right: -70px; */
+  /* bottom: -80px; */
+  left: 0;
+  bottom: -60px;
   width: 200px;
   height: 200px;
   background: url("../../img/main_product_obj.jpg") no-repeat center/cover;
@@ -833,7 +835,8 @@ br.only-pc {
   }
 
   #main .product .swiper {
-    padding: 20px 0 25px;
+    /* padding: 20px 0 25px; */
+    padding: 20px 0 50px;
   }
 
   #main .product .swiper .swiper-slide .text-group .title {
