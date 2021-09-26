@@ -16,29 +16,26 @@ mainMenuLists.forEach(function (mainMenuList) {
   mainMenuList.addEventListener('mouseleave', function (event) {
     event.target.classList.remove('active');
   });
-  // mainMenuList.addEventListener('click', function (event) {
-  //   // console.log(event.target)
-  //   if(event.target.localName === 'li') {
-  //     event.target.classList.toggle('active');
-  //   } else if (event.target.localName === 'a') {
-  //     event.target.parentElement.classList.add('active');
-  //   }
-  // });
 });
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
-  console.dir(event.target)
-
+  console.log(event.target)
+  mainMenuLists.forEach(function (event) {
+    // console.log(event.target)
+  });
   subMenues.forEach(function (subMenu) {
+    console.dir(event.target)
     const link = event.target.dataset.link || event.target.parentElement.dataset.link;
     if ((link === subMenu.dataset.filter)) {
-      subMenu.classList.toggle('open');
       if (event.target.localName === 'li') {
         event.target.classList.toggle('active');
       } else if (event.target.localName === 'a') {
         event.target.parentElement.classList.add('active');
       }
+
+      subMenu.classList.toggle('open');
+
       icons.forEach(function (icon) {
         if (subMenu.dataset.filter === icon.dataset.name) {
           icon.classList.toggle('rotate');
