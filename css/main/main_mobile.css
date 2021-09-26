@@ -141,15 +141,12 @@ br.only-pc {
   left: 0;
 }
 
-#gnb ul li {
-  padding-left: 21px;
-}
-
 #gnb ul li a {
   color: #222;
 }
 
 #gnb > ul > li {
+  padding-left: 21px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -806,6 +803,10 @@ br.only-pc {
 
   #gnb > ul > li > a > span.material-icons {
     font-size: 30px;
+  }
+
+  #gnb > ul > li > .sub-menu > li > a {
+    font-size: 14px;
   }
 
   /* CF */
