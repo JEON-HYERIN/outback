@@ -20,26 +20,33 @@ mainMenuLists.forEach(function (mainMenuList) {
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
   subMenues.forEach(function (subMenu, index) {
-    if (event.target.dataset.link === subMenu.dataset.filter) {
+    let a = event.target.nextElementSibling.classList[1];
+    console.dir( event.target.nextElementSibling.classList.contains('open'))
+    if ((event.target.dataset.link === subMenu.dataset.filter))  {
       subMenu.classList.toggle('open');
+ 
       icons.forEach(function (icon, index) {
         if (subMenu.dataset.filter === icon.dataset.name) {
           icon.classList.toggle('rotate');
         }
       });
 
-      if (subMenu.classList.contains('open')) {
-        gsap.to(subMenu, .1, {
-          opacity: 1,
-          display: 'block',
-        });
-      } else {
-        gsap.to(subMenu, .1, {
-          opacity: 0,
-          display: 'none'
-        });
-      }
-    } else {
+      // if (subMenu.classList.contains('open')) {
+      //   gsap.to(subMenu, .1, {
+      //     opacity: 1,
+      //     display: 'block',
+      //   });
+      // } else {
+      //   gsap.to(subMenu, .1, {
+      //     opacity: 0,
+      //     display: 'none'
+      //   });
+      // }
+    } 
+    // else if (a === 'open') {
+    //   subMenu.classList.remove('open');
+    // }
+     else {
       return;
     }
   });
