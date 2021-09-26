@@ -2,6 +2,7 @@
 const mainMenu = document.querySelector('#gnb > ul');
 const subMenues = mainMenu.querySelectorAll('.sub-menu');
 const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
+const anchers = document.querySelectorAll('#gnb > ul > li > a');
 const icons = mainMenu.querySelectorAll('span.material-icons');
 
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -15,17 +16,30 @@ mainMenuLists.forEach(function (mainMenuList) {
   mainMenuList.addEventListener('mouseleave', function (event) {
     event.target.classList.remove('active');
   });
+  // mainMenuList.addEventListener('click', function (event) {
+  //   // console.log(event.target)
+  //   if(event.target.localName === 'li') {
+  //     event.target.classList.toggle('active');
+  //   } else if (event.target.localName === 'a') {
+  //     event.target.parentElement.classList.add('active');
+  //   }
+  // });
 });
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
-  subMenues.forEach(function (subMenu, index) {
-    let a = event.target.nextElementSibling.classList[1];
-    // console.dir(event.target)
-    if ((event.target.dataset.link === subMenu.dataset.filter)) {
-      subMenu.classList.toggle('open');
+  console.dir(event.target)
 
-      icons.forEach(function (icon, index) {
+  subMenues.forEach(function (subMenu) {
+    const link = event.target.dataset.link || event.target.parentElement.dataset.link;
+    if ((link === subMenu.dataset.filter)) {
+      subMenu.classList.toggle('open');
+      if (event.target.localName === 'li') {
+        event.target.classList.toggle('active');
+      } else if (event.target.localName === 'a') {
+        event.target.parentElement.classList.add('active');
+      }
+      icons.forEach(function (icon) {
         if (subMenu.dataset.filter === icon.dataset.name) {
           icon.classList.toggle('rotate');
         }
