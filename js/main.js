@@ -2,7 +2,8 @@
 const mainMenu = document.querySelector('#gnb > ul');
 const subMenues = mainMenu.querySelectorAll('.sub-menu');
 const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
-const icon = mainMenu.querySelector('span.material-icons');
+const icons = mainMenu.querySelectorAll('span.material-icons');
+
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
@@ -11,9 +12,6 @@ mainMenuLists.forEach(function (mainMenuList) {
   mainMenuList.addEventListener('mouseenter', function (event) {
     event.target.classList.add('active');
   });
-  mainMenuList.addEventListener('mouseleave', function (event) {
-    event.target.classList.remove('active');
-  });
 });
 
 // 모바일버전 서브메뉴 오픈
@@ -21,14 +19,19 @@ mainMenu.addEventListener('click', function (event) {
   subMenues.forEach(function (subMenu) {
     if (event.target.dataset.link === subMenu.dataset.filter) {
       subMenu.classList.toggle('open');
-      icon.classList.toggle('rotate');
+      icons.forEach(function (icon) {
+        if ((event.target.dataset.link === subMenu.dataset.filter) && (event.target.dataset.link) === icon.dataset.name) {
+          icon.classList.toggle('rotate');
+        }
+      });
+
       if (subMenu.classList.contains('open')) {
-        gsap.to(subMenu, .2, {
+        gsap.to(subMenu, .1, {
           opacity: 1,
           display: 'block',
         });
       } else {
-        gsap.to(subMenu, .2, {
+        gsap.to(subMenu, .1, {
           opacity: 0,
           display: 'none'
         });
