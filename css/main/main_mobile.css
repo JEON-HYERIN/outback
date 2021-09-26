@@ -304,9 +304,11 @@ br.only-pc {
 }
 
 #main .cf .youtube__wrapper {
+  position: relative;
   width: 80%;
   background-color: #000;
   margin: 0 auto;
+  z-index: 9;
 }
 
 #main .cf .youtube__wrapper .youtube__area {
@@ -845,6 +847,14 @@ br.only-pc {
   }
 
   /* REWARD */
+  #main .reward .left .text-group .title {
+    font-size: 15px;
+  }
+
+  #main .reward .left .text-group .title em {
+    font-size: 30px;
+  }
+
   #main .reward .left .text-group .description {
     margin: 10px 0;
   }  
@@ -863,8 +873,16 @@ br.only-pc {
     padding: 20px 0 30px;
   }
 
+  #main .reward .right .swiper .swiper-slide .number {
+    font-size: 14px;
+  }
+
+  #main .reward .right .swiper .swiper-slide .title {
+    font-size: 16px;
+  }
+
   #main .reward .right .swiper .swiper-slide .description {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   /* FOOTER */
