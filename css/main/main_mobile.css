@@ -177,7 +177,7 @@ br.only-pc {
   transition: .5s;
 }
 
-#gnb > ul > li > a > span.material-icons.rotate {
+#gnb > ul > li.active > a > span.material-icons.rotate {
   color: #b10a11;
   opacity: 1;
   transform: translateY(-50%) rotate(-90deg);
@@ -194,7 +194,7 @@ br.only-pc {
   display: none;
 }
 
-#gnb > ul > li > .sub-menu.open {
+#gnb > ul > li.active > .sub-menu.open {
   display: block;
 }
 
