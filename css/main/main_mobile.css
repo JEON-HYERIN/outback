@@ -380,7 +380,7 @@ br.only-pc {
 }
 
 #main .product .swiper .swiper-slide .text-group .title {
-  font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
@@ -452,7 +452,7 @@ br.only-pc {
 }
 
 #main .benefit .benefit__title {
-  font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
@@ -509,7 +509,7 @@ br.only-pc {
 }
 
 #main .reward .left .text-group .title em {
-  font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 32px;
 }
 
