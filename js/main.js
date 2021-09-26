@@ -19,11 +19,11 @@ mainMenuLists.forEach(function (mainMenuList) {
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
-  subMenues.forEach(function (subMenu) {
+  subMenues.forEach(function (subMenu, index) {
     if (event.target.dataset.link === subMenu.dataset.filter) {
       subMenu.classList.toggle('open');
-      icons.forEach(function (icon) {
-        if ((event.target.dataset.link === subMenu.dataset.filter) && (event.target.dataset.link) === icon.dataset.name) {
+      icons.forEach(function (icon, index) {
+        if (subMenu.dataset.filter === icon.dataset.name) {
           icon.classList.toggle('rotate');
         }
       });
