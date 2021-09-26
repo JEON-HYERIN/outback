@@ -141,12 +141,15 @@ br.only-pc {
   left: 0;
 }
 
+#gnb ul li {
+  padding-left: 21px;
+}
+
 #gnb ul li a {
   color: #222;
 }
 
 #gnb > ul > li {
-  padding-left: 21px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -157,12 +160,6 @@ br.only-pc {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 54px;
-}
-
-#gnb > ul > li > a > span {
-  /* position: relative;
-  padding-bottom: 10px;
-  pointer-events: none; */
 }
 
 #gnb>ul>li>a>span.material-icons {
@@ -177,29 +174,30 @@ br.only-pc {
 
 #gnb > ul > li > .sub-menu {
   position: absolute;
+  left: 0;
   top: 100px;
-  padding: 28px 30px;
-  background: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 7px 30px;
+  background-color: #f8f8f8;
   visibility: hidden;
+  box-sizing: border-box;
   opacity: 0;
   transition: opacity 350ms;
   z-index: 9;
-  display: none;
 }
 
-#gnb > ul > li.active:hover > .sub-menu {
+#gnb > ul > li.active > .sub-menu {
   visibility: visible;
   opacity: 1;
 }
 
 #gnb > ul > li > .sub-menu > li > a {
-  color: #fffefe;
-  font-size: 14px;
-  line-height: 20px;
+  line-height: 40px;
+  font-size: 16px;
 }
 
 #gnb > ul > li > .sub-menu > li + li {
-  margin-top: 18px;
+  
 }
 
 #header .top-menu {
@@ -305,10 +303,10 @@ br.only-pc {
 
 #main .cf .youtube__wrapper {
   position: relative;
-  width: 80%;
+  width: 90%;
   background-color: #000;
   margin: 0 auto;
-  z-index: 9;
+  z-index: 1;
 }
 
 #main .cf .youtube__wrapper .youtube__area {
@@ -857,6 +855,7 @@ br.only-pc {
 
   #main .reward .left .text-group .description {
     margin: 10px 0;
+    width: 180px;
   }  
 
   #main .reward .left .text-group .btns {
@@ -878,7 +877,7 @@ br.only-pc {
   }
 
   #main .reward .right .swiper .swiper-slide .title {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   #main .reward .right .swiper .swiper-slide .description {
