@@ -63,6 +63,7 @@ const gnbEl = document.querySelector('#gnb');
 const topMenu = document.querySelector('#header .top-menu');
 
 openBtn.addEventListener('click', function () {
+  header.classList.add('black');
   header.classList.remove('red');
   gnbEl.classList.add('open');
   topMenu.classList.add('open');
@@ -71,7 +72,7 @@ openBtn.addEventListener('click', function () {
 });
 
 closeBtn.addEventListener('click', function () {
-  header.classList.add('red');
+  header.classList.remove('black');
   gnbEl.classList.remove('open');
   topMenu.classList.remove('open');
   openBtn.classList.remove('hidden');
@@ -83,6 +84,7 @@ const header = document.querySelector('#header');
 window.addEventListener('scroll', function () {
   if(window.pageYOffset > 1 && closeBtn.classList.contains('hidden')) {
     header.classList.add('red');
+    header.classList.remove('black');
   } else {
     header.classList.remove('red');
   };
