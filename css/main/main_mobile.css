@@ -162,7 +162,11 @@ br.only-pc {
   line-height: 54px;
 }
 
-#gnb>ul>li>a>span.material-icons {
+#gnb > ul > li > a > span:first-child {
+  pointer-events: none;
+}
+
+#gnb > ul > li > a > span.material-icons {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -187,6 +191,11 @@ br.only-pc {
 }
 
 #gnb > ul > li.active > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+#gnb > ul > li > .sub-menu.open {
   visibility: visible;
   opacity: 1;
 }

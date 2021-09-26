@@ -1,6 +1,7 @@
 // gnb영역 이벤트 
+const mainMenu = document.querySelector('#gnb > ul');
+const subMenues = mainMenu.querySelectorAll('.sub-menu');
 const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
-// const active = document.querySelector('#gnb ul li.active');
 
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
@@ -8,12 +9,22 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 mainMenuLists.forEach(function (mainMenuList) {
   mainMenuList.addEventListener('mouseenter', function (event) {
-    // active.classList.remove('active');
     event.target.classList.add('active');
   });
   mainMenuList.addEventListener('mouseleave', function (event) {
-    // active.classList.add('active');
     event.target.classList.remove('active');
+  });
+});
+
+// 모바일버전 서브메뉴 오픈
+mainMenu.addEventListener('click', function (event) {
+  console.log(event.target)
+  subMenues.forEach(function(subMenu) {
+    if(event.target.dataset.link === subMenu.dataset.filter) {
+      subMenu.classList.toggle('open');
+    } else {
+      return;
+    }
   });
 });
 
@@ -62,5 +73,3 @@ window.addEventListener('scroll', function () {
     arrowUpBtn.classList.add('invisible');
   }
 });
-
-console.log(closeBtn.classList.contains('hidden'))
