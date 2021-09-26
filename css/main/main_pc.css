@@ -1,4 +1,8 @@
 /* COMMON */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .mobile {
   display: none !important;
 }

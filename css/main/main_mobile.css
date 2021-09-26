@@ -1,4 +1,8 @@
 /* COMMON */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 .pc {
   display: none !important;
 }
@@ -336,7 +340,8 @@ br.only-pc {
 #main .cf .text-group .sub-title {
   padding-top: 10px;
   font-size: 20px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 700;
 }
 
 #main .cf .text-group .description {
@@ -382,7 +387,8 @@ br.only-pc {
 #main .product .swiper .swiper-slide .text-group .kor-title {
   padding-top: 10px;
   font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 700;
 }
 
 #main .product .swiper .swiper-slide .text-group .description {
@@ -757,7 +763,8 @@ br.only-pc {
 
 #footer .info .bottom em {
   font-size: 15px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 700;
   margin-left: 8px;
 }
 
@@ -820,19 +827,27 @@ br.only-pc {
     font-size: 30px;
   }
 
-  /* REWARD */
-  #main .reward .left .text-group .description {
-    margin: 10px 0;
-  }
-
   /* BENEFIT */
   #main .benefit {
     font-size: 12px;
+  }
+
+  #main .benefit .benefit__title {
+    font-size: 30px;
   }
   
   #main .benefit ul li {
     padding: 0 5px;
   }
+
+  #main .benefit ul li .title {
+    font-size: 14px;
+  }
+
+  /* REWARD */
+  #main .reward .left .text-group .description {
+    margin: 10px 0;
+  }  
 
   #main .reward .left .text-group .btns {
     position: static;
@@ -845,7 +860,7 @@ br.only-pc {
   }
 
   #main .reward .right .swiper {
-    padding: 20px 0 35px;
+    padding: 20px 0 30px;
   }
 
   #main .reward .right .swiper .swiper-slide .description {
@@ -855,5 +870,25 @@ br.only-pc {
   /* FOOTER */
   #footer {
     font-size: 12px;
+  }
+
+  #footer .inner {
+    padding: 20px 10px;
+  }
+
+  #footer .footer-menu li {
+    line-height: 1.6em;
+  }
+
+  #footer .info .top {
+    padding: 10px 0;
+  }
+
+  #footer .info .bottom {
+    padding-top: 10px;
+  }
+
+  #footer .info .bottom span:nth-of-type(2) {
+    padding: 5px 0;
   }
 }
