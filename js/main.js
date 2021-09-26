@@ -71,6 +71,7 @@ openBtn.addEventListener('click', function () {
 });
 
 closeBtn.addEventListener('click', function () {
+  header.classList.add('red');
   gnbEl.classList.remove('open');
   topMenu.classList.remove('open');
   openBtn.classList.remove('hidden');
