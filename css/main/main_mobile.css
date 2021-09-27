@@ -87,6 +87,10 @@ br.only-pc {
   height: 27px;
 }
 
+#header h1 a {
+  display: block;
+}
+
 #header .open-btn,
 #header .close-btn {
   position: absolute;

@@ -57,6 +57,11 @@ br.only-m {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
+}
+
+#header h1 a {
+  display: block;
 }
 
 #gnb {
