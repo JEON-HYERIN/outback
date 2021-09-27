@@ -82,7 +82,7 @@ closeBtn.addEventListener('click', function () {
 // 헤더영역 
 const header = document.querySelector('#header');
 window.addEventListener('scroll', function () {
-  if(window.pageYOffset > 1 && closeBtn.classList.contains('hidden')) {
+  if(window.pageYOffset !== 0 && closeBtn.classList.contains('hidden')) {
     header.classList.add('red');
     header.classList.remove('black');
   } else {
