@@ -72,6 +72,10 @@ br.only-pc {
   background-color: #b10a11;
 }
 
+#header.red::before {
+  display: none;
+}
+
 #header .inner {
   height: 56px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
