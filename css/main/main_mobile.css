@@ -156,15 +156,15 @@ br.only-pc {
   transition: .5s;
 }
 
+#gnb.open,
+#header .top-menu.open {
+  transform: translateX(0);
+}
+
 #gnb {
   top: 56px;
   height: 100vh;
   background-color: #fff;
-}
-
-#gnb.open,
-#header .top-menu.open {
-  transform: translateX(0);
 }
 
 #gnb ul li a {

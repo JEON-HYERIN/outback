@@ -1,0 +1,65 @@
+/* COMMON */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.pc {
+  display: block !important;
+}
+
+br.only-m {
+  content: '';
+}
+
+#wrapper {
+  min-width: 1024px;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* VISUAL */
+#visual {
+  position: relative;
+  height: 600px;
+  background: url("../../img/brand/beef/beef_bg.jpg") no-repeat center/cover;
+}
+
+#visual .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 55px;
+  line-height: 55px;
+  letter-spacing: 2px;
+}
+
+#visual .title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* MAIN */
+#main {
+  background-color: #fff;
+}
+
+#main .inner {
+  padding: 100px 0 200px;
+  box-sizing: border-box;
+}

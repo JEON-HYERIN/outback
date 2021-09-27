@@ -25,7 +25,7 @@ mainMenu.addEventListener('click', function (event) {
     // console.log(event.target)
   });
   subMenues.forEach(function (subMenu) {
-    console.dir(event.target)
+    // console.dir(event.target)
     const link = event.target.dataset.link || event.target.parentElement.dataset.link;
     if ((link === subMenu.dataset.filter)) {
       if (event.target.localName === 'li') {
