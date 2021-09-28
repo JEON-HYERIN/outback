@@ -87,6 +87,7 @@ br.only-pc {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   color: #666;
+  line-height: 1.3em;
 }
 
 #visual .product .product__detail .type {
@@ -305,7 +306,7 @@ br.only-pc {
 
   /* VISUAL */
   #visual .product {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #visual .product .product__info .title .kor {
