@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-title" content="아웃백 스테이크하우스" />
   <meta name="description" content="OUTBACK STEAKHOUSE" />
-  <title> 아웃백 티본 스테이크 | 메뉴  | 아웃백</title>
+  <title> 아웃백 티본 스테이크 | 메뉴 | 아웃백</title>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -47,8 +48,13 @@
   <link rel="stylesheet" href="../css/menu/product1_pc.css" media="screen and (min-width: 850.1px)" />
   <link rel="stylesheet" href="../css/menu/product1_mobile.css" media="screen and (max-width: 850.0px)" />
 
-  <script defer src="../js/main.js"></script>    
+  <script defer src="../js/main.js"></script>
+</head>
 
+<body>
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    
     <!-- HEADER -->
     <header id="header" class="red">
       <div class="inner">
@@ -164,7 +170,7 @@
         </ul>
       </div>
     </header>
-    
+
     <!-- VISUAL -->
     <section id="visual">
       <h2 class="ir-hidden">OUTBACK T-BONE STEAK</h2>
@@ -412,9 +418,38 @@
     <!-- ARROW-UP -->
     <button id="arrow-up" class="invisible">
       <img src="../img/btn_top.gif" alt="top" />
-    </button>    
-</head>
-<body>
-  
+    </button>
+  </div>
+
+
+
+  <script>
+    'use strict';
+
+    // 토글버튼 활성화
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const gnbEl = document.querySelector('#gnb');
+    const topMenu = document.querySelector('#header .top-menu');
+    openBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.remove('red');
+      gnbEl.classList.add('open');
+      topMenu.classList.add('open');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.add('red');
+      gnbEl.classList.remove('open');
+      topMenu.classList.remove('open');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    });
+  </script>
+
 </body>
+
 </html>

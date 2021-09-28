@@ -46,7 +46,7 @@ br.only-pc {
 }
 
 #visual .product .product__info .title {
-  margin-bottom: 10px;
+  margin: 10px 0;
   font-family: sans-serif;
 }
 
@@ -104,7 +104,7 @@ br.only-pc {
   position: relative;
   top: -5px;
   margin-right: 5px;
-  padding: 0 8px 0 13px;
+  padding: 0 5px;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: 700;
