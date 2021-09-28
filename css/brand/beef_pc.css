@@ -63,5 +63,13 @@ br.only-m {
 
 #main .inner {
   max-width: 1600px;
-  /* padding: 100px 0 200px; */
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 1023.9px) {
+
+  /* VISUAL */
+  #visual {
+    margin-top: 56px;
+  }
 }
