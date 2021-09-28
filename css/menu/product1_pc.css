@@ -162,6 +162,11 @@ br.only-m {
   background-color: #fff;
 }
 
+ /* SIDE DISH */
+ #main .side-dish {
+  padding-left: 20px;
+}
+
 /* NOTICE */
 #main .notice {
   padding-bottom: 200px;
@@ -210,3 +215,4 @@ br.only-m {
 #main .notice .text-group .text ul.description li {
   color: #666;
 }
+
