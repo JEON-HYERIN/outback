@@ -30,7 +30,6 @@ br.only-pc {
 /* VISUAL */
 #visual {
   margin-top: 56px;
-  text-align: center;
   background-color: #fff;
 }
 
@@ -41,6 +40,7 @@ br.only-pc {
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 1.5px;
+  text-align: center;
   color: #222;
 }
 
