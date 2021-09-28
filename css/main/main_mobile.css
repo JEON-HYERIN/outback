@@ -825,6 +825,7 @@ br.only-pc {
   border-radius: 50%;
 } */
 
+/* 미디어쿼리 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   /* HEADER */

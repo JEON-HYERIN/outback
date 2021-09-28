@@ -811,6 +811,7 @@ br.only-m {
   border-radius: 50%;
 } */
 
+/* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
 
   /* HEADER */
