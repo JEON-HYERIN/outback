@@ -309,8 +309,20 @@ br.only-pc {
     font-size: 15px;
   }
 
+  #visual .product .product__info .title .kor {
+    
+  }
+
+  #visual .product .product__detail ul .item .item__name {
+    font-size: 16px;
+  }
+
+  #visual .product .product__detail ul .item .item__contents .price em {
+    font-size: 20px;
+  }
+
   /* NOTICE */
   #main .notice .text-group .text ul.description li {
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
   }
 }
