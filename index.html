@@ -64,7 +64,7 @@
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
     <!-- HEADER -->
-    <header id="header">
+    <header id="header" class="red">
       <div class="inner">
         <h1>
           <a href="./index.html">
@@ -452,6 +452,7 @@
             </div>
           </section>
 
+      <!-- SERVICE MENU -->
       <ul class="service-menu">
         <li class="reserve">
           <a href="javascript:void(0)">
@@ -564,5 +565,27 @@
         <img src="./img/btn_top.gif" alt="top" />
       </button>
   </div>
+
+<script>
+  'use strict';
+
+  const header = document.querySelector('#header');
+  const headerHeight = header.getBoundingClientRect().height;
+  window.addEventListener('scroll', function () {
+    console.log(window.pageYOffset)
+    if (window.pageYOffset > 0 && closeBtn.classList.contains('hidden')) {
+      header.classList.add('red');
+      header.classList.remove('black');
+    } else {
+      header.classList.remove('red');
+    };
+
+    if (window.pageYOffset > headerHeight) {
+      arrowUpBtn.classList.remove('invisible');
+    } else {
+      arrowUpBtn.classList.add('invisible');
+    }
+  });
+</script>
 </body>
 </html>
