@@ -146,7 +146,7 @@ br.only-m {
 }
 
 #visual .product .btn-group .btn img {
-  display: inline-block;
+  display: inline-block !important;
   position: relative;
   top: -10px;
 }
