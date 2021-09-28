@@ -317,11 +317,23 @@ br.only-pc {
     font-size: 16px;
   }
 
+  #visual .product .product__detail ul .item .item__contents .label {
+    padding: 0;
+  }
+
+  #visual .product .product__detail ul .item .item__contents .price {
+    font-size: 1em;
+  }
+
   #visual .product .product__detail ul .item .item__contents .price em {
     font-size: 20px;
   }
 
   /* NOTICE */
+  #main .notice .todays__notice em {
+    font-size: 16px;
+  }
+
   #main .notice .text-group .text ul.description li {
     letter-spacing: -0.5px;
   }
