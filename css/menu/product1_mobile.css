@@ -316,6 +316,10 @@ br.only-pc {
     font-size: 16px;
   }
 
+  #visual .product .product__detail ul .item .item__contents {
+    padding-right: 10px;
+  }
+
   #visual .product .product__detail ul .item .item__contents .label {
     padding: 0;
   }
