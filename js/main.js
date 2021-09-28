@@ -20,7 +20,7 @@ mainMenuLists.forEach(function (mainMenuList) {
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {
-  console.log(event.target)
+
   mainMenuLists.forEach(function (event) {
     // console.log(event.target)
   });

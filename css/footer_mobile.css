@@ -11,11 +11,11 @@
   overflow: hidden;
 }
 
-#footer .footer-menu {
+#footer .footer__menu {
   overflow: hidden;
 }
 
-#footer .footer-menu li {
+#footer .footer__menu li {
   float: left;
   width: 33.33%;
   box-sizing: border-box;
@@ -23,15 +23,15 @@
   line-height: 2em;
 }
 
-#footer .footer-menu li:first-child {
+#footer .footer__menu li:first-child {
   font-weight: 700;
 }
 
-#footer .footer-menu li + li {
+#footer .footer__menu li + li {
   position: relative;
 }
 
-#footer .footer-menu li + li::before {
+#footer .footer__menu li + li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -44,11 +44,11 @@
   opacity: .2;
 }
 
-#footer .footer-menu li:nth-child(3) + li::before {
+#footer .footer__menu li:nth-child(3) + li::before {
   display: none;
 }
 
-#footer .footer-menu li a {
+#footer .footer__menu li a {
   display: block;
 }
 
@@ -149,7 +149,7 @@
     padding: 20px 10px;
   }
 
-  #footer .footer-menu li {
+  #footer .footer__menu li {
     line-height: 1.6em;
   }
 

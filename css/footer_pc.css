@@ -96,7 +96,7 @@
 #footer .info .top span,
 #footer .info .top .copyright,
 #footer .info .bottom,
-#footer .footer-menu {
+#footer .footer__menu {
   opacity: .7;
 }
 
@@ -167,28 +167,28 @@
   margin-left: 8px;
 }
 
-#footer .footer-menu {
+#footer .footer__menu {
   position: absolute;
   right: 0;
   top: 160px;
   overflow: hidden;
 }
 
-#footer .footer-menu li {
+#footer .footer__menu li {
   float: left;
 }
 
-#footer .footer-menu li:first-child {
+#footer .footer__menu li:first-child {
   font-weight: 700;
 }
 
-#footer .footer-menu li + li {
+#footer .footer__menu li + li {
   position: relative;
   margin-left: 10px;
   padding-left: 10px;
 }
 
-#footer .footer-menu li + li::before {
+#footer .footer__menu li + li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -248,7 +248,7 @@
     left: 15px;
   }
 
-  #footer .footer-menu {
+  #footer .footer__menu {
     right: 15px;
     top: 100px;
   }

@@ -104,7 +104,6 @@ br.only-pc {
 
 #visual .product .product__detail ul .item {
   overflow: hidden;
-  clear: both;
 }
 
 #visual .product .product__detail ul .item:first-child {
