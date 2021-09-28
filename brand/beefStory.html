@@ -334,6 +334,7 @@
   const gnbEl = document.querySelector('#gnb');
   const topMenu = document.querySelector('#header .top-menu');
   openBtn.addEventListener('click', function () {
+    header.classList.add('black');
     header.classList.remove('red');
     gnbEl.classList.add('open');
     topMenu.classList.add('open');
@@ -342,6 +343,7 @@
   });
 
   closeBtn.addEventListener('click', function () {
+    header.classList.add('black');
     header.classList.add('red');
     gnbEl.classList.remove('open');
     topMenu.classList.remove('open');

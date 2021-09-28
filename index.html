@@ -586,6 +586,7 @@
 
   closeBtn.addEventListener('click', function () {
   header.classList.remove('black');
+  header.classList.add('red');
   gnbEl.classList.remove('open');
   topMenu.classList.remove('open');
   openBtn.classList.remove('hidden');
@@ -593,21 +594,11 @@
   });
 
   // 헤더영역
-  const header = document.querySelector('#header');
-  const headerHeight = header.getBoundingClientRect().height;
   window.addEventListener('scroll', function () {
-  console.log(window.pageYOffset)
-  if (window.pageYOffset > 0 && closeBtn.classList.contains('hidden')) {
+  if(window.pageYOffset > 0 && header.classList.contains('black') === false) {
   header.classList.add('red');
-  header.classList.remove('black');
   } else {
   header.classList.remove('red');
-  };
-
-  if (window.pageYOffset > headerHeight) {
-  arrowUpBtn.classList.remove('invisible');
-  } else {
-  arrowUpBtn.classList.add('invisible');
   }
   });
 </script>

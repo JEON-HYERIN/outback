@@ -78,22 +78,14 @@ arrowUpBtn.addEventListener('click', function () {
 // });
 
 // 헤더영역 
-// const header = document.querySelector('#header');
-// const headerHeight = header.getBoundingClientRect().height;
-// window.addEventListener('scroll', function () {
-//   console.log(headerHeight)
-//   if(window.pageYOffset !== 0 && closeBtn.classList.contains('hidden')) {
-//     header.classList.add('red');
-//     header.classList.remove('black');
-//   } else {
-//     header.classList.remove('red');
-//   };
-
-//   if(window.pageYOffset > headerHeight) {
-//     arrowUpBtn.classList.remove('invisible');
-//   } else {
-//     arrowUpBtn.classList.add('invisible');
-//   }
-// });
+const header = document.querySelector('#header');
+const headerHeight = header.getBoundingClientRect().height;
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > headerHeight) {
+    arrowUpBtn.classList.remove('invisible');
+  } else {
+    arrowUpBtn.classList.add('invisible');
+  }
+});
 
 
