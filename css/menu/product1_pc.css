@@ -25,3 +25,132 @@ br.only-m {
   margin: 0 auto;
   position: relative;
 }
+
+/* VISUAL */
+#visual {
+  margin-top: 100px;
+  background: url("../../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
+}
+
+#visual .inner {
+  height: 700px;
+}
+
+#visual .product {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+#visual .product .product__info {}
+
+#visual .product .product__info .title {
+  margin-bottom: 10px;
+}
+
+#visual .product .product__info .title .kor {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+#visual .product .product__info .title .eng {
+  font-size: 35px;
+  line-height: 1em;
+}
+
+#visual .product .product__info .description {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+#visual .product .product__detail .type {
+  margin: 25px 0;
+}
+
+#visual .product .product__detail ul {
+  padding-bottom: 60px;
+}
+
+#visual .product .product__detail ul .item .item__name {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+#visual .product .product__detail ul .item .item__contents {
+  display: inline-block;
+}
+
+#visual .product .product__detail ul .item .item__contents .label {
+  position: relative;
+  display: inline-block;
+  margin-right: 17px;
+  padding: 0 8px 0 13px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #50473d;
+}
+
+#visual .product .product__detail ul .item .item__contents .label::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-width: 13px 0 13px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #50473d;
+}
+
+
+#visual .product .product__detail ul .item .item__contents .price {
+  color: #b59371;
+}
+
+#visual .product .product__detail ul .item .item__contents .price em {
+  font-size: 34px;
+}
+
+#visual .product .btn-group {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+#visual .product .btn-group .btn {
+  float: left;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#visual .product .btn-group .btn.btn--brown {
+  background-color: rgba(144, 115, 84, 0.95);
+}
+
+#visual .product .btn-group .btn.btn--red {
+  background-color: rgba(177, 10, 17, 0.95);
+}
+
+#visual .product .btn-group .btn img {
+  display: inline-block;
+}
+
+#visual .product .btn-group .btn span {
+  display: block;
+  position: relative;
+  top: -10px;
+}
