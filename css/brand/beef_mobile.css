@@ -29,20 +29,30 @@ br.only-pc {
 
 /* VISUAL */
 #visual {
-  position: relative;
   margin-top: 56px;
   text-align: center;
   background-color: #fff;
 }
 
-#visual .title {
-  display: inline-block;
+#visual > h2 {
+  position: relative;
   font-family: 'sans-serif';
   font-size: 20px;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 1.5px;
   color: #222;
+}
+
+#visual > h2::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 10px;
+  background: url("../../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 /* MAIN */ 

@@ -31,6 +31,29 @@ br.only-pc {
 /* VISUAL */
 #visual {
   margin-top: 56px;
+  background-color: #fff;
+}
+
+#visual > h2 {
+  position: relative;
+  font-family: 'sans-serif';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #222;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#visual > h2::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 10px;
+  background: url("../../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 #visual .inner {
