@@ -569,22 +569,46 @@
 <script>
   'use strict';
 
+  // 토글버튼 활성화
+  const openBtn = document.querySelector('.open-btn');
+  const closeBtn = document.querySelector('.close-btn');
+  const gnbEl = document.querySelector('#gnb');
+  const topMenu = document.querySelector('#header .top-menu');
+
+  openBtn.addEventListener('click', function () {
+  header.classList.add('black');
+  header.classList.remove('red');
+  gnbEl.classList.add('open');
+  topMenu.classList.add('open');
+  openBtn.classList.add('hidden');
+  closeBtn.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', function () {
+  header.classList.remove('black');
+  gnbEl.classList.remove('open');
+  topMenu.classList.remove('open');
+  openBtn.classList.remove('hidden');
+  closeBtn.classList.add('hidden');
+  });
+
+  // 헤더영역
   const header = document.querySelector('#header');
   const headerHeight = header.getBoundingClientRect().height;
   window.addEventListener('scroll', function () {
-    console.log(window.pageYOffset)
-    if (window.pageYOffset > 0 && closeBtn.classList.contains('hidden')) {
-      header.classList.add('red');
-      header.classList.remove('black');
-    } else {
-      header.classList.remove('red');
-    };
+  console.log(window.pageYOffset)
+  if (window.pageYOffset > 0 && closeBtn.classList.contains('hidden')) {
+  header.classList.add('red');
+  header.classList.remove('black');
+  } else {
+  header.classList.remove('red');
+  };
 
-    if (window.pageYOffset > headerHeight) {
-      arrowUpBtn.classList.remove('invisible');
-    } else {
-      arrowUpBtn.classList.add('invisible');
-    }
+  if (window.pageYOffset > headerHeight) {
+  arrowUpBtn.classList.remove('invisible');
+  } else {
+  arrowUpBtn.classList.add('invisible');
+  }
   });
 </script>
 </body>

@@ -30,7 +30,9 @@ br.only-m {
 #visual {
   position: relative;
   height: 600px;
+  margin-top: 100px;
   background: url("../../img/brand/beef/beef_bg.jpg") no-repeat center/cover;
+  
 }
 
 #visual .title {

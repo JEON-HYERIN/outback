@@ -54,7 +54,7 @@
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
     <!-- HEADER -->
-    <header id="header">
+    <header id="header" class="red">
       <div class="inner">
         <h1>
           <a href="../index.html">
@@ -170,7 +170,7 @@
     </header>
 
     <!-- VISUAL -->
-    <section id="visual" class="pc">
+    <section id="visual">
       <h2 class="title">BRAND</h2>
     </section>
 
@@ -324,5 +324,30 @@
       <img src="../img/btn_top.gif" alt="top" />
     </button>
   </div>
+
+<script>
+  'use strict';
+
+  // 토글버튼 활성화
+  const openBtn = document.querySelector('.open-btn');
+  const closeBtn = document.querySelector('.close-btn');
+  const gnbEl = document.querySelector('#gnb');
+  const topMenu = document.querySelector('#header .top-menu');
+  openBtn.addEventListener('click', function () {
+    header.classList.remove('red');
+    gnbEl.classList.add('open');
+    topMenu.classList.add('open');
+    openBtn.classList.add('hidden');
+    closeBtn.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', function () {
+    header.classList.add('red');
+    gnbEl.classList.remove('open');
+    topMenu.classList.remove('open');
+    openBtn.classList.remove('hidden');
+    closeBtn.classList.add('hidden');
+  });
+</script>
 </body>
 </html>

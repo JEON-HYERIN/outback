@@ -55,27 +55,27 @@ arrowUpBtn.addEventListener('click', function () {
 });
 
 // 토글버튼 활성화
-const openBtn = document.querySelector('.open-btn');
-const closeBtn = document.querySelector('.close-btn');
-const gnbEl = document.querySelector('#gnb');
-const topMenu = document.querySelector('#header .top-menu');
+// const openBtn = document.querySelector('.open-btn');
+// const closeBtn = document.querySelector('.close-btn');
+// const gnbEl = document.querySelector('#gnb');
+// const topMenu = document.querySelector('#header .top-menu');
 
-openBtn.addEventListener('click', function () {
-  header.classList.add('black');
-  header.classList.remove('red');
-  gnbEl.classList.add('open');
-  topMenu.classList.add('open');
-  openBtn.classList.add('hidden');
-  closeBtn.classList.remove('hidden');
-});
+// openBtn.addEventListener('click', function () {
+//   header.classList.add('black');
+//   header.classList.remove('red');
+//   gnbEl.classList.add('open');
+//   topMenu.classList.add('open');
+//   openBtn.classList.add('hidden');
+//   closeBtn.classList.remove('hidden');
+// });
 
-closeBtn.addEventListener('click', function () {
-  header.classList.remove('black');
-  gnbEl.classList.remove('open');
-  topMenu.classList.remove('open');
-  openBtn.classList.remove('hidden');
-  closeBtn.classList.add('hidden');
-});
+// closeBtn.addEventListener('click', function () {
+//   header.classList.remove('black');
+//   gnbEl.classList.remove('open');
+//   topMenu.classList.remove('open');
+//   openBtn.classList.remove('hidden');
+//   closeBtn.classList.add('hidden');
+// });
 
 // 헤더영역 
 // const header = document.querySelector('#header');
