@@ -620,7 +620,8 @@ br.only-pc {
   background-color: #b10a11;
 }
 
-/* #main .service-menu {
+/* SERVICE MENU */
+#main .service-menu {
   overflow: hidden;
   padding: 30px 15px;
 }
@@ -683,7 +684,7 @@ br.only-pc {
   top: 50%;
   transform: translateY(-50%);
   width: 115px;
-}  */
+} 
 
 /* FOOTER */
 /* #footer {

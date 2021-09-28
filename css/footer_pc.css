@@ -1,8 +1,4 @@
 /* SERVICE MENU */
-#main .inner {
-  position: relative;
-}
-
 #main .service-menu {
   position: absolute;
   left: 50%;
@@ -53,6 +49,8 @@
 }
 
 #main .service-menu li a {
+  display: block;
+  height: 100%;
   overflow: hidden;
 }
 
