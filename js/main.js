@@ -48,8 +48,6 @@ mainMenu.addEventListener('click', function (event) {
 });
 
 // ARROW-UP 버튼 클릭시 상단이동
-const visual = document.querySelector('#visual');
-const visualHeight = visual.getBoundingClientRect().height;
 const arrowUpBtn = document.querySelector('#arrow-up');
 const wrapper = document.querySelector('#wrapper');
 arrowUpBtn.addEventListener('click', function () {
@@ -81,7 +79,9 @@ closeBtn.addEventListener('click', function () {
 
 // 헤더영역 
 const header = document.querySelector('#header');
+const headerHeight = header.getBoundingClientRect().height;
 window.addEventListener('scroll', function () {
+  console.log(headerHeight)
   if(window.pageYOffset !== 0 && closeBtn.classList.contains('hidden')) {
     header.classList.add('red');
     header.classList.remove('black');
@@ -89,7 +89,7 @@ window.addEventListener('scroll', function () {
     header.classList.remove('red');
   };
 
-  if(window.pageYOffset > visualHeight / 2) {
+  if(window.pageYOffset > headerHeight) {
     arrowUpBtn.classList.remove('invisible');
   } else {
     arrowUpBtn.classList.add('invisible');

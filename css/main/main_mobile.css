@@ -40,7 +40,7 @@ br.only-pc {
 }
 
 /* HEADER */
-#header {
+/* #header {
   position: fixed;
   left: 0;
   top: 0;
@@ -259,7 +259,7 @@ br.only-pc {
   line-height: 56px;
   padding: 0 10px;
   color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 /* VISUAL */
 #visual .swiper .swiper-prev:hover,
@@ -620,7 +620,7 @@ br.only-pc {
   background-color: #b10a11;
 }
 
-#main .service-menu {
+/* #main .service-menu {
   overflow: hidden;
   padding: 30px 15px;
 }
@@ -683,10 +683,10 @@ br.only-pc {
   top: 50%;
   transform: translateY(-50%);
   width: 115px;
-} 
+}  */
 
 /* FOOTER */
-#footer {
+/* #footer {
   font-size: 13px;
   background-color: #232323;
   color: #fff;
@@ -796,13 +796,12 @@ br.only-pc {
 
 #footer .info .bottom em {
   font-size: 15px;
-  /* font-weight: 500; */
   font-weight: 700;
   margin-left: 8px;
-}
+} */
 
 /* ARROW-UP */
-#arrow-up {
+/* #arrow-up {
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -823,12 +822,12 @@ br.only-pc {
 
 #arrow-up img {
   border-radius: 50%;
-}
+} */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   /* HEADER */
-  #gnb,
+  /* #gnb,
   #header .top-menu {
     width: 90%;
   }
@@ -839,7 +838,7 @@ br.only-pc {
 
   #gnb > ul > li > .sub-menu > li > a {
     font-size: 14px;
-  }
+  } */
 
   /* CF */
   #main .cf .text-group .title {
@@ -928,7 +927,7 @@ br.only-pc {
   }
 
   /* FOOTER */
-  #footer {
+  /* #footer {
     font-size: 12px;
   }
 
@@ -950,5 +949,5 @@ br.only-pc {
 
   #footer .info .bottom span:nth-of-type(2) {
     padding: 5px 0;
-  }
+  } */
 }
