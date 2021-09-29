@@ -103,6 +103,30 @@ br.only-m {
   top: 43%;
 }
 
+/* ARROW-UP */
+#arrow-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 15%);
+  opacity: 1;
+  transition: 350ms;
+}
+
+#arrow-up.invisible {
+  height: 0;
+  opacity: 0;
+}
+
+#arrow-up img {
+  border-radius: 50%;
+}
+
 
 /* index.html */
 body.main .swiper .swiper-prev,
