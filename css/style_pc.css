@@ -26,6 +26,83 @@ br.only-m {
   position: relative;
 }
 
+/* SERVICE MENU */
+#main .service-menu {
+  position: absolute;
+  left: 50%;
+  bottom: -75px;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#main .service-menu li {
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  height: 160px;
+  padding: 30px;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#main .service-menu li::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  transition: width 350ms;
+}
+
+#main .service-menu li:hover::after {
+  width: 80px;
+}
+
+#main .service-menu li.reserve {
+  background-color: #907354;
+}
+
+#main .service-menu li.save-point {
+  background-color: #434343;
+}
+
+#main .service-menu li.delivery {
+  background-color: #c30606;
+}
+
+#main .service-menu li a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+#main .service-menu li a .text-group {
+  float: left;
+}
+
+#main .service-menu li a .text-group .description {
+  margin-top: 5px;
+}
+
+#main .service-menu li a .icon {
+  float: right;
+  position: absolute;
+  right: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top 350ms;
+}
+
+#main .service-menu li:hover a .icon {
+  top: 43%;
+}
+
 
 /* index.html */
 body.main .swiper .swiper-prev,
