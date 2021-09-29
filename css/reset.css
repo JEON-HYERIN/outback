@@ -61,7 +61,7 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
-.ir-hidden {
+.hide {
   position: absolute;
   left: -9999px;
 }

@@ -27,16 +27,16 @@ br.only-m {
 }
 
 /* VISUAL */
-#visual {
+.visual {
   margin-top: 100px;
   background: url("../../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
 }
 
-#visual .inner {
+.visual .inner {
   height: 700px;
 }
 
-#visual .product {
+.visual .product {
   position: absolute;
   right: 15px;
   top: 50px;
@@ -45,48 +45,48 @@ br.only-m {
   color: #fff;
 }
 
-#visual .product .product__info {}
+.visual .product .product__info {}
 
-#visual .product .product__info .title {
+.visual .product .product__info .title {
   margin-bottom: 10px;
 }
 
-#visual .product .product__info .title .kor {
+.visual .product .product__info .title .kor {
   font-size: 20px;
   font-weight: 500;
   line-height: 2em;
 }
 
-#visual .product .product__info .title .eng {
+.visual .product .product__info .title .eng {
   font-size: 35px;
   line-height: 1em;
 }
 
-#visual .product .product__info .description {
+.visual .product .product__info .description {
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
 }
 
-#visual .product .product__detail .type {
+.visual .product .product__detail .type {
   margin: 25px 0;
 }
 
-#visual .product .product__detail ul {
+.visual .product .product__detail ul {
   padding-bottom: 60px;
 }
 
-#visual .product .product__detail ul .item .item__name {
+.visual .product .product__detail ul .item .item__name {
   display: inline-block;
   padding-right: 30px;
   font-size: 18px;
 }
 
-#visual .product .product__detail ul .item .item__contents {
+.visual .product .product__detail ul .item .item__contents {
   display: inline-block;
 }
 
-#visual .product .product__detail ul .item .item__contents .label {
+.visual .product .product__detail ul .item .item__contents .label {
   position: relative;
   display: inline-block;
   margin-right: 17px;
@@ -99,7 +99,7 @@ br.only-m {
   background-color: #50473d;
 }
 
-#visual .product .product__detail ul .item .item__contents .label::after {
+.visual .product .product__detail ul .item .item__contents .label::after {
   content: '';
   position: absolute;
   right: -8px;
@@ -112,16 +112,15 @@ br.only-m {
   border-color: transparent transparent transparent #50473d;
 }
 
-
-#visual .product .product__detail ul .item .item__contents .price {
+.visual .product .product__detail ul .item .item__contents .price {
   color: #b59371;
 }
 
-#visual .product .product__detail ul .item .item__contents .price em {
+.visual .product .product__detail ul .item .item__contents .price em {
   font-size: 34px;
 }
 
-#visual .product .btn-group {
+.visual .product .btn-group {
   position: absolute;
   left: 0;
   width: 100%;
@@ -129,7 +128,7 @@ br.only-m {
   text-align: center;
 }
 
-#visual .product .btn-group .btn {
+.visual .product .btn-group .btn {
   float: left;
   width: 50%;
   padding: 10px 0;
@@ -137,21 +136,21 @@ br.only-m {
   line-height: 22px;
 }
 
-#visual .product .btn-group .btn.btn--brown {
+.visual .product .btn-group .btn.btn--brown {
   background-color: rgba(144, 115, 84, 0.95);
 }
 
-#visual .product .btn-group .btn.btn--red {
+.visual .product .btn-group .btn.btn--red {
   background-color: rgba(177, 10, 17, 0.95);
 }
 
-#visual .product .btn-group .btn img {
+.visual .product .btn-group .btn img {
   display: inline-block !important;
   position: relative;
   top: -10px;
 }
 
-#visual .product .btn-group .btn span {
+.visual .product .btn-group .btn span {
   display: block;
   position: relative;
   top: -15px;
@@ -220,7 +219,7 @@ br.only-m {
 @media screen and (max-width: 1023.9px) {
 
   /* VISUAL */
-  #visual {
+  .visual {
     margin-top: 56px;
   }
 }

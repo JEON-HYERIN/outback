@@ -29,12 +29,12 @@ br.only-pc {
 }
 
 /* VISUAL */
-#visual {
+.visual {
   margin-top: 56px;
   background-color: #fff;
 }
 
-#visual > h2 {
+.visual > h2 {
   position: relative;
   font-family: 'sans-serif';
   font-size: 20px;
@@ -45,7 +45,7 @@ br.only-pc {
   border-bottom: 1px solid #e6e6e6;
 }
 
-#visual > h2::before {
+.visual > h2::before {
   content: '';
   position: absolute;
   left: 20px;
@@ -56,41 +56,41 @@ br.only-pc {
   background: url("../../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
-#visual .inner {
+.visual .inner {
   padding: 15px 15px 0;
 }
 
-#visual .product {
+.visual .product {
   font-size: 16px;
 }
 
-#visual .product .product__info {
+.visual .product .product__info {
   margin-bottom: 10px;
 }
 
-#visual .product .product__info .title {
+.visual .product .product__info .title {
   margin: 10px 0;
   font-family: sans-serif;
 }
 
-#visual .product .product__info .title .eng {
+.visual .product .product__info .title .eng {
   line-height: 2em;
   color: #94785c;
 }
 
-#visual .product .product__info .title .kor {
+.visual .product .product__info .title .kor {
   font-size: 20px;
   line-height: 1em;
 }
 
-#visual .product .product__info .description {
+.visual .product .product__info .description {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   color: #666;
   line-height: 1.3em;
 }
 
-#visual .product .product__detail .type {
+.visual .product .product__detail .type {
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #ccc;
@@ -99,31 +99,31 @@ br.only-pc {
   color: #666;
 }
 
-#visual .product .product__detail ul {
+.visual .product .product__detail ul {
   padding: 20px 0;
 }
 
-#visual .product .product__detail ul .item {
+.visual .product .product__detail ul .item {
   overflow: hidden;
 }
 
-#visual .product .product__detail ul .item:first-child {
+.visual .product .product__detail ul .item:first-child {
   margin-bottom: 10px;
 }
 
-#visual .product .product__detail ul .item .item__name {
+.visual .product .product__detail ul .item .item__name {
   float: left;
   font-size: 18px;
   font-weight: 700;
 }
 
-#visual .product .product__detail ul .item .item__contents {
+.visual .product .product__detail ul .item .item__contents {
   position: relative;
   float: right;
   width: 150px;
 }
 
-#visual .product .product__detail ul .item .item__contents .label {
+.visual .product .product__detail ul .item .item__contents .label {
   display: inline-block;
   position: relative;
   top: -5px;
@@ -139,22 +139,22 @@ br.only-pc {
   background-color: #f5f5f5;
 }
 
-#visual .product .product__detail ul .item .item__contents .price {
+.visual .product .product__detail ul .item .item__contents .price {
   font-size: 16px;
 }
 
-#visual .product .product__detail ul .item .item__contents .price em {
+.visual .product .product__detail ul .item .item__contents .price em {
   font-family: sans-serif;
   font-size: 22px;
   color: #000;
 }
 
-#visual .product .btn-group {
+.visual .product .btn-group {
   overflow: hidden;
   text-align: center;
 }
 
-#visual .product .btn-group .btn {
+.visual .product .btn-group .btn {
   float: left;
   width: calc(50% - 2.5px);
   font-size: 16px;
@@ -163,18 +163,18 @@ br.only-pc {
   box-sizing: border-box;
 }
 
-#visual .product .btn-group .btn.btn--brown {
+.visual .product .btn-group .btn.btn--brown {
   border: 1px solid #907354;
   background-color: #907354;
 }
 
-#visual .product .btn-group .btn.btn--red {
+.visual .product .btn-group .btn.btn--red {
   border: 1px solid #cb0000;
   background-color: #cb0000;
   margin-left: 5px;
 }
 
-#visual .product .btn-group .btn span {
+.visual .product .btn-group .btn span {
 
 }
 
@@ -306,35 +306,35 @@ br.only-pc {
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   /* VISUAL */
-  #visual .product {
+  .visual .product {
     font-size: 14px;
   }
 
-  #visual .product .product__info .title .kor {
+  .visual .product .product__info .title .kor {
     
   }
 
-  #visual .product .product__detail ul .item .item__name {
+  .visual .product .product__detail ul .item .item__name {
     font-size: 16px;
   }
 
-  #visual .product .product__detail ul .item .item__contents {
+  .visual .product .product__detail ul .item .item__contents {
     width: 130px;
   }
 
-  #visual .product .product__detail ul .item .item__contents .label {
+  .visual .product .product__detail ul .item .item__contents .label {
     padding: 0;
   }
 
-  #visual .product .product__detail ul .item .item__contents .price {
+  .visual .product .product__detail ul .item .item__contents .price {
     font-size: 1em;
   }
 
-  #visual .product .product__detail ul .item .item__contents .price em {
+  .visual .product .product__detail ul .item .item__contents .price em {
     font-size: 20px;
   }
 
-  #visual .product .btn-group .btn {
+  .visual .product .btn-group .btn {
     font-size: 15px; 
   }
 

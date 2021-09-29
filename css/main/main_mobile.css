@@ -262,24 +262,24 @@ br.only-pc {
 } */
 
 /* VISUAL */
-#visual .swiper .swiper-prev:hover,
-#visual .swiper .swiper-next:hover {
+.visual .swiper .swiper-prev:hover,
+.visual .swiper .swiper-next:hover {
   opacity: 1;
 }
 
-#visual .swiper .swiper-prev {
+.visual .swiper .swiper-prev {
   left: 30px;
 }
 
-#visual .swiper .swiper-next {
+.visual .swiper .swiper-next {
   right: 30px;
 }
 
-#visual .swiper .swiper-pagination {
+.visual .swiper .swiper-pagination {
   bottom: 30px;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet {
   background: url("../../img/pagination.png") no-repeat center/cover;
   width: 10px;
   height: 10px;
@@ -287,11 +287,11 @@ br.only-pc {
   background-color: #fff;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
   position: relative;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
   content: '';
   position: absolute;
   left: 50%;

@@ -176,53 +176,53 @@ br.only-m {
 } */
 
 /* VISUAL */
-#visual {
+.visual {
   margin-top: 100px;
 }
 
-#visual .swiper {
+.visual .swiper {
   width: 100%;
   height: 900px;
   position: relative;
 }
 
-#visual .swiper .swiper-slide {
+.visual .swiper .swiper-slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-#visual .swiper .swiper-slide.slide1 {
+.visual .swiper .swiper-slide.slide1 {
   background-image: url("../../img/visual_bg1.jpg");
 }
-#visual .swiper .swiper-slide.slide2 {
+.visual .swiper .swiper-slide.slide2 {
   background-image: url("../../img/visual_bg2.jpg");
 }
-#visual .swiper .swiper-slide.slide3 {
+.visual .swiper .swiper-slide.slide3 {
   background-image: url("../../img/visual_bg3.jpg");
 }
-#visual .swiper .swiper-slide.slide4 {
+.visual .swiper .swiper-slide.slide4 {
   background-image: url("../../img/visual_bg4.jpg");
 }
 
-#visual .swiper .swiper-prev:hover,
-#visual .swiper .swiper-next:hover {
+.visual .swiper .swiper-prev:hover,
+.visual .swiper .swiper-next:hover {
   opacity: 1;
 }
 
-#visual .swiper .swiper-prev {
+.visual .swiper .swiper-prev {
   left: 30px;
 }
 
-#visual .swiper .swiper-next {
+.visual .swiper .swiper-next {
   right: 30px;
 }
 
-#visual .swiper .swiper-pagination {
+.visual .swiper .swiper-pagination {
   bottom: 30px;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet {
   background: url("../../img/pagination.png") no-repeat center/cover;
   width: 14px;
   height: 14px;
@@ -230,11 +230,11 @@ br.only-m {
   background-color: #fff;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
   position: relative;
 }
 
-#visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
+.visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -1100,11 +1100,11 @@ br.only-m {
 } */
 
   /* VISUAL */
-  #visual {
+  .visual {
     margin-top: 0;
   }
 
-  #visual .swiper {
+  .visual .swiper {
     max-height: 700px;
   }
 }
