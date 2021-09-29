@@ -27,16 +27,16 @@ br.only-m {
 }
 
 /* VISUAL */
-.visual {
+body.product .visual {
   margin-top: 100px;
   background: url("../../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
 }
 
-.visual .inner {
+body.product .visual .inner {
   height: 700px;
 }
 
-.visual .product {
+body.product .visual .product {
   position: absolute;
   right: 15px;
   top: 50px;
@@ -45,48 +45,48 @@ br.only-m {
   color: #fff;
 }
 
-.visual .product .product__info {}
+body.product .visual .product .product__info {}
 
-.visual .product .product__info .title {
+body.product .visual .product .product__info .title {
   margin-bottom: 10px;
 }
 
-.visual .product .product__info .title .kor {
+body.product .visual .product .product__info .title .kor {
   font-size: 20px;
   font-weight: 500;
   line-height: 2em;
 }
 
-.visual .product .product__info .title .eng {
+body.product .visual .product .product__info .title .eng {
   font-size: 35px;
   line-height: 1em;
 }
 
-.visual .product .product__info .description {
+body.product .visual .product .product__info .description {
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
 }
 
-.visual .product .product__detail .type {
+body.product .visual .product .product__detail .type {
   margin: 25px 0;
 }
 
-.visual .product .product__detail ul {
+body.product .visual .product .product__detail ul {
   padding-bottom: 60px;
 }
 
-.visual .product .product__detail ul .item .item__name {
+body.product .visual .product .product__detail ul .item .item__name {
   display: inline-block;
   padding-right: 30px;
   font-size: 18px;
 }
 
-.visual .product .product__detail ul .item .item__contents {
+body.product .visual .product .product__detail ul .item .item__contents {
   display: inline-block;
 }
 
-.visual .product .product__detail ul .item .item__contents .label {
+body.product .visual .product .product__detail ul .item .item__contents .label {
   position: relative;
   display: inline-block;
   margin-right: 17px;
@@ -99,7 +99,7 @@ br.only-m {
   background-color: #50473d;
 }
 
-.visual .product .product__detail ul .item .item__contents .label::after {
+body.product .visual .product .product__detail ul .item .item__contents .label::after {
   content: '';
   position: absolute;
   right: -8px;
@@ -112,15 +112,15 @@ br.only-m {
   border-color: transparent transparent transparent #50473d;
 }
 
-.visual .product .product__detail ul .item .item__contents .price {
+body.product .visual .product .product__detail ul .item .item__contents .price {
   color: #b59371;
 }
 
-.visual .product .product__detail ul .item .item__contents .price em {
+body.product .visual .product .product__detail ul .item .item__contents .price em {
   font-size: 34px;
 }
 
-.visual .product .btn-group {
+body.product .visual .product .btn-group {
   position: absolute;
   left: 0;
   width: 100%;
@@ -128,7 +128,7 @@ br.only-m {
   text-align: center;
 }
 
-.visual .product .btn-group .btn {
+body.product .visual .product .btn-group .btn {
   float: left;
   width: 50%;
   padding: 10px 0;
@@ -136,69 +136,69 @@ br.only-m {
   line-height: 22px;
 }
 
-.visual .product .btn-group .btn.btn--brown {
+body.product .visual .product .btn-group .btn.btn--brown {
   background-color: rgba(144, 115, 84, 0.95);
 }
 
-.visual .product .btn-group .btn.btn--red {
+body.product .visual .product .btn-group .btn.btn--red {
   background-color: rgba(177, 10, 17, 0.95);
 }
 
-.visual .product .btn-group .btn img {
+body.product .visual .product .btn-group .btn img {
   display: inline-block !important;
   position: relative;
   top: -10px;
 }
 
-.visual .product .btn-group .btn span {
+body.product .visual .product .btn-group .btn span {
   display: block;
   position: relative;
   top: -15px;
 }
 
 /* MAIN */
-#main {
+body.product #main {
   background-color: #fff;
 }
 
  /* SIDE DISH */
- #main .side-dish {
+body.product .side-dish {
   padding-left: 20px;
 }
 
 /* NOTICE */
-#main .notice {
+body.product .notice {
   padding-bottom: 200px;
 }
 
-#main .notice .todays__notice {
+body.product .notice .todays__notice {
   padding: 60px;
   background: url("../../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }
 
-#main .notice .todays__notice em {
+body.product .notice .todays__notice em {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 30px;
   font-weight: 500;
 }
 
-#main .notice .todays__notice span {
+body.product .notice .todays__notice span {
   font-size: 18px;
 }
 
-#main .notice .text-group {
+body.product .notice .text-group {
   padding: 40px 0 40px 20px;
   
 }
 
-#main .notice .text-group .text {
+body.product .notice .text-group .text {
   overflow: hidden;
 }
 
-#main .notice .text-group .text .title {
+body.product .notice .text-group .text .title {
   float: left;
   width: 160px;
   font-size: 20px;
@@ -206,12 +206,12 @@ br.only-m {
   color: #222;
 }
 
-#main .notice .text-group .text ul.description {
+body.product .notice .text-group .text ul.description {
   float: left;
   padding: 5px 0 20px;
 }
 
-#main .notice .text-group .text ul.description li {
+body.product .notice .text-group .text ul.description li {
   color: #666;
 }
 
@@ -219,7 +219,7 @@ br.only-m {
 @media screen and (max-width: 1023.9px) {
 
   /* VISUAL */
-  .visual {
+  body.product .visual {
     margin-top: 56px;
   }
 }

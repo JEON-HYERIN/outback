@@ -262,24 +262,24 @@ br.only-pc {
 } */
 
 /* VISUAL */
-.visual .swiper .swiper-prev:hover,
-.visual .swiper .swiper-next:hover {
+body.main .visual .swiper .swiper-prev:hover,
+body.main .visual .swiper .swiper-next:hover {
   opacity: 1;
 }
 
-.visual .swiper .swiper-prev {
+body.main .visual .swiper .swiper-prev {
   left: 30px;
 }
 
-.visual .swiper .swiper-next {
+body.main .visual .swiper .swiper-next {
   right: 30px;
 }
 
-.visual .swiper .swiper-pagination {
+body.main .visual .swiper .swiper-pagination {
   bottom: 30px;
 }
 
-.visual .swiper .swiper-pagination .swiper-pagination-bullet {
+body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet {
   background: url("../../img/pagination.png") no-repeat center/cover;
   width: 10px;
   height: 10px;
@@ -287,11 +287,11 @@ br.only-pc {
   background-color: #fff;
 }
 
-.visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
+body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
   position: relative;
 }
 
-.visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
+body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -304,21 +304,21 @@ br.only-pc {
 }
 
 /* MAIN */
-#main {
+body.main #main {
   background-color: #fff;
 }
 
-#main .inner {
+body.main #main .inner {
   padding-top: 60px;
   box-sizing: border-box;
 }
 
 /* CF */
-#main .cf {
+body.main .cf {
   position: relative;
 }
 
-#main .cf::after {
+body.main .cf::after {
   content: '';
   position: absolute;
   right: -200px;
@@ -328,7 +328,7 @@ br.only-pc {
   background: url("../../img/main_cf_obj.jpg") no-repeat center/cover;
 }
 
-#main .cf .youtube__wrapper {
+body.main .cf .youtube__wrapper {
   position: relative;
   width: 90%;
   background-color: #000;
@@ -336,14 +336,14 @@ br.only-pc {
   z-index: 1;
 }
 
-#main .cf .youtube__wrapper .youtube__area {
+body.main .cf .youtube__wrapper .youtube__area {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-#main .cf .youtube__wrapper .youtube__area iframe {
+body.main .cf .youtube__wrapper .youtube__area iframe {
   position: absolute;
   left: 0;
   top: 0;
@@ -351,44 +351,42 @@ br.only-pc {
   height: 100%;
 }
 
-#main .cf .text-group {
+body.main .cf .text-group {
   position: relative;
   text-align: center;
   color: #222;
   z-index: 1;
 }
 
-#main .cf .text-group .title {
+body.main .cf .text-group .title {
   padding-top: 30px;
   font-size: 40px;
   font-weight: 700;
 }
 
-#main .cf .text-group .sub-title {
+body.main .cf .text-group .sub-title {
   padding-top: 10px;
   font-size: 20px;
   /* font-weight: 500; */
   font-weight: 700;
 }
 
-#main .cf .text-group .description {
+body.main .cf .text-group .description {
   padding-top: 20px;
   color: #666;
   font-size: 12px;
 }
 
 /* PRODUCT */
-#main .product {
+body.main .product {
   /* padding-top: 60px; */
   padding: 60px 0 60px;
   position: relative;
 } 
 
-#main .product::after {
+body.main .product::after {
   content: '';
   position: absolute;
-  /* right: -70px; */
-  /* bottom: -80px; */
   left: 0;
   bottom: -60px;
   width: 200px;
@@ -396,38 +394,37 @@ br.only-pc {
   background: url("../../img/main_product_obj.jpg") no-repeat center/cover;
 }
 
-#main .product .swiper {
+body.main .product .swiper {
   height: 266px;
   padding: 40px 0 50px;
 }
 
-#main .product .swiper .swiper-slide .text-group {
+body.main .product .swiper .swiper-slide .text-group {
   position: absolute;
   left: 15px;
   z-index: 1;
 }
 
-#main .product .swiper .swiper-slide .text-group .title {
+body.main .product .swiper .swiper-slide .text-group .title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
 }
 
-#main .product .swiper .swiper-slide .text-group .kor-title {
+body.main .product .swiper .swiper-slide .text-group .kor-title {
   padding-top: 10px;
   font-size: 16px;
-  /* font-weight: 500; */
   font-weight: 700;
 }
 
-#main .product .swiper .swiper-slide .text-group .description {
+body.main .product .swiper .swiper-slide .text-group .description {
   padding-top: 15px;
   color: #666;
   max-width: 150px;
 }
 
-#main .product .swiper .swiper-slide .image {
+body.main .product .swiper .swiper-slide .image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -437,24 +434,24 @@ br.only-pc {
   right: 0;
 }
 
-#main .product .swiper .swiper-slide.slide1 .image {
+body.main .product .swiper .swiper-slide.slide1 .image {
   background-image: url("../../img/product_image1.jpg");
 }
-#main .product .swiper .swiper-slide.slide2 .image {
+body.main .product .swiper .swiper-slide.slide2 .image {
   background-image: url("../../img/product_image2.jpg");
 }
-#main .product .swiper .swiper-slide.slide3 .image {
+body.main .product .swiper .swiper-slide.slide3 .image {
   background-image: url("../../img/product_image3.jpg");
 }
-#main .product .swiper .swiper-slide.slide4 .image {
+body.main .product .swiper .swiper-slide.slide4 .image {
   background-image: url("../../img/product_image4.jpg");
 }
 
-#main .product .swiper .swiper-pagination {
+body.main .product .swiper .swiper-pagination {
   bottom: 0;
 }
 
-#main .product .swiper .swiper-pagination .swiper-pagination-bullet {
+body.main .product .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #999;
@@ -463,14 +460,14 @@ br.only-pc {
   transition: .2s;
 }
 
-#main .product .swiper .swiper-pagination .swiper-pagination-bullet-active {
+body.main .product .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
   background-color: #b10a11;
 }
 
 /* BENEFIT */
-#main .benefit {
+body.main .benefit {
   position: relative;
   background: url("../../img/main_benefit_bg.jpg") no-repeat center/cover;
   padding: 35px 0px;
@@ -479,58 +476,58 @@ br.only-pc {
   color: #fff;
 }
 
-#main .benefit .benefit__title {
+body.main .benefit .benefit__title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
 
-#main .benefit .benefit__description {
+body.main .benefit .benefit__description {
   margin: 10px 0 20px;
   opacity: 0.7;
 }
 
-#main .benefit ul {
+body.main .benefit ul {
   overflow: hidden;
 }
 
-#main .benefit ul li {
+body.main .benefit ul li {
   float: left;
   width: calc(100% / 3);
   padding: 0 10px;
   box-sizing: border-box;
 }
 
-#main .benefit ul li img {
+body.main .benefit ul li img {
   display: inline-block;
   max-height: 30px;
 }
 
-#main .benefit ul li .title {
+body.main .benefit ul li .title {
   margin: 15px 0 5px;
   font-size: 16px;
   font-weight: 700;
 }
 
-#main .benefit ul li .description {
+body.main .benefit ul li .description {
   opacity: 0.7;
 }
 
 /* REWARD */
-#main .reward {
+body.main .reward {
   padding: 30px 15px 5px;
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#main .reward .left .text-group {
+body.main .reward .left .text-group {
   position: relative;
   padding: 10px;
   border: 2px solid #222;
   border-radius: 10px;
 }
 
-#main .reward .left .text-group .title {
+body.main .reward .left .text-group .title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -538,18 +535,18 @@ br.only-pc {
   color: #222;
 }
 
-#main .reward .left .text-group .title em {
+body.main .reward .left .text-group .title em {
   font-size: 32px;
 }
 
-#main .reward .left .text-group .description {
+body.main .reward .left .text-group .description {
   display: inline-block;
   margin-top: 10px;
   font-size: 13px;
   color: #666;
 }
 
-#main .reward .left .text-group .btns {
+body.main .reward .left .text-group .btns {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -557,14 +554,14 @@ br.only-pc {
   text-align: right;
 }
 
-#main .reward .left .text-group .btns .btn.mobile {
+body.main .reward .left .text-group .btns .btn.mobile {
   margin-left: 0;
   color: #fff;
   border: 1px solid #282828;
   background-color: #282828;
 }
 
-#main .reward .left .text-group .btns .btn {
+body.main .reward .left .text-group .btns .btn {
   display: inline-block !important;
   width: 200px;
   line-height: 37px;
@@ -576,36 +573,36 @@ br.only-pc {
   box-sizing: border-box;
 }
 
-#main .reward .right .swiper {
+body.main .reward .right .swiper {
   padding: 30px 0 50px;
 }
 
-#main .reward .right .swiper .swiper-slide .number {
+body.main .reward .right .swiper .swiper-slide .number {
   font-size: 16px;
   font-weight: 700;
   color: #c4ab9d;
   opacity: .4;
 }
 
-#main .reward .right .swiper .swiper-slide .title {
+body.main .reward .right .swiper .swiper-slide .title {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #222;
 }
 
-#main .reward .right .swiper .swiper-slide .description {
+body.main .reward .right .swiper .swiper-slide .description {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.6em;
   color: #646464;
 }
 
-#main .reward .right .swiper .swiper-pagination {
+body.main .reward .right .swiper .swiper-pagination {
   bottom: 0;
 }
 
-#main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet {
+body.main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #999;
@@ -614,19 +611,19 @@ br.only-pc {
   transition: .2s;
 }
 
-#main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet-active {
+body.main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
   background-color: #b10a11;
 }
 
 /* SERVICE MENU */
-#main .service-menu {
+body.main .service-menu {
   overflow: hidden;
   padding: 30px 15px;
 }
 
-#main .service-menu li {
+body.main .service-menu li {
   float: left;
   width: calc(50% - 5px);
   height: 79px;
@@ -636,20 +633,20 @@ br.only-pc {
   box-sizing: border-box;
 }
 
-#main .service-menu li img {
+body.main .service-menu li img {
   display: inline-block;
 }
 
-#main .service-menu li.reserve {
+body.main .service-menu li.reserve {
   background-color: #907354;
 }
 
-#main .service-menu li.save-point {
+body.main .service-menu li.save-point {
   background-color: #434343;
   margin-left: 10px;
 }
 
-#main .service-menu li.delivery {
+body.main .service-menu li.delivery {
   position: relative;
   clear: both;
   width: 100%;
@@ -657,28 +654,28 @@ br.only-pc {
   background-color: #c30606;
 }
 
-#main .service-menu li a {
+body.main .service-menu li a {
   overflow: hidden;
 }
 
-#main .service-menu li a .text-group {
+body.main .service-menu li a .text-group {
   float: left;
 }
 
-#main .service-menu li a .text-group .title {
+body.main .service-menu li a .text-group .title {
   max-width: 80px;
 }
 
-#main .service-menu li a .text-group .description {
+body.main .service-menu li a .text-group .description {
   margin-top: 5px;
 }
 
-#main .service-menu li a .icon {
+body.main .service-menu li a .icon {
   float: right;
   width: 34px;
 }
 
-#main .service-menu li.delivery a .icon.mobile {
+body.main .service-menu li.delivery a .icon.mobile {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -843,88 +840,88 @@ br.only-pc {
   } */
 
   /* CF */
-  #main .cf .text-group .title {
+  body.main .cf .text-group .title {
     padding-top: 15px;
     font-size: 20px;
   }
 
-  #main .cf .text-group .sub-title {
+  body.main .cf .text-group .sub-title {
     font-size: 13px;
   }
 
-  #main .cf .text-group .description {
+  body.main .cf .text-group .description {
     padding-top: 10px;
   }
 
   /* PRODUCT */
-  #main .product {
+  body.main .product {
     /* padding: 30px 0 30px; */
     padding: 40px 0 40px;
   }
 
-  #main .product .swiper {
+  body.main .product .swiper {
     /* padding: 20px 0 25px; */
     padding: 20px 0 50px;
   }
 
-  #main .product .swiper .swiper-slide .text-group .title {
+  body.main .product .swiper .swiper-slide .text-group .title {
     font-size: 28px;
   }
 
   /* BENEFIT */
-  #main .benefit {
+  body.main .benefit {
     font-size: 12px;
   }
 
-  #main .benefit .benefit__title {
+  body.main .benefit .benefit__title {
     font-size: 30px;
   }
   
-  #main .benefit ul li {
+  body.main .benefit ul li {
     padding: 0 5px;
   }
 
-  #main .benefit ul li .title {
+  body.main .benefit ul li .title {
     font-size: 14px;
   }
 
   /* REWARD */
-  #main .reward .left .text-group .title {
+  body.main .reward .left .text-group .title {
     font-size: 15px;
   }
 
-  #main .reward .left .text-group .title em {
+  body.main .reward .left .text-group .title em {
     font-size: 30px;
   }
 
-  #main .reward .left .text-group .description {
+  body.main .reward .left .text-group .description {
     margin: 10px 0;
     width: 180px;
   }  
 
-  #main .reward .left .text-group .btns {
+  body.main .reward .left .text-group .btns {
     position: static;
     transform: translateY(0);
     text-align: left;
   }
 
-  #main .reward .left .text-group .btns .btn {
+  body.main .reward .left .text-group .btns .btn {
     width: 100px;
   }
 
-  #main .reward .right .swiper {
+  body.main .reward .right .swiper {
     padding: 20px 0 30px;
   }
 
-  #main .reward .right .swiper .swiper-slide .number {
+  body.main .reward .right .swiper .swiper-slide .number {
     font-size: 13px;
   }
 
-  #main .reward .right .swiper .swiper-slide .title {
+  body.main .reward .right .swiper .swiper-slide .title {
     font-size: 15px;
   }
 
-  #main .reward .right .swiper .swiper-slide .description {
+  body.main .reward .right .swiper .swiper-slide .description {
     font-size: 12px;
   }
 
