@@ -1,4 +1,4 @@
-new Swiper('#visual .swiper', {
+new Swiper('body.main .visual .swiper', {
   autoplay: true,
   loop: true,
   navigation: {
@@ -11,7 +11,7 @@ new Swiper('#visual .swiper', {
   }
 });
 
-new Swiper('#main .product .swiper', {
+new Swiper('body.main .product .swiper', {
   autoplay: {
     delay: 5000,
   },
@@ -36,7 +36,7 @@ new Swiper('#main .product .swiper', {
   }
 });
 
-new Swiper('#main .reward .swiper', {
+new Swiper('body.main .reward .swiper', {
   slidesPerView: 2,
   spaceBetween: 20,
   pagination: {
