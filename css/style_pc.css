@@ -159,16 +159,16 @@ body.main .visual .swiper .swiper-slide {
 }
 
 body.main .visual .swiper .swiper-slide.slide1 {
-  background-image: url("../../img/visual_bg1.jpg");
+  background-image: url("../img/visual_bg1.jpg");
 }
 body.main .visual .swiper .swiper-slide.slide2 {
-  background-image: url("../../img/visual_bg2.jpg");
+  background-image: url("../img/visual_bg2.jpg");
 }
 body.main .visual .swiper .swiper-slide.slide3 {
-  background-image: url("../../img/visual_bg3.jpg");
+  background-image: url("../img/visual_bg3.jpg");
 }
 body.main .visual .swiper .swiper-slide.slide4 {
-  background-image: url("../../img/visual_bg4.jpg");
+  background-image: url("../img/visual_bg4.jpg");
 }
 
 body.main .visual .swiper .swiper-prev:hover,
@@ -189,7 +189,7 @@ body.main .visual .swiper .swiper-pagination {
 }
 
 body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet {
-  background: url("../../img/pagination.png") no-repeat center/cover;
+  background: url("../img/pagination.png") no-repeat center/cover;
   width: 14px;
   height: 14px;
   margin: 0 15px;
@@ -235,7 +235,7 @@ body.main .cf::after {
   bottom: -200px;
   width: 320px;
   height: 381px;
-  background: url("../../img/main_cf_obj.jpg") no-repeat center/cover;
+  background: url("../img/main_cf_obj.jpg") no-repeat center/cover;
 }
 
 body.main .cf .youtube__wrapper {
@@ -301,7 +301,7 @@ body.main .product::after {
   bottom: -150px;
   width: 375px;
   height: 442px;
-  background: url("../../img/main_product_obj.jpg") no-repeat center/cover;
+  background: url("../img/main_product_obj.jpg") no-repeat center/cover;
 }
 
 body.main .product .swiper {
@@ -338,16 +338,16 @@ body.main .product .swiper .swiper-slide .image {
 }
 
 body.main .product .swiper .swiper-slide.slide1 .image {
-  background-image: url("../../img/product_image1.jpg");
+  background-image: url("../img/product_image1.jpg");
 }
 body.main .product .swiper .swiper-slide.slide2 .image {
-  background-image: url("../../img/product_image2.jpg");
+  background-image: url("../img/product_image2.jpg");
 }
 body.main .product .swiper .swiper-slide.slide3 .image {
-  background-image: url("../../img/product_image3.jpg");
+  background-image: url("../img/product_image3.jpg");
 }
 body.main .product .swiper .swiper-slide.slide4 .image {
-  background-image: url("../../img/product_image4.jpg");
+  background-image: url("../img/product_image4.jpg");
 }
 
 body.main .product .swiper .swiper-slide.swiper-slide-active {
@@ -408,7 +408,7 @@ body.main .product .swiper .swiper-next {
 /* BENEFIT */
 body.main .benefit {
   position: relative;
-  background: url("../../img/main_benefit_bg.jpg") no-repeat center/cover;
+  background: url("../img/main_benefit_bg.jpg") no-repeat center/cover;
   padding: 90px 15px;
   text-align: center;
   color: #fff;
@@ -545,7 +545,7 @@ body.beef-story .visual {
   position: relative;
   height: 600px;
   margin-top: 100px;
-  background: url("../../img/brand/beef/beef_bg.jpg") no-repeat center/cover fixed;
+  background: url("../img/brand/beef/beef_bg.jpg") no-repeat center/cover fixed;
   
 }
 
@@ -585,7 +585,7 @@ body.beef-story #main .inner {
 /* VISUAL */
 body.product .visual {
   margin-top: 100px;
-  background: url("../../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
+  background: url("../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
 }
 
 body.product .visual .inner {
@@ -729,7 +729,7 @@ body.product .notice {
 
 body.product .notice .todays__notice {
   padding: 60px;
-  background: url("../../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
+  background: url("../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }

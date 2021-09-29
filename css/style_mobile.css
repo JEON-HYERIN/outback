@@ -131,7 +131,7 @@ body.main .visual .swiper .swiper-pagination {
 }
 
 body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet {
-  background: url("../../img/pagination.png") no-repeat center/cover;
+  background: url("../img/pagination.png") no-repeat center/cover;
   width: 10px;
   height: 10px;
   margin: 0 10px;
@@ -176,7 +176,7 @@ body.main .cf::after {
   bottom: -200px;
   width: 320px;
   height: 381px;
-  background: url("../../img/main_cf_obj.jpg") no-repeat center/cover;
+  background: url("../img/main_cf_obj.jpg") no-repeat center/cover;
 }
 
 body.main .cf .youtube__wrapper {
@@ -242,7 +242,7 @@ body.main .product::after {
   bottom: -60px;
   width: 200px;
   height: 200px;
-  background: url("../../img/main_product_obj.jpg") no-repeat center/cover;
+  background: url("../img/main_product_obj.jpg") no-repeat center/cover;
 }
 
 body.main .product .swiper {
@@ -286,16 +286,16 @@ body.main .product .swiper .swiper-slide .image {
 }
 
 body.main .product .swiper .swiper-slide.slide1 .image {
-  background-image: url("../../img/product_image1.jpg");
+  background-image: url("../img/product_image1.jpg");
 }
 body.main .product .swiper .swiper-slide.slide2 .image {
-  background-image: url("../../img/product_image2.jpg");
+  background-image: url("../img/product_image2.jpg");
 }
 body.main .product .swiper .swiper-slide.slide3 .image {
-  background-image: url("../../img/product_image3.jpg");
+  background-image: url("../img/product_image3.jpg");
 }
 body.main .product .swiper .swiper-slide.slide4 .image {
-  background-image: url("../../img/product_image4.jpg");
+  background-image: url("../img/product_image4.jpg");
 }
 
 body.main .product .swiper .swiper-pagination {
@@ -320,7 +320,7 @@ body.main .product .swiper .swiper-pagination .swiper-pagination-bullet-active {
 /* BENEFIT */
 body.main .benefit {
   position: relative;
-  background: url("../../img/main_benefit_bg.jpg") no-repeat center/cover;
+  background: url("../img/main_benefit_bg.jpg") no-repeat center/cover;
   padding: 35px 0px;
   font-size: 13px;
   text-align: center;
@@ -561,7 +561,7 @@ body.beef-story .visual > h2::before {
   transform: translateY(-50%);
   width: 23px;
   height: 10px;
-  background: url("../../img/menu/t-bone/arrow.png") no-repeat center/cover;
+  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 /* MAIN */ 
@@ -597,7 +597,7 @@ body.product .visual > h2::before {
   transform: translateY(-50%);
   width: 23px;
   height: 10px;
-  background: url("../../img/menu/t-bone/arrow.png") no-repeat center/cover;
+  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 body.product .visual .inner {
@@ -739,7 +739,7 @@ body.product .notice {
 
 body.product .notice .todays__notice {
   padding: 20px;
-  background: url("../../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
+  background: url("../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }
@@ -786,7 +786,7 @@ body.product .notice .text-group .text .title::before {
   top: 2px;
   width: 13px;
   height: 13px;
-  background: url("../../img/menu/t-bone/check.png") no-repeat center/cover;
+  background: url("../img/menu/t-bone/check.png") no-repeat center/cover;
 }
 
 body.product .notice .text-group .text ul.description {
