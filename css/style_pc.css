@@ -26,6 +26,15 @@ br.only-m {
   position: relative;
 }
 
+#main {
+  background-color: #fff;
+}
+
+.visual,
+.main-visual {
+  margin-top: 100px;
+}
+
 /* SERVICE MENU */
 #main .service-menu {
   position: absolute;
@@ -142,10 +151,6 @@ body.main .swiper .swiper-next {
 }
 
 /* VISUAL */
-.main-visual {
-  margin-top: 100px;
-}
-
 .main-visual .swiper {
   width: 100%;
   height: 900px;
@@ -213,10 +218,6 @@ body.main .swiper .swiper-next {
 }
 
 /* MAIN */
-body.main #main {
-  background-color: #fff;
-}
-
 body.main #main .inner {
   padding: 140px 0 200px;
   box-sizing: border-box;
@@ -543,7 +544,6 @@ body.main #main .inner {
 body.beef-story .visual {
   position: relative;
   height: 600px;
-  margin-top: 100px;
   background: url("../img/brand/beef/beef_bg.jpg") no-repeat center/cover fixed;
   
 }
@@ -570,10 +570,6 @@ body.beef-story .visual .title::after {
 }
 
 /* MAIN */
-body.beef-story #main {
-  background-color: #fff;
-}
-
 body.beef-story #main .inner {
   max-width: 1600px;
 }
@@ -583,7 +579,6 @@ body.beef-story #main .inner {
 
 /* VISUAL */
 body.product .visual {
-  margin-top: 100px;
   background: url("../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
 }
 
@@ -710,10 +705,6 @@ body.product .visual .product .btn-group .btn span {
 }
 
 /* MAIN */
-body.product #main {
-  background-color: #fff;
-}
-
  /* SIDE DISH */
 .side-dish {
   padding-left: 20px;
@@ -765,6 +756,117 @@ body.product #main {
 }
 
 .notice .text-group .text ul.description li {
+  color: #666;
+}
+
+/* membership.html */
+/* VISUAL */
+.membership.visual {
+  background: url("../img/membership/visual_bg.jpg") no-repeat center/cover fixed;
+  height: 600px;
+}
+
+/* MAIN */
+main.membership {}
+
+main.membership .inner {
+  padding-bottom: 200px;
+}
+
+/* BENEFIT */
+.benefit {
+  padding-top: 80px;
+}
+
+.benefit > .title {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 0 0 21px 45px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #111;
+  border-bottom: 2px solid #222;
+}
+
+.benefit > h2.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 34px;
+  background: url("../img/membership/benefit_title_icon.png") no-repeat center/cover;
+}
+
+.benefit__menu {
+  overflow: hidden;
+}
+
+.benefit__menu li {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.benefit__menu li .text-group {}
+
+.benefit__menu li .text-group .title {
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.benefit__menu li .text-group .description {
+  font-size: 16px;
+  color: #666;
+}
+
+.benefit__menu li .btn {
+  padding: 0 20px;
+  margin: 16px auto 0;
+  line-height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  border: 1px solid #bbb;
+}
+
+/* DETAILS */
+.details {
+  padding: 40px;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+.details > .title {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.details > .title > span {
+  color: #b10a11
+}
+
+.details dl {
+  padding: 0 10px;
+}
+
+.details dl + dl {
+  margin-top: 30px;
+}
+
+.details dl dt {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.details dl dd {
+  font-size: 14px;
+  line-height: 1.8em;
   color: #666;
 }
 

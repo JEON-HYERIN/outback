@@ -47,7 +47,7 @@
 
   <script defer src="../js/main.js"></script>  
 </head>
-<body class="beef-story sub">
+<body class="membership sub">
   <div id="wrapper">
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
@@ -168,12 +168,12 @@
     </header>
 
     <!-- VISUAL -->
-    <section class="visual">
+    <section class="visual membership">
       <h2 class="hide">비주얼 영역</h2>
     </section>
 
     <!-- MAIN -->
-    <main id="main">
+    <main id="main" class="membership">
       <div class="inner">
 
         <!-- BENEFIT -->
@@ -256,7 +256,7 @@
 
         <!-- DETAILS -->
         <section class="details">
-          <h2 class="title">※ 자세한 부메랑 카드 이용 정보 확인하세요!</h2>
+          <h2 class="title">※ 자세한 <span>부메랑 카드</span> 이용 정보 확인하세요!</h2>
           <dl>
             <dt>포인트 적립/사용/소멸</dt>
             <dd>
@@ -307,6 +307,51 @@
             </dd>
           </dl>
         </section>
+
+        <!-- SERVICE MENU -->
+        <ul class="service-menu">
+          <li class="reserve">
+            <a href="javascript:void(0)">
+              <div class="text-group">
+                <img src="../img/service_menu_title1.png" alt="RESERVE" class="title pc" />
+                <h3 class="title mobile">RESERVE</h3>
+                <p class="description">
+                  예약하기
+                </p>
+              </div>
+              <img src="../img/service_menu_icon1.png" alt="" class="icon pc" />
+            </a>
+          </li>
+          <li class="save-point">
+            <a href="javascript:void(0)">
+              <div class="text-group">
+                <img src="../img/service_menu_title2.png" alt="SAVE POINT" class="title pc" />
+                <h3 class="title mobile">SAVE POINT</h3>
+                <p class="description">
+                  사후 적립
+                </p>
+              </div>
+              <img src="../img/service_menu_icon2.png" alt="" class="icon pc" />
+            </a>
+          </li>
+          <li class="delivery">
+            <a href="javascript:void(0)">
+              <div class="text-group">
+                <img src="../img/service_menu_title3.png" alt="DELIVERY" class="title pc" />
+                <h3 class="title mobile">DELIVERY</h3>
+                <p class="description">
+                  <span class="pc">
+                    딜리버리 전화주문<br />
+                    1811-3650
+                  </span>
+                  <span class="mobile">아웃백 딜리버리</span>
+                </p>
+              </div>
+              <img src="../img/service_menu_icon3.png" alt="" class="icon pc" />
+            </a>
+          </li>
+        </ul>
+        
       </div>
     </main>
 
