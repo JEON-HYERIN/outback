@@ -113,24 +113,24 @@ body.main .swiper .swiper-next {
 }
 
 /* VISUAL */
-body.main .visual .swiper .swiper-prev:hover,
-body.main .visual .swiper .swiper-next:hover {
+.main-visual .swiper .swiper-prev:hover,
+.main-visual .swiper .swiper-next:hover {
   opacity: 1;
 }
 
-body.main .visual .swiper .swiper-prev {
+.main-visual .swiper .swiper-prev {
   left: 30px;
 }
 
-body.main .visual .swiper .swiper-next {
+.main-visual .swiper .swiper-next {
   right: 30px;
 }
 
-body.main .visual .swiper .swiper-pagination {
+.main-visual .swiper .swiper-pagination {
   bottom: 30px;
 }
 
-body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet {
+.main-visual .swiper .swiper-pagination-bullet {
   background: url("../img/pagination.png") no-repeat center/cover;
   width: 10px;
   height: 10px;
@@ -138,11 +138,11 @@ body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
 }
 
-body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.main-visual .swiper .swiper-pagination-bullet-active {
   position: relative;
 }
 
-body.main .visual .swiper .swiper-pagination .swiper-pagination-bullet-active::after {
+.main-visual .swiper .swiper-pagination-bullet-active::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -165,11 +165,11 @@ body.main #main .inner {
 }
 
 /* CF */
-body.main .cf {
+.main-cf {
   position: relative;
 }
 
-body.main .cf::after {
+.main-cf::after {
   content: '';
   position: absolute;
   right: -200px;
@@ -179,7 +179,7 @@ body.main .cf::after {
   background: url("../img/main_cf_obj.jpg") no-repeat center/cover;
 }
 
-body.main .cf .youtube__wrapper {
+.main-cf .youtube__wrapper {
   position: relative;
   width: 90%;
   background-color: #000;
@@ -187,14 +187,14 @@ body.main .cf .youtube__wrapper {
   z-index: 1;
 }
 
-body.main .cf .youtube__wrapper .youtube__area {
+.main-cf .youtube__wrapper .youtube__area {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-body.main .cf .youtube__wrapper .youtube__area iframe {
+.main-cf .youtube__wrapper .youtube__area iframe {
   position: absolute;
   left: 0;
   top: 0;
@@ -202,40 +202,40 @@ body.main .cf .youtube__wrapper .youtube__area iframe {
   height: 100%;
 }
 
-body.main .cf .text-group {
+.main-cf .text-group {
   position: relative;
   text-align: center;
   color: #222;
   z-index: 1;
 }
 
-body.main .cf .text-group .title {
+.main-cf .text-group .title {
   padding-top: 30px;
   font-size: 40px;
   font-weight: 700;
 }
 
-body.main .cf .text-group .sub-title {
+.main-cf .text-group .sub-title {
   padding-top: 10px;
   font-size: 20px;
   /* font-weight: 500; */
   font-weight: 700;
 }
 
-body.main .cf .text-group .description {
+.main-cf .text-group .description {
   padding-top: 20px;
   color: #666;
   font-size: 12px;
 }
 
 /* PRODUCT */
-body.main .product {
+.main-product {
   /* padding-top: 60px; */
   padding: 60px 0 60px;
   position: relative;
 } 
 
-body.main .product::after {
+.main-product::after {
   content: '';
   position: absolute;
   left: 0;
@@ -245,37 +245,37 @@ body.main .product::after {
   background: url("../img/main_product_obj.jpg") no-repeat center/cover;
 }
 
-body.main .product .swiper {
+.main-product .swiper {
   height: 266px;
   padding: 40px 0 50px;
 }
 
-body.main .product .swiper .swiper-slide .text-group {
+.main-product .swiper .swiper-slide .text-group {
   position: absolute;
   left: 15px;
   z-index: 1;
 }
 
-body.main .product .swiper .swiper-slide .text-group .title {
+.main-product .swiper .swiper-slide .text-group .title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
 }
 
-body.main .product .swiper .swiper-slide .text-group .kor-title {
+.main-product .swiper .swiper-slide .text-group .kor-title {
   padding-top: 10px;
   font-size: 16px;
   font-weight: 700;
 }
 
-body.main .product .swiper .swiper-slide .text-group .description {
+.main-product .swiper .swiper-slide .text-group .description {
   padding-top: 15px;
   color: #666;
   max-width: 150px;
 }
 
-body.main .product .swiper .swiper-slide .image {
+.main-product .swiper .swiper-slide .image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -285,24 +285,24 @@ body.main .product .swiper .swiper-slide .image {
   right: 0;
 }
 
-body.main .product .swiper .swiper-slide.slide1 .image {
+.main-product .swiper .swiper-slide.slide1 .image {
   background-image: url("../img/product_image1.jpg");
 }
-body.main .product .swiper .swiper-slide.slide2 .image {
+.main-product .swiper .swiper-slide.slide2 .image {
   background-image: url("../img/product_image2.jpg");
 }
-body.main .product .swiper .swiper-slide.slide3 .image {
+.main-product .swiper .swiper-slide.slide3 .image {
   background-image: url("../img/product_image3.jpg");
 }
-body.main .product .swiper .swiper-slide.slide4 .image {
+.main-product .swiper .swiper-slide.slide4 .image {
   background-image: url("../img/product_image4.jpg");
 }
 
-body.main .product .swiper .swiper-pagination {
+.main-product .swiper .swiper-pagination {
   bottom: 0;
 }
 
-body.main .product .swiper .swiper-pagination .swiper-pagination-bullet {
+.main-product .swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #999;
@@ -311,14 +311,14 @@ body.main .product .swiper .swiper-pagination .swiper-pagination-bullet {
   transition: .2s;
 }
 
-body.main .product .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.main-product .swiper .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
   background-color: #b10a11;
 }
 
 /* BENEFIT */
-body.main .benefit {
+.main-benefit {
   position: relative;
   background: url("../img/main_benefit_bg.jpg") no-repeat center/cover;
   padding: 35px 0px;
@@ -327,58 +327,58 @@ body.main .benefit {
   color: #fff;
 }
 
-body.main .benefit .benefit__title {
+.main-benefit .benefit__title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
 
-body.main .benefit .benefit__description {
+.main-benefit .benefit__description {
   margin: 10px 0 20px;
   opacity: 0.7;
 }
 
-body.main .benefit ul {
+.main-benefit ul {
   overflow: hidden;
 }
 
-body.main .benefit ul li {
+.main-benefit ul li {
   float: left;
   width: calc(100% / 3);
   padding: 0 10px;
   box-sizing: border-box;
 }
 
-body.main .benefit ul li img {
+.main-benefit ul li img {
   display: inline-block;
   max-height: 30px;
 }
 
-body.main .benefit ul li .title {
+.main-benefit ul li .title {
   margin: 15px 0 5px;
   font-size: 16px;
   font-weight: 700;
 }
 
-body.main .benefit ul li .description {
+.main-benefit ul li .description {
   opacity: 0.7;
 }
 
 /* REWARD */
-body.main .reward {
+.main-reward {
   padding: 30px 15px 5px;
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-body.main .reward .left .text-group {
+.main-reward .left .text-group {
   position: relative;
   padding: 10px;
   border: 2px solid #222;
   border-radius: 10px;
 }
 
-body.main .reward .left .text-group .title {
+.main-reward .left .text-group .title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -386,18 +386,18 @@ body.main .reward .left .text-group .title {
   color: #222;
 }
 
-body.main .reward .left .text-group .title em {
+.main-reward .left .text-group .title em {
   font-size: 32px;
 }
 
-body.main .reward .left .text-group .description {
+.main-reward .left .text-group .description {
   display: inline-block;
   margin-top: 10px;
   font-size: 13px;
   color: #666;
 }
 
-body.main .reward .left .text-group .btns {
+.main-reward .left .text-group .btns {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -405,14 +405,14 @@ body.main .reward .left .text-group .btns {
   text-align: right;
 }
 
-body.main .reward .left .text-group .btns .btn.mobile {
+.main-reward .left .text-group .btns .btn.mobile {
   margin-left: 0;
   color: #fff;
   border: 1px solid #282828;
   background-color: #282828;
 }
 
-body.main .reward .left .text-group .btns .btn {
+.main-reward .left .text-group .btns .btn {
   display: inline-block !important;
   width: 200px;
   line-height: 37px;
@@ -424,36 +424,36 @@ body.main .reward .left .text-group .btns .btn {
   box-sizing: border-box;
 }
 
-body.main .reward .right .swiper {
+.main-reward .right .swiper {
   padding: 30px 0 50px;
 }
 
-body.main .reward .right .swiper .swiper-slide .number {
+.main-reward .right .swiper .swiper-slide .number {
   font-size: 16px;
   font-weight: 700;
   color: #c4ab9d;
   opacity: .4;
 }
 
-body.main .reward .right .swiper .swiper-slide .title {
+.main-reward .right .swiper .swiper-slide .title {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #222;
 }
 
-body.main .reward .right .swiper .swiper-slide .description {
+.main-reward .right .swiper .swiper-slide .description {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.6em;
   color: #646464;
 }
 
-body.main .reward .right .swiper .swiper-pagination {
+.main-reward .right .swiper .swiper-pagination {
   bottom: 0;
 }
 
-body.main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet {
+.main-reward .right .swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #999;
@@ -462,7 +462,7 @@ body.main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet {
   transition: .2s;
 }
 
-body.main .reward .right .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.main-reward .right .swiper .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
   background-color: #b10a11;
@@ -580,6 +580,7 @@ body.product .visual {
 
 body.product .visual > h2 {
   position: relative;
+  left: 0;
   font-family: 'sans-serif';
   font-size: 20px;
   font-weight: 700;
@@ -608,33 +609,33 @@ body.product .visual .product {
   font-size: 16px;
 }
 
-body.product .visual .product .product__info {
+body.product .visual .product__info {
   margin-bottom: 10px;
 }
 
-body.product .visual .product .product__info .title {
+body.product .visual .product__info .title {
   margin: 10px 0;
   font-family: sans-serif;
 }
 
-body.product .visual .product .product__info .title .eng {
+body.product .visual .product__info .title .eng {
   line-height: 2em;
   color: #94785c;
 }
 
-body.product .visual .product .product__info .title .kor {
+body.product .visual .product__info .title .kor {
   font-size: 20px;
   line-height: 1em;
 }
 
-body.product .visual .product .product__info .description {
+body.product .visual .product__info .description {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   color: #666;
   line-height: 1.3em;
 }
 
-body.product .visual .product .product__detail .type {
+body.product .visual .product__detail .type {
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #ccc;
@@ -643,31 +644,31 @@ body.product .visual .product .product__detail .type {
   color: #666;
 }
 
-body.product .visual .product .product__detail ul {
+body.product .visual .product__detail ul {
   padding: 20px 0;
 }
 
-body.product .visual .product .product__detail ul .item {
+body.product .visual .product__detail ul .item {
   overflow: hidden;
 }
 
-body.product .visual .product .product__detail ul .item:first-child {
+body.product .visual .product__detail ul .item:first-child {
   margin-bottom: 10px;
 }
 
-body.product .visual .product .product__detail ul .item .item__name {
+body.product .visual .product__detail ul .item__name {
   float: left;
   font-size: 18px;
   font-weight: 700;
 }
 
-body.product .visual .product .product__detail ul .item .item__contents {
+body.product .visual .product__detail ul .item__contents {
   position: relative;
   float: right;
   width: 150px;
 }
 
-body.product .visual .product .product__detail ul .item .item__contents .label {
+body.product .visual .product__detail ul .item__contents .label {
   display: inline-block;
   position: relative;
   top: -5px;
@@ -683,11 +684,11 @@ body.product .visual .product .product__detail ul .item .item__contents .label {
   background-color: #f5f5f5;
 }
 
-body.product .visual .product .product__detail ul .item .item__contents .price {
+body.product .visual .product__detail ul .item__contents .price {
   font-size: 16px;
 }
 
-body.product .visual .product .product__detail ul .item .item__contents .price em {
+body.product .visual .product__detail ul .item__contents .price em {
   font-family: sans-serif;
   font-size: 22px;
   color: #000;
@@ -718,55 +719,48 @@ body.product .visual .product .btn-group .btn.btn--red {
   margin-left: 5px;
 }
 
-body.product .visual .product .btn-group .btn span {
-
-}
-
 /* MAIN */
 body.product #main {
   background-color: #fff;
 }
 
 /* SIDE DISH */
-body.product .side-dish {
+.side-dish {
   padding: 35px 15px 0;
 }
 
 /* NOTICE */
-body.product .notice {
+.notice {
   padding: 15px 15px 0;
 }
 
-body.product .notice .todays__notice {
+.notice .todays__notice {
   padding: 20px;
   background: url("../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }
 
-body.product .notice .todays__notice em {
+.notice .todays__notice em {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 18px;
   color: #fff0e1;
 }
 
-body.product .notice .todays__notice span {
+.notice .todays__notice span {
   font-size: 14px;
   color: #dfc9b2;
 }
 
-body.product .notice .text-group {
+.notice .text-group {
   padding: 20px 15px;
   border: 1px solid #dcdcdc;
   background-color: #f8f8f8;
   margin: 15px 0 35px;
 }
 
-body.product .notice .text-group .text {
-}
-
-body.product .notice .text-group .text .title {
+.notice .text-group .text .title {
   position: relative;
   padding-left: 20px;
   margin: 20px 0 15px;
@@ -775,11 +769,11 @@ body.product .notice .text-group .text .title {
   font-weight: 700;
 }
 
-body.product .notice .text-group .text:first-child .title {
+.notice .text-group .text:first-child .title {
   margin-top: 0;
 }
 
-body.product .notice .text-group .text .title::before {
+.notice .text-group .text .title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -789,11 +783,7 @@ body.product .notice .text-group .text .title::before {
   background: url("../img/menu/t-bone/check.png") no-repeat center/cover;
 }
 
-body.product .notice .text-group .text ul.description {
-  
-}
-
-body.product .notice .text-group .text ul.description li {
+.notice .text-group .text ul.description li {
   font-size: 13px;
   line-height: 1.5em;
 }
@@ -804,86 +794,86 @@ body.product .notice .text-group .text ul.description li {
 
   /* index.html */
   /* CF */
-  body.main .cf .text-group .title {
+  .main-cf .text-group .title {
     padding-top: 15px;
     font-size: 20px;
   }
 
-  body.main .cf .text-group .sub-title {
+  .main-cf .text-group .sub-title {
     font-size: 13px;
   }
 
-  body.main .cf .text-group .description {
+  .main-cf .text-group .description {
     padding-top: 10px;
   }
 
   /* PRODUCT */
-  body.main .product {
+  .main-product {
     padding: 40px 0 40px;
   }
 
-  body.main .product .swiper {
+  .main-product .swiper {
     padding: 20px 0 50px;
   }
 
-  body.main .product .swiper .swiper-slide .text-group .title {
+  .main-product .swiper .swiper-slide .text-group .title {
     font-size: 28px;
   }
 
   /* BENEFIT */
-  body.main .benefit {
+  .main-benefit {
     font-size: 12px;
   }
 
-  body.main .benefit .benefit__title {
+  .main-benefit .benefit__title {
     font-size: 30px;
   }
   
-  body.main .benefit ul li {
+  .main-benefit ul li {
     padding: 0 5px;
   }
 
-  body.main .benefit ul li .title {
+  .main-benefit ul li .title {
     font-size: 14px;
   }
 
   /* REWARD */
-  body.main .reward .left .text-group .title {
+  .main-reward .left .text-group .title {
     font-size: 15px;
   }
 
-  body.main .reward .left .text-group .title em {
+  .main-reward .left .text-group .title em {
     font-size: 30px;
   }
 
-  body.main .reward .left .text-group .description {
+  .main-reward .left .text-group .description {
     margin: 10px 0;
     width: 180px;
   }  
 
-  body.main .reward .left .text-group .btns {
+  .main-reward .left .text-group .btns {
     position: static;
     transform: translateY(0);
     text-align: left;
   }
 
-  body.main .reward .left .text-group .btns .btn {
+  .main-reward .left .text-group .btns .btn {
     width: 100px;
   }
 
-  body.main .reward .right .swiper {
+  .main-reward .right .swiper {
     padding: 20px 0 30px;
   }
 
-  body.main .reward .right .swiper .swiper-slide .number {
+  .main-reward .right .swiper .swiper-slide .number {
     font-size: 13px;
   }
 
-  body.main .reward .right .swiper .swiper-slide .title {
+  .main-reward .right .swiper .swiper-slide .title {
     font-size: 15px;
   }
 
-  body.main .reward .right .swiper .swiper-slide .description {
+  .main-reward .right .swiper .swiper-slide .description {
     font-size: 12px;
   }
 
@@ -893,27 +883,23 @@ body.product .notice .text-group .text ul.description li {
     font-size: 14px;
   }
 
-  body.product .visual .product .product__info .title .kor {
-    
-  }
-
-  body.product .visual .product .product__detail ul .item .item__name {
+  body.product .visual .product__detail ul .item__name {
     font-size: 16px;
   }
 
-  body.product .visual .product .product__detail ul .item .item__contents {
+  body.product .visual .product__detail ul .item__contents {
     width: 130px;
   }
 
-  body.product .visual .product .product__detail ul .item .item__contents .label {
+  body.product .visual .product__detail ul .item__contents .label {
     padding: 0;
   }
 
-  body.product .visual .product .product__detail ul .item .item__contents .price {
+  body.product .visual .product__detail ul .item__contents .price {
     font-size: 1em;
   }
 
-  body.product .visual .product .product__detail ul .item .item__contents .price em {
+  body.product .visual .product__detail ul .item__contents .price em {
     font-size: 20px;
   }
 
@@ -922,11 +908,11 @@ body.product .notice .text-group .text ul.description li {
   }
 
   /* NOTICE */
-  body.product .notice .todays__notice em {
+  .notice .todays__notice em {
     font-size: 16px;
   }
 
-  body.product .notice .text-group .text ul.description li {
+  .notice .text-group .text ul.description li {
     letter-spacing: -0.5px;
   }  
 }
