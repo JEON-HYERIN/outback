@@ -541,14 +541,14 @@ body.main #main .inner {
 
 /* beefStory.html */
 /* VISUAL */
-body.beef-story .visual {
+.brand-visual {
   position: relative;
   height: 600px;
   background: url("../img/brand/beef/beef_bg.jpg") no-repeat center/cover fixed;
   
 }
 
-body.beef-story .visual .title {
+.brand-visual .title {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -559,7 +559,7 @@ body.beef-story .visual .title {
   letter-spacing: 2px;
 }
 
-body.beef-story .visual .title::after {
+.brand-visual .title::after {
   content: '';
   position: absolute;
   left: 0;
@@ -570,23 +570,22 @@ body.beef-story .visual .title::after {
 }
 
 /* MAIN */
-body.beef-story #main .inner {
+#main.brand .inner {
   max-width: 1600px;
 }
 
 
 /* product.html */
-
 /* VISUAL */
-body.product .visual {
+.product-visual {
   background: url("../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
 }
 
-body.product .visual .inner {
+.product-visual .inner {
   height: 700px;
 }
 
-body.product .visual .product {
+.product-visual .product {
   position: absolute;
   right: 15px;
   top: 50px;
@@ -595,46 +594,46 @@ body.product .visual .product {
   color: #fff;
 }
 
-body.product .visual .product__info .title {
+.product-visual .product__info .title {
   margin-bottom: 10px;
 }
 
-body.product .visual .product__info .title .kor {
+.product-visual .product__info .title .kor {
   font-size: 20px;
   font-weight: 500;
   line-height: 2em;
 }
 
-body.product .visual .product__info .title .eng {
+.product-visual .product__info .title .eng {
   font-size: 35px;
   line-height: 1em;
 }
 
-body.product .visual .product__info .description {
+.product-visual .product__info .description {
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
 }
 
-body.product .visual .product__detail .type {
+.product-visual .product__detail .type {
   margin: 25px 0;
 }
 
-body.product .visual .product__detail ul {
+.product-visual .product__detail ul {
   padding-bottom: 60px;
 }
 
-body.product .visual .product__detail ul .item__name {
+.product-visual .product__detail ul .item__name {
   display: inline-block;
   padding-right: 30px;
   font-size: 18px;
 }
 
-body.product .visual .product__detail ul .item__contents {
+.product-visual .product__detail ul .item__contents {
   display: inline-block;
 }
 
-body.product .visual .product__detail ul .item__contents .label {
+.product-visual .product__detail ul .item__contents .label {
   position: relative;
   display: inline-block;
   margin-right: 17px;
@@ -647,7 +646,7 @@ body.product .visual .product__detail ul .item__contents .label {
   background-color: #50473d;
 }
 
-body.product .visual .product__detail ul .item__contents .label::after {
+.product-visual .product__detail ul .item__contents .label::after {
   content: '';
   position: absolute;
   right: -8px;
@@ -660,15 +659,15 @@ body.product .visual .product__detail ul .item__contents .label::after {
   border-color: transparent transparent transparent #50473d;
 }
 
-body.product .visual .product__detail ul .item__contents .price {
+.product-visual .product__detail ul .item__contents .price {
   color: #b59371;
 }
 
-body.product .visual .product__detail ul .item__contents .price em {
+.product-visual .product__detail ul .item__contents .price em {
   font-size: 34px;
 }
 
-body.product .visual .product .btn-group {
+.product-visual .product .btn-group {
   position: absolute;
   left: 0;
   width: 100%;
@@ -676,7 +675,7 @@ body.product .visual .product .btn-group {
   text-align: center;
 }
 
-body.product .visual .product .btn-group .btn {
+.product-visual .product .btn-group .btn {
   float: left;
   width: 50%;
   padding: 10px 0;
@@ -684,21 +683,21 @@ body.product .visual .product .btn-group .btn {
   line-height: 22px;
 }
 
-body.product .visual .product .btn-group .btn.btn--brown {
+.product-visual .product .btn-group .btn.btn--brown {
   background-color: rgba(144, 115, 84, 0.95);
 }
 
-body.product .visual .product .btn-group .btn.btn--red {
+.product-visual .product .btn-group .btn.btn--red {
   background-color: rgba(177, 10, 17, 0.95);
 }
 
-body.product .visual .product .btn-group .btn img {
+.product-visual .product .btn-group .btn img {
   display: inline-block !important;
   position: relative;
   top: -10px;
 }
 
-body.product .visual .product .btn-group .btn span {
+.product-visual .product .btn-group .btn span {
   display: block;
   position: relative;
   top: -15px;
@@ -761,15 +760,13 @@ body.product .visual .product .btn-group .btn span {
 
 /* membership.html */
 /* VISUAL */
-.membership.visual {
+.membership-visual {
   background: url("../img/membership/visual_bg.jpg") no-repeat center/cover fixed;
   height: 600px;
 }
 
 /* MAIN */
-main.membership {}
-
-main.membership .inner {
+#main.membership .inner {
   padding-bottom: 200px;
 }
 
@@ -809,8 +806,6 @@ main.membership .inner {
   padding-bottom: 50px;
   text-align: center;
 }
-
-.benefit__menu li .text-group {}
 
 .benefit__menu li .text-group .title {
   margin-bottom: 13px;
@@ -886,7 +881,11 @@ main.membership .inner {
   }
 
   /* membership.html */
-  .membership.visual {
+  #main.membership .inner {
+    padding: 0 20px 200px;
+  }
+  /* VISUAL */
+  .membership-visual {
     background-attachment: scroll;
   }  
 
@@ -908,14 +907,14 @@ main.membership .inner {
 
   /* beefStory.html */
   /* VISUAL */
-  body.beef-story .visual {
+  .brand.visual {
     margin-top: 56px;
   }
   
   
   /* product.html */
   /* VISUAL */
-  body.product .visual {
+  .product-visual {
     margin-top: 56px;
   }  
 
