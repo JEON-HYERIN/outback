@@ -840,25 +840,25 @@ body.main .service-menu li.delivery a .icon.mobile {
   border-top: 10px solid #f7f7f7;
 }
 
-/* BENEFIT */
-.benefit__menu {
+/* MEMBERSHIP BENEFIT */
+.membership-benefit__menu {
   text-align: center;
 }
 
-.benefit__menu li {
+.membership-benefit__menu li {
   padding: 30px;
 }
 
-.benefit__menu li + li {
+.membership-benefit__menu li + li {
   border-top: 10px solid #f7f7f7;
 }
 
-.benefit__menu li img {
+.membership-benefit__menu li img {
   display: inline-block;
   vertical-align: middle;
 }
 
-.benefit__menu li .text-group .title {
+.membership-benefit__menu li .text-group .title {
   margin-bottom: 6px;
   font-size: 20px;
   font-weight: 700;
@@ -866,13 +866,13 @@ body.main .service-menu li.delivery a .icon.mobile {
   color: #333;
 }
 
-.benefit__menu li .text-group .description {
+.membership-benefit__menu li .text-group .description {
   font-size: 14px;
   line-height: 1.4em;
   color: #666;
 }
 
-.benefit__menu li .btn {
+.membership-benefit__menu li .btn {
   padding: 0 40px;
   margin: 15px auto 0;
   font-size: 14px;

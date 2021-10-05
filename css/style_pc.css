@@ -770,12 +770,12 @@ body.main #main .inner {
   padding-bottom: 200px;
 }
 
-/* BENEFIT */
-.benefit {
+/* MEMBERSHIP BENEFIT */
+.membership-benefit {
   padding-top: 80px;
 }
 
-.benefit > .title {
+.membership-benefit > .title {
   position: relative;
   left: 0;
   margin-bottom: 25px;
@@ -786,7 +786,7 @@ body.main #main .inner {
   border-bottom: 2px solid #222;
 }
 
-.benefit > h2.title::before {
+.membership-benefit > h2.title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -796,35 +796,35 @@ body.main #main .inner {
   background: url("../img/membership/benefit_title_icon.png") no-repeat center/cover;
 }
 
-.benefit__menu {
+.membership-benefit__menu {
   overflow: hidden;
 }
 
-.benefit__menu li {
+.membership-benefit__menu li {
   float: left;
   width: 33.33%;
   padding-bottom: 50px;
   text-align: center;
 }
 
-.benefit__menu li img {
+.membership-benefit__menu li img {
   display: inline-block;
   vertical-align: middle;
 }
 
-.benefit__menu li .text-group .title {
+.membership-benefit__menu li .text-group .title {
   margin-bottom: 13px;
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
 
-.benefit__menu li .text-group .description {
+.membership-benefit__menu li .text-group .description {
   font-size: 16px;
   color: #666;
 }
 
-.benefit__menu li .btn {
+.membership-benefit__menu li .btn {
   padding: 0 20px;
   margin: 16px auto 0;
   line-height: 38px;
