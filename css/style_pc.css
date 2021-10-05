@@ -807,6 +807,11 @@ body.main #main .inner {
   text-align: center;
 }
 
+.benefit__menu li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .benefit__menu li .text-group .title {
   margin-bottom: 13px;
   font-size: 18px;
