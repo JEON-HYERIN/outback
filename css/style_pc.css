@@ -780,6 +780,7 @@ main.membership .inner {
 
 .benefit > .title {
   position: relative;
+  left: 0;
   margin-bottom: 25px;
   padding: 0 0 21px 45px;
   font-size: 30px;
@@ -884,6 +885,11 @@ main.membership .inner {
     left: -230px;
   }
 
+  /* membership.html */
+  .membership.visual {
+    background-attachment: scroll;
+  }  
+
 }
 
 
@@ -912,4 +918,5 @@ main.membership .inner {
   body.product .visual {
     margin-top: 56px;
   }  
+
 }
