@@ -853,8 +853,8 @@ body.main .service-menu li.delivery a .icon.mobile {
   border-top: 10px solid #f7f7f7;
 }
 
-.membership-benefit__menu li img {
-  display: inline-block;
+.membership-benefit__menu li img.mobile {
+  display: inline-block !important;
   vertical-align: middle;
 }
 

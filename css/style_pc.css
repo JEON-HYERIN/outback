@@ -807,8 +807,8 @@ body.main #main .inner {
   text-align: center;
 }
 
-.membership-benefit__menu li img {
-  display: inline-block;
+.membership-benefit__menu li img.pc {
+  display: inline-block !important;
   vertical-align: middle;
 }
 
