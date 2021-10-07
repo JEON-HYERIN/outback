@@ -239,7 +239,7 @@ body.main .swiper .swiper-next {
 }
 
 /* MAIN */
-body.main #main .inner {
+body.main #main > .inner {
   padding: 140px 0 200px;
   box-sizing: border-box;
 }
@@ -570,7 +570,7 @@ body.main #main .inner {
 }
 
 /* MAIN */
-#main.brand .inner {
+main.brand > .inner {
   max-width: 1600px;
 }
 
@@ -766,7 +766,7 @@ body.main #main .inner {
 }
 
 /* MAIN */
-#main.membership .inner {
+main.membership > .inner {
   padding-bottom: 200px;
 }
 
@@ -873,6 +873,10 @@ body.main #main .inner {
 
 
 /* benefit.html */
+main.benefit > .inner {
+  padding: 80px 0 200px;
+}
+
 /* VISUAL */
 .benefit-visual {
   background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
@@ -883,17 +887,81 @@ body.main #main .inner {
 
 /* MAIN */
 /* CARD BENEFIT */
-.card-benefit .details {}
+.card-benefit .details {
+  font-size: 14px;
+  color: #666;
+}
 
-.card-benefit .details__title {}
+.card-benefit .details__title {
+  margin-bottom: 25px;
+}
 
-.card-benefit .details__title em {}
+.card-benefit .details__title em,
+.card-benefit .details__description dt {
+  color: #222;
+}
 
-.card-benefit .details__description {}
+.card-benefit .details__title em {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
 
-.card-benefit .details__description dt {}
+.card-benefit .details__description {
+  padding: 40px;
+  background: #fffaf5;
+  border: 1px solid #c7b19b;
+}
 
-.card-benefit .details__description dd {}
+.card-benefit .details__description dt {
+  margin-bottom: 13px;
+}
+
+.card-benefit .details__description dd {
+  position: relative;
+  padding-left: 13px;
+  line-height: 1.5em;
+}
+
+.card-benefit .details__description dd::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 9px;
+  width: 4px;
+  height: 2px;
+  background-color: #666;
+}
+
+.card-benefit__menu {
+  overflow: hidden;
+  margin: 60px 0 40px;
+}
+
+.card-benefit__menu li {
+  float: left;
+  width: calc(100% / 5);
+  text-align: center;
+}
+
+
+.card-benefit__menu li a {
+  display: block;
+  line-height: 62px;
+  letter-spacing: -0.9px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.card-benefit__menu li.active a {
+  color: #fff;
+  border-color: #cc0001;
+  background-color: #cc0001;
+}
 
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
@@ -910,7 +978,7 @@ body.main #main .inner {
   }
 
   /* membership.html */
-  #main.membership .inner {
+  main.membership > .inner {
     padding: 0 20px 200px;
   }
   /* VISUAL */

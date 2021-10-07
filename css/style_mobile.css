@@ -185,7 +185,7 @@ body.main .swiper .swiper-next {
 }
 
 /* MAIN */
-body.main #main .inner {
+body.main #main > .inner {
   padding-top: 60px;
   box-sizing: border-box;
 }
