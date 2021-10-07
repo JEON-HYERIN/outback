@@ -1078,6 +1078,11 @@ main.benefit > .inner {
 
 @media screen and (max-width: 1023.9px) {
 
+  /* COMMON */
+  .visual {
+    margin-top: 56px;
+  }
+
   /* index.html */
   /* VISUAL */
   .main-visual {
@@ -1087,19 +1092,5 @@ main.benefit > .inner {
   .main-visual .swiper {
     max-height: 700px;
   }
-
-
-  /* beefStory.html */
-  /* VISUAL */
-  .brand.visual {
-    margin-top: 56px;
-  }
-  
-  
-  /* product.html */
-  /* VISUAL */
-  .product-visual {
-    margin-top: 56px;
-  }  
 
 }
