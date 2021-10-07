@@ -988,13 +988,11 @@ body.main .service-menu li.delivery a .icon.mobile {
   font-weight: 700;
   line-height: 48px;
   color: #999;
-  border-bottom: 2px solid transparent;
   box-sizing: border-box;
 }
 
 .card-benefit__menu li a.active {
-  color: #222;
-  border-bottom-color: #cb0000;
+  color: #cb0000;
 }
 
 .card-benefit .card-type {
@@ -1013,6 +1011,7 @@ body.main .service-menu li.delivery a .icon.mobile {
   font-size: 14px;
   line-height: 1.6em;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 .card-benefit .card-type > li + li {
@@ -1027,6 +1026,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 .card-benefit .card-type > li .right .title {
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
   color: #222;
@@ -1040,7 +1040,12 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 .card-benefit .card-type > li .right .description {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.card-benefit .card-type > li .right .description.open {
+  display: block;
 }
 
 .card-benefit .card-type>li .right .btn {
