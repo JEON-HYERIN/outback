@@ -797,9 +797,18 @@
     });
   });
 
-  $('.card-benefit .card-type > li').on('click', function () {
-    $('.card-benefit .card-type > li .right .description').toggleClass('open');
+
+  $('.card-benefit .card-type > li .right').on('click', function () {
+    var index = $('.card-benefit .card-type > li').index($(this).parent());
+    $('.card-benefit .card-type > li:eq(' + index + ') .right .description').toggleClass('open');
+    var isTrue = $('.card-benefit .card-type > li:eq(' + index + ') .right .description').hasClass('open');
+    var btn = $('.card-benefit .card-type > li:eq(' + index + ') .right .btn');
+    isTrue === true ? btn.text('닫기') : btn.text('카드 정보 더보기');
+    console.log(isTrue.length)
+
   });
+
+
 </script>
 </body>
 </html>

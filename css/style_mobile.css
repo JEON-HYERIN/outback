@@ -1048,7 +1048,7 @@ body.main .service-menu li.delivery a .icon.mobile {
   display: block;
 }
 
-.card-benefit .card-type>li .right .btn {
+.card-benefit .card-type > li .right .btn {
   width: 100px;
   padding: 0 35px;
   margin: 0 auto;
@@ -1057,6 +1057,7 @@ body.main .service-menu li.delivery a .icon.mobile {
   border: 1px solid #999;
   background-color: #fff;
 }
+
 
 /* 미디어쿼리 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
