@@ -940,6 +940,10 @@ body.main .service-menu li.delivery a .icon.mobile {
   color: #666;
 }
 
+.card-benefit .details__description dd + dd {
+  margin-top: 3px;
+}
+
 .card-benefit .details__description dd:nth-of-type(1)::before {
   content: '1.';
 }
