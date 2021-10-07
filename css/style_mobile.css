@@ -904,7 +904,72 @@ body.main .service-menu li.delivery a .icon.mobile {
 
 .card-benefit .details__description dt {}
 
-.card-benefit .details__description dd {}
+.card-benefit .details__description dd {
+  position: relative;
+}
+
+.card-benefit .details__description dd::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 9px;
+  width: 4px;
+  height: 2px;
+  background-color: #666;
+}
+
+.card-benefit__menu {
+  overflow: hidden;
+  margin: 60px 0 40px;
+}
+
+.card-benefit__menu li {
+  float: left;
+  width: calc(100% / 5);
+  text-align: center;
+}
+
+
+.card-benefit__menu li a {
+  display: block;
+  line-height: 62px;
+  letter-spacing: -0.9px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.card-benefit__menu li.active a {
+  color: #fff;
+  border-color: #cc0001;
+  background-color: #cc0001;
+}
+
+.card-benefit .card-type {
+
+}
+
+.card-benefit .card-type li {}
+
+.card-benefit .card-type li .left {}
+
+.card-benefit .card-type li .left img {
+  width: 330px;
+}
+
+.card-benefit .card-type li .right {}
+
+.card-benefit .card-type li .right .title {}
+
+.card-benefit .card-type li .right em {}
+
+.card-benefit .card-type li .right .description {}
+
+.card-benefit .card-type li .right .description li {}
+
+.card-benefit .card-type li .right .btn {}
 
 /* 미디어쿼리 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
