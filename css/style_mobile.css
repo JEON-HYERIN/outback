@@ -37,6 +37,27 @@ br.only-pc {
   background-color: #fff;
 }
 
+.visual > h2 {
+  position: relative;
+  font-family: 'sans-serif';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #222;
+}
+
+.visual > h2::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 10px;
+  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
+}
+
 body.sub .service-menu {
   overflow: hidden;
   background-color: #303030;
@@ -542,25 +563,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 /* beefStory.html */
 /* VISUAL */
 .brand-visual > h2 {
-  position: relative;
-  font-family: 'sans-serif';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 50px;
   letter-spacing: 1.5px;
-  text-align: center;
-  color: #222;
-}
-
-.brand-visual > h2::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 23px;
-  height: 10px;
-  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 /* MAIN */ 
@@ -573,26 +576,8 @@ body.main .service-menu li.delivery a .icon.mobile {
 /* product.html */
 /* VISUAL */
 .product-visual > h2 {
-  position: relative;
   left: 0;
-  font-family: 'sans-serif';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 50px;
-  text-align: center;
-  color: #222;
   border-bottom: 1px solid #e6e6e6;
-}
-
-.product-visual > h2::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 23px;
-  height: 10px;
-  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 .product-visual .inner {
@@ -786,25 +771,8 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 .membership-visual > h2 {
-  position: relative;
   left: 0;
-  font-family: 'sans-serif';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 50px;
-  color: #222;
   border-bottom: 10px solid #f7f7f7;
-}
-
-.membership-visual > h2::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 23px;
-  height: 10px;
-  background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
 }
 
 .membership-visual .inner {
@@ -882,35 +850,35 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 /* DETAILS */
-.details {
+.membership-details {
   padding: 30px 15px 70px;
   background-color: #f7f7f7;
 }
 
-.details > .title,
-.details dl dt {
+.membership-details > .title,
+.membership-details dl dt {
   font-size: 16px;
   font-weight: 700;
   color: #222;
 }
 
-.details > .title {
+.membership-details > .title {
   padding-bottom: 15px;
 }
 
-.details > .title > span {
+.membership-details > .title > span {
   color: #b10a11;
 }
 
-.details dl + dl {
+.membership-details dl + dl {
   padding-top: 15px;
 }
 
-.details dl dt {
+.membership-details dl dt {
   margin-bottom: 8px;
 }
 
-.details dl dd {
+.membership-details dl dd {
   padding-left: 13px;
   font-size: 14px;
   line-height: 1.6em;
