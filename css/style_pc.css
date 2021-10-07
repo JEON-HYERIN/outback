@@ -871,6 +871,30 @@ body.main #main .inner {
   color: #666;
 }
 
+
+/* benefit.html */
+/* VISUAL */
+.benefit-visual {
+  background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
+  height: 600px;
+}
+
+.benefit-visual > h2.title {}
+
+/* MAIN */
+/* CARD BENEFIT */
+.card-benefit .details {}
+
+.card-benefit .details__title {}
+
+.card-benefit .details__title em {}
+
+.card-benefit .details__description {}
+
+.card-benefit .details__description dt {}
+
+.card-benefit .details__description dd {}
+
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
 

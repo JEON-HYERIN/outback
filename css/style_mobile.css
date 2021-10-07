@@ -885,6 +885,27 @@ body.main .service-menu li.delivery a .icon.mobile {
   color: #666;
 }
 
+
+/* benefit.html */
+/* VISUAL */
+.benefit-visual {}
+
+.benefit-visual > h2.title {}
+
+/* MAIN */
+/* CARD BENEFIT */
+.card-benefit .details {}
+
+.card-benefit .details__title {}
+
+.card-benefit .details__title em {}
+
+.card-benefit .details__description {}
+
+.card-benefit .details__description dt {}
+
+.card-benefit .details__description dd {}
+
 /* 미디어쿼리 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
