@@ -887,12 +887,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 
 
 /* benefit.html */
-main.benefit > .inner {
-  
-}
 /* VISUAL */
-.benefit-visual {}
-
 .benefit-visual > h2.title {
   border-bottom: 10px solid #f7f7f7;
 }
@@ -901,10 +896,6 @@ main.benefit > .inner {
 /* CARD BENEFIT */
 .card-benefit {
   padding: 35px 15px 70px;
-}
-
-.card-benefit .details {
-
 }
 
 .card-benefit .details__title {
@@ -964,7 +955,9 @@ main.benefit > .inner {
 
 .card-benefit__menu {
   position: relative;
+  display: flex;
   overflow: hidden;
+  overflow-x: auto;
   height: 50px;
   padding: 0 15px;
   margin: 35px -15px 30px -15px;
@@ -982,14 +975,9 @@ main.benefit > .inner {
 }
 
 .card-benefit__menu li {
-  float: left;
-  width: calc(100% / 4);
+  flex-shrink: 0;
+  padding: 0 4px;
   text-align: center;
-}
-
-.card-benefit__menu li:last-child {
-  position: absolute;
-  left: -9999px;
 }
 
 .card-benefit__menu li a {
@@ -1004,13 +992,19 @@ main.benefit > .inner {
   box-sizing: border-box;
 }
 
-.card-benefit__menu li.active a {
+.card-benefit__menu li a.active {
   color: #222;
   border-bottom-color: #cb0000;
 }
 
 .card-benefit .card-type {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #dcdcdc;
+  display: none;
+}
 
+.card-benefit .card-type.visible {
+  display: block;
 }
 
 .card-benefit .card-type > li {
@@ -1018,24 +1012,19 @@ main.benefit > .inner {
   color: #666;
   font-size: 14px;
   line-height: 1.6em;
-  border-top: 1px solid #eaeaea;
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
-.card-benefit .card-type > li:last-child {
-  border-bottom: 1px solid #eaeaea;
+.card-benefit .card-type > li + li {
+  border-top: 1px solid #eaeaea;
 }
 
 .card-benefit .card-type > li .left {
-  width: 85%;
-  margin: 0 auto 16px;
+  /* width: 85%;
+  margin: 0 auto 16px; */
+  width: 360px;
+  margin: 0 0 16px;
 }
-
-.card-benefit .card-type > li .left img {
-
-}
-
-.card-benefit .card-type > li .right {}
 
 .card-benefit .card-type > li .right .title {
   font-size: 16px;
@@ -1054,12 +1043,9 @@ main.benefit > .inner {
   margin: 20px 0;
 }
 
-.card-benefit .card-type > li .right .description li {}
-
 .card-benefit .card-type>li .right .btn {
   width: 100px;
   padding: 0 35px;
-  /* margin: 20px auto 0; */
   margin: 0 auto;
   line-height: 37px;
   color: #222;
@@ -1192,5 +1178,13 @@ main.benefit > .inner {
 
   .notice .text-group .text ul.description li {
     letter-spacing: -0.5px;
+  }  
+
+
+  /* benefit.html */
+  /* CARD BENEFIT */
+  .card-benefit .card-type > li .left {
+    width: 270px;
+    margin: 0 auto 16px;
   }  
 }

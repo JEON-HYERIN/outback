@@ -884,8 +884,6 @@ main.benefit > .inner {
   background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
 }
 
-.benefit-visual > h2.title {}
-
 /* MAIN */
 /* CARD BENEFIT */
 .card-benefit .details {
@@ -958,7 +956,7 @@ main.benefit > .inner {
   box-sizing: border-box;
 }
 
-.card-benefit__menu li.active a {
+.card-benefit__menu li a.active {
   color: #fff;
   border-color: #cc0001;
   background-color: #cc0001;
@@ -966,6 +964,11 @@ main.benefit > .inner {
 
 .card-benefit .card-type {
   padding-bottom: 40px;
+  display: none;
+}
+
+.card-benefit .card-type.visible {
+  display: block;
 }
 
 .card-benefit .card-type > li {

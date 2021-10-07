@@ -45,6 +45,7 @@
   <link rel="stylesheet" href="./css/style_pc.css" media="screen and (min-width: 850.1px)" />
   <link rel="stylesheet" href="./css/style_mobile.css" media="screen and (max-width: 850.0px)" />
 
+  <script src="./js/jquery-3.6.0.min.js"></script>
   <script defer src="./js/main.js"></script>  
 </head>
 <body class="sub">
@@ -195,14 +196,14 @@
           </div>
 
           <ul class="card-benefit__menu">
-            <li class="active"><a href="javascript:void(0)">삼성카드</a></li>
-            <li><a href="javascript:void(0)">신한카드</a></li>
-            <li><a href="javascript:void(0)">BC카드</a></li>
-            <li><a href="javascript:void(0)">기타카드</a></li>
-            <li><a href="javascript:void(0)">매장별 카드</a></li>
+            <li><a href="javascript:void(0)" data-filter="type1" class="active">삼성카드</a></li>
+            <li><a href="javascript:void(0)" data-filter="type2">신한카드</a></li>
+            <li><a href="javascript:void(0)" data-filter="type3">BC카드</a></li>
+            <li><a href="javascript:void(0)" data-filter="type4">기타카드</a></li>
+            <li><a href="javascript:void(0)" data-filter="type5">매장별 카드</a></li>
           </ul>
 
-          <ul class="card-type type1">
+          <ul class="card-type visible" data-type="type1">
             <li>
               <div class="left">
                 <img src="./img/benefit/samsung1.jpg" alt="아메리칸 엑스프레스 리저브 카드" />
@@ -289,6 +290,331 @@
                   <li>- 6만원 이상 결제 시 3만원 현장할인</li>
                   <li>- 월 1회/연 3회까지만 가능</li>
                   <li>* 해당 카드는 신규발급이 중단되었습니다. (갱신/재발급만 가능)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="card-type" data-type="type2">
+            <li>
+              <div class="left">
+                <img src="./img/benefit/shinhan1.png" alt="신한 아웃백 카드 (Lady/2030)" />
+              </div>
+              <div class="right">
+                <h3 class="title">신한 아웃백 카드 (Lady/2030)<br />
+                  <span>30% ~ 최대 40% 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 30% 현장 할인</li>
+                  <li>- 아웃백 특정 지정일 추가 10% 할인(설날, 추석) = 최대 40% 할인(월 최대 할인한도 5만원, 신용/체크 사용 가능)</li>
+                  <li>- 아웃백 부메랑 포인트 2% 자동 적립</li>
+                  <li>- 전월 실적 미달 시 부메랑클럽 10% 할인 가능(단, 부메랑 포인트 2% 적립 불가)</li>
+                  <li>- 월 단위 최대 할인한도 5만원으로 운영</li>
+                  <li>- 2012년 7월 23일부로 체크카드 신규 발급 중단(단, 기존 소지 고객의 분실/훼손 재발급은 가능)</li>
+                  <li>- 2020년 7월 1일부로 신규 카드 발급(교체/추가 발급 포함) 중단</li>
+                  <li>단, 기존 소지 고객의 분실/훼손 시 재발급 가능(소지 카드의 유효기간 내)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/shinhan2.png" alt="
+                신한카드 Love" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                  신한카드 Love<br /><span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 2회(1일~말일), 1회 10만원 (할인 전 승인금액 기준, 1회 최대 2만원까지 할인)</li>
+                  <li>- 주류 품목 제외, 대형 백화점/할인점 입점 매장 서비스 제공</li>
+                  <li>* 전월 이용실적에 따라 제공되는 통합할인한도 내에서 서비스 적용</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/shinhan3.png" alt="신한카드 Love Platinum#" />
+              </div>
+              <div class="right">
+                <h3 class="title">신한카드 Love Platinum#<br /><span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 2회(1일~말일), 1회 10만원 할인 전 승인금액 기준(1회 최대 2만원까지 할인)</li>
+                  <li>- 주류 품목 제외, 대형 백화점/할인점 입점 매장 서비스 제공</li>
+                  <li>* 전월 이용실적에 따라 제공되는 통합할인한도 내에서 서비스 적용</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/shinhan4.png" alt="신한카드 Lady" />
+              </div>
+              <div class="right">
+                <h3 class="title">신한카드 Lady<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 연 4회 할인 서비스 가능 (년 기준 : 1월 ~12월)</li>
+                  <li>- 1회 결제금액 20만원까지 할인 가능 (할인 전 금액) 포함</li>
+                  <li>- 타 쿠폰 및 타 카드(신용카드, 통신사 카드 등) 중복 할인 적용 불가</li>
+                  <li>- 할인 횟수 및 이용 실적 기준은 보유한 모든 Lady 카드 통합 적용됨</li>
+                  <li>* 이용 실적 기준</li>
+                  <li>- Lady 신용카드로 서비스 이용 전월 일시불+할부 이용 금액이 30만원 이상인 경우 서비스 제공되며, 신규 카드는 카드 사용 등록월 포함 2개월까지 실적 제한 없이 서비스 제공</li>
+                  <li>- Lady 체크카드로 서비스 이용 직전 3개월 일시불+할부 이용금액 월평균 10만원 이상인 경우 서비스 제공</li>
+                  <li>- 전월 이용실적은 전월 1일부터 말일까지의 거래시점 실적으로 반영</li>
+                  <li>- 교통카드 이용실적은 전전월 사용실적이 반영</li>
+                  <li>- 해외이용실적은 매입일자 기준으로 실적 반영</li>
+                  <li>* 전월 이용금액 제외 대상(현금서비스/카드론/각종 수수료/이자/거래 취소금액)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/shinhan5.png" alt="신한카드 2030" />
+              </div>
+              <div class="right">
+                <h3 class="title">신한카드 2030<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 연 4회 할인 서비스 가능 (년 기준 : 1월 ~12월)</li>
+                  <li>- 1회 결제금액 20만원까지 할인 가능 (할인 전 금액) 포함</li>
+                  <li>- 할인 횟수 및 이용 실적 기준은 보유한 모든 2030 카드 통합 적용됨</li>
+                  <li>* 이용 실적 기준</li>
+                  <li>- 2030 신용카드로 서비스 이용 전월 일시불+할부 이용 금액이 30만원 이상인 경우 서비스 제공되며, 신규 카드는 카드 사용 등록월 포함 2개월까지 실적 제한 없이 서비스 제공</li>
+                  <li>- 2030 체크카드로 서비스 이용 직전 3개월 일시불+할부 이용금액 월평균 10만원 이상인 경우 서비스 제공</li>
+                  <li>- 전월 이용실적은 전월 1일부터 말일까지의 거래시점 실적으로 반영</li>
+                  <li>- 교통카드 이용실적은 전전월 사용실적이 반영</li>
+                  <li>- 해외이용실적은 매입일자 기준으로 실적 반영</li>
+                  <li>* 전월 이용금액 제외 대상(현금서비스/카드론/각종 수수료/이자/거래 취소금액)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="card-type" data-type="type3">
+            <li>
+              <div class="left">
+                <img src="./img/benefit/bc1.png" alt="
+                하나 아웃백 클럽 카드(신용)" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                하나 아웃백 클럽 카드(신용)<br />
+                  <span>20% ~ 최대 30% 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 20% 현장 할인(1일 최대 결제금액 20만원 한도 내)</li>
+                  <li>- 생일 축하 10% 추가 할인(연 1회) = 최대 30% 할인</li>
+                  <li>- 이용 시점 기준 전월(1일~말일) 국내 일시불/할부 이용금액이 10만원 이상인 카드에 한해 할인</li>
+                  <li>* 최초 카드 사용등록 후 익월까지는 이용금액 체크 없이 할인</li>
+                  <li>* 교통요금, 통신요금 자동이체 결제금액 매출 접수 월 기준으로 카드 이용금액에 반영</li>
+                  <li>* 할부 이용건은 승인 당월 이용실적으로 전액 합산 처리, 분할로 적용되지 않음</li>
+                  <li>예시) 8월 4일 30만원 3개월 할부 이용 시 8월 실적 30만원으로 반영</li>
+                  <li>* 2007년 3월 이전에 발급한 카드도 2011년 5월부터 국내 일시불/할부 이용금 10만원 이상인 카드에 한해 할인 적용</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/bc2.png" alt="
+                하나 아웃백 클럽 카드(체크)" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                하나 아웃백 클럽 카드(체크)<br /><span>20%~ 최대 30% 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 20% 현장 할인 (1일 최대 결제금액 20만원 한도 내)</li>
+                  <li>- 생일 축하 10% 추가 할인(연 1회) = 최대 30% 할인</li>
+                  <li>- 이용 시점 기준 전월(1일~말일) 국내 일시불/할부 이용금액이 10만원 이상인 카드에 한해 할인</li>
+                  <li>* 최초 카드 사용등록 후 익월까지는 이용금액 체크 없이 할인</li>
+                  <li>* 교통요금, 통신요금 자동이체 결제금액 매출 접수 월 기준으로 카드 이용금액에 반영</li>
+                  <li>* 할부 이용건은 승인 당월 이용실적으로 전액 합산 처리, 분할로 적용되지 않음</li>
+                  <li>예시) 8월 4일 30만원 3개월 할부 이용 시 8월 실적 30만원으로 반영</li>
+                  <li>* 2007년 3월 이전에 발급한 카드도 2011년 5월부터 국내 일시불/할부 이용금액 10만원 이상인 카드에 한해 할인 적용</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/bc3.png" alt="
+                IBK 나라사랑 카드" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                  IBK 나라사랑 카드<br /><span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 1회, 1회 이용금액 20만원한도, 월 최대 4만원 할인</li>
+                  <li>- 전월 1일부터 말일까지 국내 가맹점 이용금액 20만원 이상 시 제공</li>
+                  <li>* 단, 전월 이용금액에서 제세공과금 납부금액, 상품권 구매금액, 교통카드 이용금액은 실적 산정 제외</li>
+                  <li>- 카드 수령일부터 다음 달 말일까지는 카드 이용실적이 미달하여도 할인 제공</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/bc4.png" alt="다둥이행복카드" />
+              </div>
+              <div class="right">
+                <h3 class="title">다둥이행복카드<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 일 1회, 건당 최대 2만원까지 할인 (아웃백 스테이크 하우스, TGIF 통합 일 1회)</li>
+                  <li>※ 전월 국내가맹점 이용금액 20만원 이상 시 제공 (실적/할인 제외는 상품안내장 참조)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/bc5.png" alt="카드의 정석 다이렉트 (구, 다모아 할인 다이렉트)" />
+              </div>
+              <div class="right">
+                <h3 class="title">카드의 정석 다이렉트 (구, 다모아 할인 다이렉트)<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 일 1회, 건당 최대 2만원까지 할인(외식 제휴 브랜드 통합 일 1회)</li>
+                  <li>* 전월 국내가맹점 이용금액 30만원 이상 시 제공 (실적/할인 제외는 상품안내장 참조)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="card-type" data-type="type4">
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc1.png" alt="롯데 아멕스 플래티늄 위버 스카이 카드 / 롯데 아멕스 플래티넘 법인카드" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                  롯데 아멕스 플래티늄 위버 스카이 카드 / 롯데 아멕스 플래티넘 법인카드<br />
+                  <span>3만원 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>* 상단의 "Platinum" 마크와 하단 "AMERICAN EXPRESS" 블루박스 로고를 확인해 주세요.</li>
+                  <li>- 6만원 이상 결제 시 3만원 현장 할인</li>
+                  <li>- 월 1회/연 2회까지만 가능</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc2.png" alt="
+                하나 Juliet 카드" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                하나 Juliet 카드<br /><span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 1회, 1일 최대 이용금액 20만원(아웃백, TGI, 씨즐러, 빕스, 씨푸드오션, 차이나팩토리 상기 패밀리레스토랑을 통합하여 월 1회(회원 단위) 할인 서비스가 제공)</li>
+                  <li>- 전월 사용 실적(1일~31일) 30만원 이상(주유업종 실적 제외)인 경우 할인 서비스 적용(최초 발급 월 포함 2개월은 전월 실적과 관계없이 서비스 제공)</li>
+                  <li>- 하나 Yes4u 쇼핑카드도 동일 혜택 적용 (Yes4u 쇼핑 카드는 현재 발급 불가)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc3.png" alt="
+                하나 The One 카드(신용/체크)" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                하나 The One 카드(신용/체크)<br /><span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 1회, 1일 최대 이용금액 20만원 (연 6회 제공)</li>
+                  <li>- 전월 사용실적 30만원 이상(주유업종 실적 제외)인 경우 할인 서비스 적용</li>
+                  <li>- 전월 사용 기준 : 전월 1일~말일 카드 사용 실적(일시불, 할부)</li>
+                  <li>- 최초 발급 월 포함 2개월은 전월 실적과 관계없이 서비스 제공</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc4.png" alt="
+              하나카드 플래티늄 1200" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                하나카드 플래티늄 1200<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 1회, 1일 최대 이용금액 20만원(아웃백/TGI/Sizzler 통합 할인 서비스)</li>
+                  <li>- 전월 사용실적 30만원 이상(주유업종 실적 제외)인 경우 할인 서비스 적용</li>
+                  <li>- 전월 사용 기준 : 전월 1일~말일 카드 사용 실적(일시불, 할부)</li>
+                  <li>- 최초 발급 월 포함 2개월은 전월 실적과 관계없이 서비스 제공</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc5.png" alt="하나카드 EXPAT 플래티늄" />
+              </div>
+              <div class="right">
+                <h3 class="title">하나카드 EXPAT 플래티늄<br />
+                  <span>20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 월 1회, 1일 최대 이용금액 20만원</li>
+                  <li>- 전월 사용실적 30만원 이상인 경우 할인 서비스 적용</li>
+                  <li>- 전월 사용 기준 : 전월 1일~말일 카드 사용 실적(일시불, 할부)</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="card-type" data-type="type5">
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc2_1.png" alt="전북은행 카드" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                  전북은행 카드<br />
+                  <span>매장명 : 전주 효자점 / 20% 현장 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 1일 1회, 이용금액 20만원 이내</li>
+                  <li>- 전월 이용실적 20만원 이상 시 할인 가능(현금 서비스 제외)</li>
+                  <li>- 카드 사용 등록일로부터 2개월간 실적 없이 제공</li>
+                  <li>* 체크카드, J Shopping카드, JB아시아나클럽카드, JTV it's카드는 제외</li>
+                  <li>- 사용 가능 매장 : 전주 효자점</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="./img/benefit/etc2_2.png" alt="
+              제주카드 제휴" />
+              </div>
+              <div class="right">
+                <h3 class="title">
+                제주카드 제휴<br /><span>매장명 : 제주점 / 20% 할인</span>
+                </h3>
+                <ul class="description">
+                  <li>- 제주 드림카드Ⅱ/플래티늄카드/복지카드</li>
+                  <li>- 월 1회/ 연 12회 (1일 최대 이용 금액 20만원)</li>
+                  <li>- 전월 사용 금액 20만원 이상 시 적용</li>
+                  <li>- 사용 가능 매장 : 제주점</li>
                 </ul>
                 <a href="javascript:void(0)" class="btn">카드 정보 더보기</a>
               </div>
@@ -443,6 +769,29 @@
     topMenu.classList.remove('open');
     openBtn.classList.remove('hidden');
     closeBtn.classList.add('hidden');
+  });
+
+  const cardBenefitLists = document.querySelectorAll('.card-benefit__menu li a');
+  const cardTypes = document.querySelectorAll('.card-type');
+  cardBenefitLists.forEach(function (cardBenefitList) {
+    cardBenefitList.addEventListener('click', function (e) {
+      const filter = e.target.dataset.filter;
+      cardTypes.forEach(function (cardType) {
+        const type = cardType.dataset.type;
+        if(filter === type) {
+          cardType.classList.add('visible');
+        } else {
+          cardType.classList.remove('visible');
+        }
+        
+        const active = document.querySelector('.card-benefit__menu li a.active')
+        if (active !== null) {
+          active.classList.remove('active');
+        }
+        event.target.classList.add('active');
+
+      });
+    });
   });
 </script>
 </body>
