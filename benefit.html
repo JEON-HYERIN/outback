@@ -804,7 +804,7 @@
     var isTrue = $('.card-benefit .card-type > li:eq(' + index + ') .right .description').hasClass('open');
     var btn = $('.card-benefit .card-type > li:eq(' + index + ') .right .btn');
     isTrue === true ? btn.text('닫기') : btn.text('카드 정보 더보기');
-    console.log(isTrue.length)
+    console.log($('.card-benefit .card-type > li:eq(' + index + ') .right .description').attr('class'))
 
   });
 
