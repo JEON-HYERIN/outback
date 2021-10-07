@@ -879,8 +879,9 @@ main.benefit > .inner {
 
 /* VISUAL */
 .benefit-visual {
-  background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
+  position: relative;
   height: 600px;
+  background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
 }
 
 .benefit-visual > h2.title {}
@@ -979,7 +980,7 @@ main.benefit > .inner {
 
 .card-benefit .card-type > li .left {
   float: left;
-  width: 414px;
+  width: 35%;
 }
 
 .card-benefit .card-type > li .left img {
@@ -988,19 +989,18 @@ main.benefit > .inner {
 
 .card-benefit .card-type > li .right {
   float: left;
-  width: 725px;
+  width: 60%;
 }
 
 .card-benefit .card-type > li .right .title {
-  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 400;
   color: #222;
 }
 
-.card-benefit .card-type > li .right em {
-  font-size: 20px;
-  font-weight: 400;
+.card-benefit .card-type > li .right .title span {
+  display: inline-block;
+  margin-top: 5px;
   color: #b10a11;
 }
 
@@ -1008,7 +1008,7 @@ main.benefit > .inner {
   margin: 30px 0 35px 0;
 }
 
-.card-benefit .card-type>li .right ul.description li {
+.card-benefit .card-type > li .right ul.description li {
   font-size: 14px;
   line-height: 21px;
   color: #666;
@@ -1043,6 +1043,12 @@ main.benefit > .inner {
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
 
+  /* COMMON */
+  .membership-visual,
+  .benefit-visual {
+    background-attachment: scroll;
+  }  
+
   /* index.html */
   /* CF */
   .main-cf .text-group {
@@ -1058,10 +1064,11 @@ main.benefit > .inner {
   main.membership > .inner {
     padding: 0 20px 200px;
   }
-  /* VISUAL */
-  .membership-visual {
-    background-attachment: scroll;
-  }  
+
+  /* benefit.html */
+  main.benefit > .inner {
+    padding: 80px 20px 200px;
+  }
 
 }
 
