@@ -283,8 +283,7 @@ body.main #main > .inner {
 .main-cf .text-group {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   color: #222;
 }
 
