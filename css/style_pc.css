@@ -35,6 +35,12 @@ br.only-m {
   margin-top: 100px;
 }
 
+.visual {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .visual > h2.title {
   position: absolute;
   left: 50%;
@@ -564,8 +570,7 @@ body.main #main > .inner {
 .brand-visual {
   position: relative;
   height: 600px;
-  background: url("../img/brand/beef/beef_bg.jpg") no-repeat center/cover fixed;
-  
+  background-image: url("../img/brand/beef/beef_bg.jpg");
 }
 
 /* MAIN */
@@ -577,7 +582,7 @@ main.brand > .inner {
 /* product.html */
 /* VISUAL */
 .product-visual {
-  background: url("../img/menu/t-bone/visual_bg.jpg") no-repeat center/cover;
+  background-image: url("../img/menu/t-bone/visual_bg.jpg");
 }
 
 .product-visual .inner {
@@ -760,7 +765,7 @@ main.brand > .inner {
 /* membership.html */
 /* VISUAL */
 .membership-visual {
-  background: url("../img/membership/visual_bg.jpg") no-repeat center/cover fixed;
+  background-image: url("../img/membership/visual_bg.jpg");
   height: 600px;
 }
 
@@ -880,7 +885,7 @@ main.benefit > .inner {
 .benefit-visual {
   position: relative;
   height: 600px;
-  background: url("../img/benefit/benefit_visual.jpg") no-repeat center/cover fixed;
+  background-image: url("../img/benefit/benefit_visual.jpg");
 }
 
 /* MAIN */
@@ -1044,12 +1049,6 @@ main.benefit > .inner {
 
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
-
-  /* COMMON */
-  .membership-visual,
-  .benefit-visual {
-    background-attachment: scroll;
-  }  
 
   /* index.html */
   /* CF */
