@@ -1018,7 +1018,7 @@ main.benefit > .inner {
 
 .card-benefit .card-type > li .right .btn {
   position: relative;
-  display: inline-block;
+  width: 140px;
   padding: 0 29px 0 14px;
   margin: 0 1px;
   font-size: 13px;
