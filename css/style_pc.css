@@ -568,9 +568,9 @@ body.main #main > .inner {
 /* OUTBACK STORY */
 .outback-story {
   position: relative;
-  background: url("../img/brand/story_bg.jpg") no-repeat center/cover;
   min-height: 2285px;
   padding: 226px 0 300px;
+  background: url("../img/brand/story_bg.jpg") no-repeat center/cover;
 }
 
 .outback-story::before,
