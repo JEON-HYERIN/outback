@@ -1291,11 +1291,6 @@ body.main .service-menu li.delivery a .icon.mobile {
     padding-top: 10px;
   }
 
-  /* outbackStory.html */
-  .outback-story .content .description br {
-    content: normal;
-  }
-
   /* PRODUCT */
   .main-product {
     padding: 40px 0 40px;
