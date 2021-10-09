@@ -565,11 +565,6 @@ body.main #main > .inner {
 }
 
 /* outbackStory.html */
-/* MAIN */
-main.brand-01 .inner {
-  
-}
-
 /* OUTBACK STORY */
 .outback-story {
   position: relative;
@@ -684,6 +679,12 @@ main.brand-01 .inner {
   font-weight: 500;
 }
 
+.outback-story .content:not(.content.red) .title span {
+  position: relative;
+  top: -10px;
+  letter-spacing: 3.36px;
+}
+
 .outback-story .content .description {
   margin-top: 35px;
   font-size: 16px;
@@ -728,8 +729,6 @@ main.brand-01 .inner {
   padding: 0 57px;
 }
 
-.outback-story .content.red .title {}
-
 .outback-story .content.red .title em {
   margin: 0 15px;
   font-size: 64px;
@@ -744,10 +743,6 @@ main.brand-01 .inner {
 .outback-story .content.red .description {
   margin-top: 10px;
   opacity: 0.5;
-}
-
-.outback-story .content.content--1980 {
-
 }
 
 .outback-story .contents .left .content.content--1980::after {
@@ -772,7 +767,6 @@ main.brand-01 .inner {
   height: 100%;
 }
 
-.outback-story .content.content--1988 {}
 .outback-story .content.content--2013 {
   padding-top: 270px;
 }
@@ -789,22 +783,10 @@ main.brand-01 .inner {
   top: -150px;
 }
 
-.outback-story .content.content--2013 .title {}
-
-.outback-story .content.content--2013 .title em {}
-
-.outback-story .content.content--2013 .title span {}
-
-.outback-story .content.content--2013 .description {
-  max-width: none;
-}
-
 .outback-story .content.content--2013 .description img {
   float: left;
   margin-right: 30px;
 }
-
-.outback-story .content.content--2013 .description p {}
 
 .outback-story .content.content--2013 .description p:last-child {
   clear: both;

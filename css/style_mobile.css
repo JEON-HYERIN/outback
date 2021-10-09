@@ -560,6 +560,229 @@ body.main .service-menu li.delivery a .icon.mobile {
 } 
 
 
+/* outbackStory.html */
+/* OUTBACK STORY */
+.outback-story {
+  position: relative;
+  background: url("../img/brand/story_bg.jpg") no-repeat center/cover;
+  min-height: 2285px;
+  padding: 226px 0 300px;
+}
+
+.outback-story::before,
+.outback-story::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1878px;
+  height: 1710px;
+  background: url("../img/brand/story_fire.png") no-repeat center/cover;
+}
+
+.outback-story::before {
+  top: 0;
+}
+
+.outback-story::after {
+  top: 1000px;
+}
+
+.outback-story .text-group {
+  text-align: center;
+}
+
+.outback-story__title {
+  display: inline-block;
+}
+
+.outback-story__description {
+  margin-top: 38px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #c7b19b;
+}
+
+.outback-story .contents {
+  overflow: hidden;
+  max-width: 1180px;
+  margin: 200px auto 0;
+}
+
+.outback-story .contents .left {
+  float: left;
+  width: 50%;
+}
+
+.outback-story .contents .left .content {
+  text-align: right;
+}
+
+.outback-story .contents .left .content:not(.content.red) {
+  padding-right: 140px;
+}
+
+.outback-story .contents .left .content.red::before,
+.outback-story .contents .left .content::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 115px;
+  background-color: #fff;
+  opacity: .3;
+}
+
+.outback-story .contents .right {
+  float: right;
+  width: 50%;
+  margin-top: 170px;
+}
+
+.outback-story .contents .right .content {
+  text-align: left;
+}
+
+.outback-story .contents .right .content:not(.content.red) {
+  padding-left: 140px;
+}
+
+.outback-story .contents .right .content::before {
+  content: '';
+  position: absolute;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  margin-top: -15px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.outback-story .content {
+  position: relative;
+}
+
+.outback-story .content .title {
+  color: #c7b19b;
+}
+
+.outback-story .content .title em {
+  font-size: 86px;
+}
+
+.outback-story .content .title span {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.outback-story .content .description {
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+.outback-story .content .description p + p {
+  margin-top: 10px;
+}
+
+.outback-story .contents .left .content.red {
+  padding-top: 225px;
+}
+
+.outback-story .contents .left .content.red::before {
+  top: 293px;
+  height: 255px;
+}
+
+.outback-story .contents .left .content.red::after {
+  top: -85px;
+  height: 280px;
+}
+
+.outback-story .contents .right .content.red {
+  padding-top: 80px;
+}
+
+.outback-story .contents .right .content.red::before {
+  left: -3px;
+  top: 95px;
+  width: 4px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.outback-story .content.red {
+  padding: 0 57px;
+}
+
+.outback-story .content.red .title em {
+  margin: 0 15px;
+  font-size: 64px;
+  color: #cb0000;
+}
+
+.outback-story .content.red .title span {
+  font-size: 24px;
+  color: #fff;
+}
+
+.outback-story .content.red .description {
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.outback-story .contents .left .content.content--1980::after {
+  top: 5px;
+}
+
+.outback-story .content.content--1997 {
+  padding-top: 110px;
+}
+
+.outback-story .contents .left .content.content--1997::after {
+  top: 270px;
+  height: 60%;
+}
+
+.outback-story .content.content--2019 {
+  padding-top: 50px;
+}
+
+.outback-story .contents .left .content.content--2019::after {
+  top: 110px;
+  height: 100%;
+}
+
+.outback-story .content.content--2013 {
+  padding-top: 270px;
+}
+
+.outback-story .contents .right .content.content--2013::before {
+  top: 195px;
+}
+
+.outback-story .content.content--2020 {
+  padding-top: 150px;
+}
+
+.outback-story .contents .right .content.content--2020::before {
+  top: -150px;
+}
+
+.outback-story .content.content--2013 .description img {
+  float: left;
+  margin-right: 30px;
+}
+
+.outback-story .content.content--2013 .description p:last-child {
+  clear: both;
+}
+
+
 /* beefStory.html */
 /* VISUAL */
 .brand-visual > h2 {
