@@ -579,12 +579,9 @@ body.main .service-menu li.delivery a .icon.mobile {
   background: url("../img/brand/story_fire.png") no-repeat center/cover;
 }
 
-.outback-story .text-group {
-
-}
-
-.outback-story__title {
-  display: inline-block;
+.outback-story__title.mobile {
+  display: inline-block !important;
+  width: 360px;
 }
 
 .outback-story__description {
@@ -598,18 +595,6 @@ body.main .service-menu li.delivery a .icon.mobile {
   margin-top: 30px;
 }
 
-.outback-story .contents .left {
-
-}
-
-.outback-story .contents .left .content {
-
-}
-
-.outback-story .contents .left .content:not(.content.red) {
-
-}
-
 .outback-story .contents .left .content::after {
   content: '';
   position: absolute;
@@ -618,18 +603,6 @@ body.main .service-menu li.delivery a .icon.mobile {
   width: 1px;
   background-color: #fff;
   opacity: .3;
-}
-
-.outback-story .contents .right {
-
-}
-
-.outback-story .contents .right .content {
-  
-}
-
-.outback-story .contents .right .content:not(.content.red) {
-
 }
 
 .outback-story .contents .right .content::before {
@@ -774,63 +747,17 @@ body.main .service-menu li.delivery a .icon.mobile {
   opacity: 0.5;
 }
 
-.outback-story .contents .content.content--1980::before {}
-
-.outback-story .contents .content.content--1980::after {
-
-}
-
-.outback-story .content.content--1997 {
-
+.outback-story .content .description br {
+  content: '';
 }
 
 .outback-story .contents .content.content--1997::before {
   top: 20px;
 }
 
-.outback-story .content.content--1997::after {
-  
+.outback-story .content.content--2013 .description {
+  text-align: left;
 }
-
-.outback-story .content.content--2019 {
-  
-}
-
-.outback-story .contents .content.content--2019::before {}
-
-.outback-story .contents .content.content--2019::after {
-
-}
-
-.outback-story .contents .content.content--1988::before {
-
-}
-
-.outback-story .contents .content.content--1988::after {}
-
-.outback-story .content.content--2013 {
- 
-}
-
-.outback-story .contents .content.content--2013::before {
-  
-}
-
-.outback-story .contents .content.content--2013::after {}
-
-.outback-story .content.content--2020 {
-  
-}
-
-.outback-story .contents .content.content--2020::before {
-  
-}
-
-.outback-story .contents .content.content--2020::after {}
-
-.outback-story .contents .content.content--2013::before {}
-
-.outback-story .contents .content.content--2013::after {}
 
 .outback-story .content.content--2013 .description img {
   float: left;
@@ -1362,6 +1289,11 @@ body.main .service-menu li.delivery a .icon.mobile {
 
   .main-cf .text-group .description {
     padding-top: 10px;
+  }
+
+  /* outbackStory.html */
+  .outback-story .content .description br {
+    content: normal;
   }
 
   /* PRODUCT */

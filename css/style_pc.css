@@ -785,6 +785,7 @@ body.main #main > .inner {
 
 .outback-story .content.content--2013 .description img {
   float: left;
+  width: 195px;
   margin-right: 30px;
 }
 
@@ -1283,7 +1284,7 @@ main.benefit > .inner {
     right: 15px;
   }
 
-  /* outbackstory.html */
+  /* outbackStory.html */
   /* OUTBACK STORY */
   .outback-story {
     padding: 226px 20px 300px;
