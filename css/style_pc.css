@@ -575,8 +575,7 @@ main.brand-01 .inner {
   position: relative;
   background: url("../img/brand/story_bg.jpg") no-repeat center/cover;
   min-height: 2285px;
-  padding: 226px 0 300px 0;
-  text-align: center;
+  padding: 226px 0 300px;
 }
 
 .outback-story::before,
@@ -595,6 +594,10 @@ main.brand-01 .inner {
 
 .outback-story::after {
   top: 1000px;
+}
+
+.outback-story .text-group {
+  text-align: center;
 }
 
 .outback-story__title {
@@ -1296,6 +1299,12 @@ main.benefit > .inner {
   /* CF */
   .main-cf .text-group {
     right: 15px;
+  }
+
+  /* outbackstory.html */
+  /* OUTBACK STORY */
+  .outback-story {
+    padding: 226px 20px 300px;
   }
 
   /* PRODUCT */
