@@ -757,6 +757,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 .outback-story .content.red .title em {
+  padding: 0 5px;
   font-size: 25px;
   color: #cb0000;
 }
@@ -769,6 +770,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 .outback-story .content.red .description {
   margin-top: 10px;
   padding: 0 20px;
+  font-size: 11px;
   opacity: 0.5;
 }
 
@@ -833,7 +835,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 .outback-story .content.content--2013 .description img {
   float: left;
   width: 140px;
-  margin: 2px 15px 0 0;
+  margin: 2px 15px 2px 0;
 }
 
 .outback-story .content.content--2013 .description p:last-child {
