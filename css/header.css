@@ -73,7 +73,8 @@
     transition: 350ms;
   }
 
-  #gnb > ul > li.active > a > span::after {
+  #gnb > ul > li.active > a > span::after,
+  #gnb > ul > li:hover > a > span::after {
     width: 100%;
   }
 
@@ -89,7 +90,7 @@
     pointer-events: none;
   }
 
-  #gnb > ul > li.active:hover > .sub-menu {
+  #gnb > ul > li:hover > .sub-menu {
     height: auto;
     opacity: 1;
     pointer-events: auto;

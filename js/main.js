@@ -9,14 +9,14 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
-mainMenuLists.forEach(function (mainMenuList) {
-  mainMenuList.addEventListener('mouseenter', function (event) {
-    event.target.classList.add('active');
-  });
-  mainMenuList.addEventListener('mouseleave', function (event) {
-    event.target.classList.remove('active');
-  });
-});
+// mainMenuLists.forEach(function (mainMenuList) {
+//   mainMenuList.addEventListener('mouseenter', function (event) {
+//     event.target.classList.add('active');
+//   });
+//   mainMenuList.addEventListener('mouseleave', function (event) {
+//     event.target.classList.remove('active');
+//   });
+// });
 
 // 모바일버전 서브메뉴 오픈
 mainMenu.addEventListener('click', function (event) {

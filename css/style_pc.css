@@ -595,8 +595,8 @@ body.main #main > .inner {
   text-align: center;
 }
 
-.outback-story__title {
-  display: inline-block;
+.outback-story__title.pc {
+  display: inline-block !important;
 }
 
 .outback-story__description {
