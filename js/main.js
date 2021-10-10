@@ -9,42 +9,43 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
-// mainMenuLists.forEach(function (mainMenuList) {
-//   mainMenuList.addEventListener('mouseenter', function (event) {
-//     event.target.classList.add('active');
+// 모바일버전 서브메뉴 오픈
+// mainMenu.addEventListener('click', function (event) {
+
+//   mainMenuLists.forEach(function (event) {
+//     // console.log(event.target)
 //   });
-//   mainMenuList.addEventListener('mouseleave', function (event) {
-//     event.target.classList.remove('active');
+//   subMenues.forEach(function (subMenu) {
+//     // console.dir(event.target)
+//     const link = event.target.dataset.link || event.target.parentElement.dataset.link;
+//     if ((link === subMenu.dataset.filter)) {
+//       if (event.target.localName === 'li') {
+//         event.target.classList.toggle('active');
+//       } else if (event.target.localName === 'a') {
+//         event.target.parentElement.classList.add('active');
+//       }
+
+//       subMenu.classList.toggle('open');
+
+//       icons.forEach(function (icon) {
+//         if (subMenu.dataset.filter === icon.dataset.name) {
+//           icon.classList.toggle('rotate');
+//         }
+//       });
+//     } else {
+//       return;
+//     }
 //   });
 // });
 
+
 // 모바일버전 서브메뉴 오픈
-mainMenu.addEventListener('click', function (event) {
-
-  mainMenuLists.forEach(function (event) {
-    // console.log(event.target)
-  });
-  subMenues.forEach(function (subMenu) {
-    // console.dir(event.target)
-    const link = event.target.dataset.link || event.target.parentElement.dataset.link;
-    if ((link === subMenu.dataset.filter)) {
-      if (event.target.localName === 'li') {
-        event.target.classList.toggle('active');
-      } else if (event.target.localName === 'a') {
-        event.target.parentElement.classList.add('active');
-      }
-
-      subMenu.classList.toggle('open');
-
-      icons.forEach(function (icon) {
-        if (subMenu.dataset.filter === icon.dataset.name) {
-          icon.classList.toggle('rotate');
-        }
-      });
-    } else {
-      return;
-    }
-  });
+$('#gnb > ul > li > a').on('click', function () {
+  var index = $('#gnb > ul > li').index($(this).parent());
+  $('#gnb > ul > li').removeClass('active');
+  $('#gnb > ul > li:eq(' + index + ')').toggleClass('active');
+  $('#gnb > ul > li:eq(' + index + ') > .sub-menu').toggleClass('open');
+  $('#gnb > ul > li:eq(' + index + ') > a > .material-icons').toggleClass('rotate');
 });
 
 // ARROW-UP 버튼 클릭시 상단이동

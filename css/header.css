@@ -58,7 +58,6 @@
   #gnb > ul > li > a > span {
     position: relative;
     padding-bottom: 10px;
-    pointer-events: none;
   }
 
   #gnb > ul > li > a > span::after {
@@ -83,17 +82,12 @@
     top: 100px;
     padding: 28px 30px;
     background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    height: 0;
-    transition: 300ms;
     z-index: 9;
-    pointer-events: none;
+    display: none;
   }
 
   #gnb > ul > li:hover > .sub-menu {
-    height: auto;
-    opacity: 1;
-    pointer-events: auto;
+    display: block;
   }
 
   #gnb > ul > li > .sub-menu > li > a {
@@ -294,22 +288,15 @@
     color: #222;
   }
 
-  #gnb > ul > li {
-    padding-left: 21px;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
   #gnb > ul > li > a {
     position: relative;
     display: block;
+    padding-left: 21px;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 54px;
-  }
-
-  #gnb > ul > li > a > span:first-child {
-    pointer-events: none;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   #gnb > ul > li > a > span.material-icons {
