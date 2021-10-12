@@ -216,7 +216,6 @@
   #header .close-btn {
     position: absolute;
     left: 15px;
-    cursor: pointer;
     z-index: 9;
   }
 
@@ -224,6 +223,7 @@
     top: 19px;
     width: 23px;
     height: 19px;
+    text-indent: -9999px;
   }
 
   #header .open-btn.hidden,
@@ -261,6 +261,11 @@
   #header .close-btn .material-icons {
     font-size: 30px;
     line-height: 56px;
+  }
+
+  #header .close-btn .material-icons span {
+    position: absolute;
+    left: -9999px;
   }
 
   #gnb,
