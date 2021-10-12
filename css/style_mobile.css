@@ -683,6 +683,10 @@ body.main .service-menu li.delivery a .icon.mobile {
   margin-top: 16px;
 }
 
+.outback-story .content.red::after {
+  height: 100%;
+}
+
 .outback-story .content.red::before {
   top: 293px;
   height: 255px;
@@ -746,9 +750,9 @@ body.main .service-menu li.delivery a .icon.mobile {
   content: '';
 }
 
-.outback-story .contents .content.content--1997::after {
-  top: -114px;
-  height: 138px;
+.outback-story .content.content--1997::after {
+  top: -8px;
+  height: 28px;
 }
 
 .outback-story .content.content--2013 .description {
