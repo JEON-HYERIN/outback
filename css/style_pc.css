@@ -1005,13 +1005,9 @@ main.membership > .inner {
   background: url("../img/membership/benefit_title_icon.png") no-repeat center/cover;
 }
 
-.membership-benefit__menu {
-  overflow: hidden;
-}
-
 .membership-benefit__menu li {
-  float: left;
-  width: 33.33%;
+  display: inline-block;
+  width: 33%;
   padding-bottom: 50px;
   text-align: center;
 }
