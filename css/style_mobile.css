@@ -1233,8 +1233,6 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 .card-benefit .card-type > li .left {
-  /* width: 85%;
-  margin: 0 auto 16px; */
   width: 360px;
   margin: 0 0 16px;
 }

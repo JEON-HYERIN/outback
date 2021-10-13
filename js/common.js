@@ -1,3 +1,9 @@
+'use strict';
+
+$(document).on('click', 'a[href="#"]', function (e) {
+  e.preventDefault();
+});
+
 // gnb영역 이벤트 
 const mainMenu = document.querySelector('#gnb > ul');
 const subMenues = mainMenu.querySelectorAll('.sub-menu');
