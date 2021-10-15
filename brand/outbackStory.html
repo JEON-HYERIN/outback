@@ -53,7 +53,7 @@
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
     <!-- HEADER -->
-    <header id="header" class="red">
+    <header id="header" class="active">
       <div class="inner">
         <h1>
           <a href="../index.html">
@@ -610,7 +610,7 @@
   const topMenu = document.querySelector('#header .top-menu');
   openBtn.addEventListener('click', function () {
     header.classList.add('black');
-    header.classList.remove('red');
+    header.classList.remove('active');
     gnbEl.classList.add('open');
     topMenu.classList.add('open');
     openBtn.classList.add('hidden');
@@ -619,7 +619,7 @@
 
   closeBtn.addEventListener('click', function () {
     header.classList.add('black');
-    header.classList.add('red');
+    header.classList.add('active');
     gnbEl.classList.remove('open');
     topMenu.classList.remove('open');
     openBtn.classList.remove('hidden');

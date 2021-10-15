@@ -185,11 +185,11 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  #header.red {
+  #header.active {
     background-color: #b10a11;
   }
 
-  #header.red::before {
+  #header.active::before {
     display: none;
   }
 
