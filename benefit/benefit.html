@@ -1178,9 +1178,23 @@
     var isTrue = $('.card-benefit .card-type > li:eq(' + index + ') .right .description').hasClass('open');
     var btn = $('.card-benefit .card-type > li:eq(' + index + ') .right .btn.mobile');
     isTrue === true ? btn.text('닫기') : btn.text('카드 정보 더보기');
-    console.log($('.card-benefit .card-type > li:eq(' + index + ') .right .description').attr('class'))
-
+    console.log($('.card-benefit .card-type > li:eq(' + index + ') .right .description').attr('class'));
   });
+  
+  // var isOpen = false;
+  // $('.card-benefit .card-type > li .right .btn').on('click', function () {
+  //   var index = $('.card-benefit .card-type > li .right').index($(this).parent());
+  //   var btn = $('.card-benefit .card-type > li:eq(' + index + ') .right .btn.mobile');
+  //   if (isOpen === true) {
+  //     $('.card-benefit .card-type > li .right .description').removeClass('open');
+  //     btn.text('카드 정보 더보기');
+  //     isOpen = false;
+  //   } else {
+  //     $('.card-benefit .card-type > li .right:eq(' + index + ') .description').addClass('open');
+  //     btn.text('닫기'); 
+  //     isOpen = true;
+  //   }
+  // })
 
 
 </script>
