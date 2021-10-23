@@ -923,21 +923,21 @@ main.brand > .inner {
   padding-bottom: 200px;
 }
 
-.notice .todays__notice {
+.notice .todays-notice {
   padding: 60px;
   background: url("../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }
 
-.notice .todays__notice em {
+.notice .todays-notice em {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 30px;
   font-weight: 500;
 }
 
-.notice .todays__notice span {
+.notice .todays-notice span {
   font-size: 18px;
 }
 

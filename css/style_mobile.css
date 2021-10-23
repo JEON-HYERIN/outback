@@ -919,21 +919,21 @@ body.main .service-menu li.delivery a .icon.mobile {
   padding: 15px 15px 0;
 }
 
-.notice .todays__notice {
+.notice .todays-notice {
   padding: 20px;
   background: url("../img/menu/t-bone/notice_bg.jpg") no-repeat center/cover;
   text-align: center;
   color: #fff;
 }
 
-.notice .todays__notice em {
+.notice .todays-notice em {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 18px;
   color: #fff0e1;
 }
 
-.notice .todays__notice span {
+.notice .todays-notice span {
   font-size: 14px;
   color: #dfc9b2;
 }
@@ -1390,7 +1390,7 @@ body.main .service-menu li.delivery a .icon.mobile {
   }
 
   /* NOTICE */
-  .notice .todays__notice em {
+  .notice .todays-notice em {
     font-size: 16px;
   }
 
