@@ -65,10 +65,10 @@
           <span class="line1"></span>
           <span class="line2"></span>
           <span class="line3"></span>
-          모바일 메뉴
+          네비게이션 열기
         </a>
         <a href="#" class="close-btn hidden mobile">
-          <div class="material-icons">close<span>닫기</span></div>
+          <div class="material-icons">close<span class="hide">네비게이션 닫기</span></div>
         </a>
 
         <!-- NAV -->
@@ -1116,10 +1116,10 @@
       </div>
     </footer>
 
-    <!-- ARROW-UP -->
-    <button id="arrow-up" class="invisible">
+    <!-- TO TOP BUTTON -->
+    <a href="#" id="to-top" class="invisible">
       <img src="../img/btn_top.gif" alt="top" />
-    </button>
+    </a>
   </div>
 
 <script>
@@ -1181,22 +1181,6 @@
     console.log($('.card-benefit .card-type > li:eq(' + index + ') .right .description').attr('class'));
   });
   
-  // var isOpen = false;
-  // $('.card-benefit .card-type > li .right .btn').on('click', function () {
-  //   var index = $('.card-benefit .card-type > li .right').index($(this).parent());
-  //   var btn = $('.card-benefit .card-type > li:eq(' + index + ') .right .btn.mobile');
-  //   if (isOpen === true) {
-  //     $('.card-benefit .card-type > li .right .description').removeClass('open');
-  //     btn.text('카드 정보 더보기');
-  //     isOpen = false;
-  //   } else {
-  //     $('.card-benefit .card-type > li .right:eq(' + index + ') .description').addClass('open');
-  //     btn.text('닫기'); 
-  //     isOpen = true;
-  //   }
-  // })
-
-
 </script>
 </body>
 </html>

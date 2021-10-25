@@ -105,7 +105,8 @@ body.sub .service-menu li a .text-group .description {
   opacity: .3;
 }
 
-#arrow-up {
+/* TO TOP BUTTON */
+#to-top {
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -119,12 +120,12 @@ body.sub .service-menu li a .text-group .description {
   transition: 350ms;
 }
 
-#arrow-up.invisible {
+#to-top.invisible {
   height: 0;
   opacity: 0;
 }
 
-#arrow-up img {
+#to-top img {
   border-radius: 50%;
 } 
 

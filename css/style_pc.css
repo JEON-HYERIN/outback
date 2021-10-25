@@ -139,8 +139,8 @@ br.only-m {
   top: 43%;
 }
 
-/* ARROW-UP */
-#arrow-up {
+/* TO TOP BUTTON */
+#to-top {
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -154,12 +154,12 @@ br.only-m {
   transition: 350ms;
 }
 
-#arrow-up.invisible {
+#to-top.invisible {
   height: 0;
   opacity: 0;
 }
 
-#arrow-up img {
+#to-top img {
   border-radius: 50%;
 }
 

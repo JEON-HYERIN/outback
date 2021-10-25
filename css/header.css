@@ -267,24 +267,21 @@
     line-height: 56px;
   }
 
-  #header .close-btn .material-icons span {
-    position: absolute;
-    left: -9999px;
-  }
-
   #gnb,
   #header .top-menu {
     position: fixed;
     left: 0;
     width: 95%;
     z-index: 1;
-    transform: translateX(-200%);
-    /* transition: .5s; */
+    transform: translateX(-100%);
+    transition: .5s;
+    pointer-events: none;
   }
 
   #gnb.open,
   #header .top-menu.open {
     transform: translateX(0);
+    pointer-events: auto;
   }
 
   #gnb {

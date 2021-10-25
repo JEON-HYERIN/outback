@@ -34,10 +34,10 @@ $('#gnb > ul > li > a').on('click', function () {
   $('#gnb > ul > li:eq(' + index + ') > a > .material-icons').toggleClass('rotate');
 });
 
-// ARROW-UP 버튼 클릭시 상단이동
-const arrowUpBtn = document.querySelector('#arrow-up');
+// TO-TOP 버튼 클릭시 상단이동
+const toTopBtn = document.querySelector('#to-top');
 const wrapper = document.querySelector('#wrapper');
-arrowUpBtn.addEventListener('click', function () {
+toTopBtn.addEventListener('click', function () {
   wrapper.scrollIntoView({behavior:"smooth"});
 });
 
@@ -46,9 +46,9 @@ const header = document.querySelector('#header');
 const headerHeight = header.getBoundingClientRect().height;
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > headerHeight) {
-    arrowUpBtn.classList.remove('invisible');
+    toTopBtn.classList.remove('invisible');
   } else {
-    arrowUpBtn.classList.add('invisible');
+    toTopBtn.classList.add('invisible');
   }
 });
 
