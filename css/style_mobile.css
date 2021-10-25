@@ -32,11 +32,6 @@ br.only-pc {
   background-color: #fff;
 }
 
-.visual {
-  margin-top: 56px;
-  background-color: #fff;
-}
-
 .visual > h2 {
   position: relative;
   font-family: 'sans-serif';
@@ -56,6 +51,10 @@ br.only-pc {
   width: 23px;
   height: 10px;
   background: url("../img/menu/t-bone/arrow.png") no-repeat center/cover;
+}
+
+body.sub #main {
+  margin-top: 56px;
 }
 
 body.sub .service-menu {
@@ -778,7 +777,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 /* MAIN */ 
-#main.brand {
+#main.brand > .inner {
   padding-top: 10px;
   background-color: #f7f7f7;
   border-top: 1px solid #e6e6e6;
@@ -1015,7 +1014,7 @@ body.main .service-menu li.delivery a .icon.mobile {
 }
 
 /* MAIN */
-#main.membership {
+#main.membership > .inner {
   border-top: 10px solid #f7f7f7;
 }
 
