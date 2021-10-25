@@ -5,6 +5,14 @@
     background-color: #232323;
     color: #fff;
   }
+
+  #footer a {
+    display: block;
+  }
+
+  #footer a:focus {
+    outline: 5px solid #be161e;
+  }
   
   #footer .inner {
     padding: 140px 0 60px;
@@ -29,11 +37,10 @@
   
   #footer .btn-group {
     margin-bottom: 20px;
-    overflow: hidden;
   }
   
   #footer .btn-group a.btn {
-    float: left;
+    display: inline-block;
     width: 88px;
     font-size: 12px;
     line-height: 28px;
@@ -74,6 +81,7 @@
   }
   
   #footer .info .top a {
+    display: inline-block;
     text-decoration: underline;
     color: #fff;
     margin-left: 8px;
@@ -127,12 +135,11 @@
     position: absolute;
     right: 0;
     top: 200px;
-    overflow: hidden;
     padding-top: 20px;
   }
   
   #footer .sns li {
-    float: left;
+    display: inline-block;
   }
   
   #footer .sns li + li {
@@ -163,6 +170,14 @@
     background-color: #232323;
     color: #fff;
     text-align: center;
+  }
+
+  #footer a {
+    display: block;
+  }
+
+  #footer a:focus {
+    outline: 5px solid #be161e;
   }
   
   #footer .inner {
@@ -206,11 +221,7 @@
   #footer .footer__menu li:nth-child(3) + li::before {
     display: none;
   }
-  
-  #footer .footer__menu li a {
-    display: block;
-  }
-  
+    
   #footer .info .top {
     padding: 20px 0;
     border-bottom: 1px solid #4b4b4b;
@@ -241,7 +252,6 @@
   }
   
   #footer .info .top a {
-    display: block;
     text-decoration: underline;
     color: #fff;
     padding: 5px 0;

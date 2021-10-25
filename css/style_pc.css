@@ -465,17 +465,21 @@ body.main #main > .inner {
   width: calc(100% / 3);
 }
 
-.main-benefit ul li img {
+.main-benefit ul li a {
+  display: block;
+}
+
+.main-benefit ul li a img {
   display: inline-block;
 }
 
-.main-benefit ul li .title {
+.main-benefit ul li a .title {
   margin-top: 35px;
   font-size: 25px;
   font-weight: 700;
 }
 
-.main-benefit ul li .description {
+.main-benefit ul li a .description {
   margin-top: 14px;
   font-size: 14px;
   line-height: 22px;

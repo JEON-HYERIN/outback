@@ -86,9 +86,13 @@
     display: none;
   }
 
-  #gnb > ul > li:hover > .sub-menu {
+  #gnb > ul > li > .sub-menu.on {
     display: block;
   }
+
+  /* #gnb > ul > li:hover > .sub-menu {
+    display: block;
+  } */
 
   #gnb > ul > li > .sub-menu > li > a {
     color: #fffefe;
