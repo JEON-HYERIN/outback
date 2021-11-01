@@ -590,6 +590,20 @@ body.main #main > .inner {
   top: 1000px;
 }
 
+.outback-story.on::before,
+.outback-story.on::after {
+  animation: fly_image 2.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+@keyframes fly_image {
+  0% {
+    transform: translate(900px, 900px) rotate(-90deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
 .outback-story .text-group {
   text-align: center;
 }

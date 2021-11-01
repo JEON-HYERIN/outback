@@ -614,6 +614,21 @@
     closeBtn.classList.add('hidden');
   });
 
+  $(window).on('resize scroll', function () {
+    var scrollAmt = $(document).scrollTop();
+    var start = $('section.outback-story').offset().top - $(window).height() + 100;
+    var end = $('section.outback-story').offset().top + $('section.outback-story').height() + 100;
+    console.log(scrollAmt)
+    console.log(start + ' ~ ' + end)
+
+    if ((scrollAmt > start) && (scrollAmt < end)) {
+      $('section.outback-story').addClass('on');
+    } else {
+      $('section.outback-story').removeClass('on');
+    }
+  });
+
+
 </script>
 </body>
 </html>
