@@ -65,6 +65,8 @@ $('#gnb > ul > li > a').on('click', function (e) {
 $(window).on('resize', function () {
   if ($(window).width() >= 1024) {
     $('#gnb > ul > li > ul').removeAttr('style');
+  } else {
+    $('#gnb > ul > li.active > a').trigger('click');
   }
 });
 
