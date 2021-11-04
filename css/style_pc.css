@@ -689,12 +689,13 @@ body.main #main > .inner {
   font-size: 86px;
 }
 
-.outback-story .content .title span {
+.outback-story .content .title > span {
   font-size: 28px;
   font-weight: 500;
 }
 
-.outback-story .content:not(.content.red) .title span {
+.outback-story .content:not(.content.red) .title > span {
+  display: block;
   position: relative;
   top: -10px;
   letter-spacing: 3.36px;

@@ -97,8 +97,7 @@
   }
 
   #gnb > ul > li > .sub-menu > li.active > a {
-    font-weight: 700;
-    color: #be161e; 
+    opacity: .6;
   }
 
   #gnb > ul > li > .sub-menu > li + li {

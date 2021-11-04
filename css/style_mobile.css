@@ -661,12 +661,13 @@ body.main .service-menu li.delivery a .icon.mobile {
   font-size: 28px;
 }
 
-.outback-story .content .title span {
+.outback-story .content .title > span {
   font-size: 10px;
   font-weight: 500;
 }
 
-.outback-story .content:not(.content.red) .title span {
+.outback-story .content:not(.content.red) .title > span {
+  display: block;
   position: relative;
   top: -5px;
 }
