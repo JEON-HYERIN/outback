@@ -27,6 +27,13 @@ function disable() {
   window.scrollTo(0, scrollPosition);
 }
 
+// TO-TOP 버튼 클릭시 상단이동
+const toTopBtn = document.querySelector('#to-top');
+const wrapper = document.querySelector('#wrapper');
+toTopBtn.addEventListener('click', function () {
+  wrapper.scrollIntoView({behavior:"smooth"});
+});
+
 // 헤더영역 
 const header = document.querySelector('#header');
 const headerHeight = header.getBoundingClientRect().height;
@@ -104,12 +111,6 @@ $(window).on('resize', function () {
   }
 });
 
-// TO-TOP 버튼 클릭시 상단이동
-const toTopBtn = document.querySelector('#to-top');
-const wrapper = document.querySelector('#wrapper');
-toTopBtn.addEventListener('click', function () {
-  wrapper.scrollIntoView({behavior:"smooth"});
-});
 
 
 
