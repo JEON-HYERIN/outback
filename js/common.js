@@ -37,13 +37,13 @@ toTopBtn.addEventListener('click', function () {
 // 헤더영역 
 const header = document.querySelector('#header');
 const headerHeight = header.getBoundingClientRect().height;
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', _.throttle(function () {
   if (window.pageYOffset > headerHeight) {
     toTopBtn.classList.remove('invisible');
   } else {
     toTopBtn.classList.add('invisible');
   }
-});
+}, 300));
 
 // gnb영역 이벤트 
 const mainMenu = document.querySelector('#gnb > ul');
