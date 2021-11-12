@@ -554,41 +554,41 @@
     </a>
   </div>
 
-<script>
-  'use strict';
+  <script>
+    'use strict';
 
-  // 토글버튼 활성화
-  const openBtn = document.querySelector('.open-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  const gnbEl = document.querySelector('#gnb');
-  const topMenu = document.querySelector('#header .top-menu');
+    // 토글버튼 활성화
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const gnbEl = document.querySelector('#gnb');
+    const topMenu = document.querySelector('#header .top-menu');
 
-  openBtn.addEventListener('click', function () {
-  header.classList.add('black');
-  header.classList.remove('active');
-  gnbEl.classList.add('open');
-  topMenu.classList.add('open');
-  openBtn.classList.add('hidden');
-  closeBtn.classList.remove('hidden');
-  });
+    openBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.remove('active');
+      gnbEl.classList.add('open');
+      topMenu.classList.add('open');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    });
 
-  closeBtn.addEventListener('click', function () {
-  header.classList.remove('black');
-  header.classList.add('active');
-  gnbEl.classList.remove('open');
-  topMenu.classList.remove('open');
-  openBtn.classList.remove('hidden');
-  closeBtn.classList.add('hidden');
-  });
+    closeBtn.addEventListener('click', function () {
+      header.classList.remove('black');
+      header.classList.add('active');
+      gnbEl.classList.remove('open');
+      topMenu.classList.remove('open');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    });
 
-  // 헤더영역
-  window.addEventListener('scroll', function () {
-  if(window.pageYOffset > 0 && header.classList.contains('black') === false) {
-  header.classList.add('active');
-  } else {
-  header.classList.remove('active');
-  }
-  });
-</script>
+    // 헤더영역
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 0 && header.classList.contains('black') === false) {
+        header.classList.add('active');
+      } else {
+        header.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>

@@ -319,31 +319,31 @@
     </a>
   </div>
 
-<script>
-  'use strict';
+  <script>
+    'use strict';
 
-  // 토글버튼 활성화
-  const openBtn = document.querySelector('.open-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  const gnbEl = document.querySelector('#gnb');
-  const topMenu = document.querySelector('#header .top-menu');
-  openBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.remove('active');
-    gnbEl.classList.add('open');
-    topMenu.classList.add('open');
-    openBtn.classList.add('hidden');
-    closeBtn.classList.remove('hidden');
-  });
+    // 토글버튼 활성화
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const gnbEl = document.querySelector('#gnb');
+    const topMenu = document.querySelector('#header .top-menu');
+    openBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.remove('active');
+      gnbEl.classList.add('open');
+      topMenu.classList.add('open');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    });
 
-  closeBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.add('active');
-    gnbEl.classList.remove('open');
-    topMenu.classList.remove('open');
-    openBtn.classList.remove('hidden');
-    closeBtn.classList.add('hidden');
-  });
-</script>
+    closeBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.add('active');
+      gnbEl.classList.remove('open');
+      topMenu.classList.remove('open');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>

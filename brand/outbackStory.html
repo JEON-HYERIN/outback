@@ -664,84 +664,85 @@
     </a>
   </div>
 
-<script>
-  'use strict';
+  <script>
+    'use strict';
 
-  // 토글버튼 활성화
-  const openBtn = document.querySelector('.open-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  const gnbEl = document.querySelector('#gnb');
-  const topMenu = document.querySelector('#header .top-menu');
-  openBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.remove('active');
-    gnbEl.classList.add('open');
-    topMenu.classList.add('open');
-    openBtn.classList.add('hidden');
-    closeBtn.classList.remove('hidden');
-  });
+    // 토글버튼 활성화
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const gnbEl = document.querySelector('#gnb');
+    const topMenu = document.querySelector('#header .top-menu');
+    openBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.remove('active');
+      gnbEl.classList.add('open');
+      topMenu.classList.add('open');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    });
 
-  closeBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.add('active');
-    gnbEl.classList.remove('open');
-    topMenu.classList.remove('open');
-    openBtn.classList.remove('hidden');
-    closeBtn.classList.add('hidden');
-  });
+    closeBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.add('active');
+      gnbEl.classList.remove('open');
+      topMenu.classList.remove('open');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    });
 
-  $(window).on('resize scroll', function () {
-    scrollSpy('section.outback-story');
-    scrollSpy('.counting');
-  });
+    $(window).on('resize scroll', function () {
+      scrollSpy('section.outback-story');
+      scrollSpy('.counting');
+    });
 
-function scrollSpy (selector) {
-  $(selector).each(function () {
-    var scrollAmt = $(document).scrollTop();
-    var start =  $(this).offset().top - $(window).height() + 100;
-    var end =  $(this).offset().top +  $(this).height() + 100;
-    if ((scrollAmt > start) && (scrollAmt < end)) {
-      $(this).addClass('on');
-    } 
-  });
-}
-
-setCounting('.counting');
-
-function setCounting (selector) {
-  var numbers = [];
-  $(selector).find('> span').each(function (i) {
-    numbers[i] = $(this).text();
-    $(this).text('');
-    $(this).append('<span class="fixed">' + numbers[i] + '</span>');
-    $(this).append('<span class="count"></span>');
-    for (var i = 0; i < 100; i ++) {
-      $(this).find('span.count').append('<span style="top: ' + (i * 100) + '%;">' + (i % 10) + '</span>');
-    }
-  });
-
-  startCounting(3000, 500, 0);
-  function startCounting(duration, delay, interval) {
-    $(selector).find('> span').each(function (i) {
-      var counter = $(this).find('span.count');
-      counter.one('transitionend', function () {
-        counter.parent().removeClass('count-down');
-        counter.remove();
-        counter.css({
-          'top': '0%',
-          'transition': 'none'
+    function scrollSpy(selector) {
+      $(selector).each(function () {
+        var scrollAmt = $(document).scrollTop();
+        var start = $(this).offset().top - $(window).height() + 100;
+        var end = $(this).offset().top + $(this).height() + 100;
+        if ((scrollAmt > start) && (scrollAmt < end)) {
+          $(this).addClass('on');
+        }
       });
-    });
-    setTimeout(function() {
-        counter.parent().addClass('count-down');
-        counter.css({'transition': 'top ' + duration + 'ms', 'top': '-3' + numbers[i] + '00%'});
-      }, delay + (i * interval));
-    });
-  }
-}
+    }
 
+    setCounting('.counting');
 
+    function setCounting(selector) {
+      var numbers = [];
+      $(selector).find('> span').each(function (i) {
+        numbers[i] = $(this).text();
+        $(this).text('');
+        $(this).append('<span class="fixed">' + numbers[i] + '</span>');
+        $(this).append('<span class="count"></span>');
+        for (var i = 0; i < 100; i++) {
+          $(this).find('span.count').append('<span style="top: ' + (i * 100) + '%;">' + (i % 10) + '</span>');
+        }
+      });
 
-</script>
+      startCounting(3000, 500, 0);
+
+      function startCounting(duration, delay, interval) {
+        $(selector).find('> span').each(function (i) {
+          var counter = $(this).find('span.count');
+          counter.one('transitionend', function () {
+            counter.parent().removeClass('count-down');
+            counter.remove();
+            counter.css({
+              'top': '0%',
+              'transition': 'none'
+            });
+          });
+          setTimeout(function () {
+            counter.parent().addClass('count-down');
+            counter.css({
+              'transition': 'top ' + duration + 'ms',
+              'top': '-3' + numbers[i] + '00%'
+            });
+          }, delay + (i * interval));
+        });
+      }
+    }
+  </script>
 </body>
 </html>

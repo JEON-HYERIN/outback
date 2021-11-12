@@ -1070,74 +1070,74 @@
     </a>
   </div>
 
-<script>
-  'use strict';
+  <script>
+    'use strict';
 
-  // 토글버튼 활성화
-  const openBtn = document.querySelector('.open-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  const gnbEl = document.querySelector('#gnb');
-  const topMenu = document.querySelector('#header .top-menu');
-  openBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.remove('active');
-    gnbEl.classList.add('open');
-    topMenu.classList.add('open');
-    openBtn.classList.add('hidden');
-    closeBtn.classList.remove('hidden');
-  });
+    // 토글버튼 활성화
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const gnbEl = document.querySelector('#gnb');
+    const topMenu = document.querySelector('#header .top-menu');
+    openBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.remove('active');
+      gnbEl.classList.add('open');
+      topMenu.classList.add('open');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    });
 
-  closeBtn.addEventListener('click', function () {
-    header.classList.add('black');
-    header.classList.add('active');
-    gnbEl.classList.remove('open');
-    topMenu.classList.remove('open');
-    openBtn.classList.remove('hidden');
-    closeBtn.classList.add('hidden');
-  });
+    closeBtn.addEventListener('click', function () {
+      header.classList.add('black');
+      header.classList.add('active');
+      gnbEl.classList.remove('open');
+      topMenu.classList.remove('open');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    });
 
-  const cardBenefitLists = document.querySelectorAll('.card-benefit__menu li a');
-  const cardTypes = document.querySelectorAll('.card-type');
-  cardBenefitLists.forEach(function (cardBenefitList) {
-    cardBenefitList.addEventListener('click', function (e) {
-      const filter = e.target.dataset.filter;
-      cardTypes.forEach(function (cardType) {
-        const type = cardType.dataset.type;
-        if(filter === type) {
-          cardType.classList.add('visible');
-        } else {
-          cardType.classList.remove('visible');
-        }
-        
-        const active = document.querySelector('.card-benefit__menu li a.active')
-        if (active !== null) {
-          active.classList.remove('active');
-        }
-        event.target.classList.add('active');
+    const cardBenefitLists = document.querySelectorAll('.card-benefit__menu li a');
+    const cardTypes = document.querySelectorAll('.card-type');
+    cardBenefitLists.forEach(function (cardBenefitList) {
+      cardBenefitList.addEventListener('click', function (e) {
+        const filter = e.target.dataset.filter;
+        cardTypes.forEach(function (cardType) {
+          const type = cardType.dataset.type;
+          if (filter === type) {
+            cardType.classList.add('visible');
+          } else {
+            cardType.classList.remove('visible');
+          }
 
+          const active = document.querySelector('.card-benefit__menu li a.active')
+          if (active !== null) {
+            active.classList.remove('active');
+          }
+          event.target.classList.add('active');
+
+        });
       });
     });
-  });
 
 
-  // 모바일 카드 정보 
-  $('.card-benefit .card-type > li .right').on('click', function () {
-    if ($(window).width() < 850) {
-      var index = $('.card-benefit .card-type > li').index($(this).parent());
-    console.log(index);
-    $(this).parent().find('.description').addClass('open');
-    $(this).parent().find('.btn').text('닫기');
-    $(this).parent().siblings().find('.description').removeClass('open');
-    $(this).parent().siblings().find('.btn').text('카드 정보 더보기');
-    }
-  });
+    // 모바일 카드 정보 
+    $('.card-benefit .card-type > li .right').on('click', function () {
+      if ($(window).width() < 850) {
+        var index = $('.card-benefit .card-type > li').index($(this).parent());
+        console.log(index);
+        $(this).parent().find('.description').addClass('open');
+        $(this).parent().find('.btn').text('닫기');
+        $(this).parent().siblings().find('.description').removeClass('open');
+        $(this).parent().siblings().find('.btn').text('카드 정보 더보기');
+      }
+    });
 
-  $(window).on('resize', function () {
-    if ($(window).width() >= 850) {
-      $('.card-benefit .card-type > li .right .btn').text('카드 정보 더보기');
-      $('.card-benefit .card-type > li .right .description').removeClass('open');
-    }
-  });
-</script>
+    $(window).on('resize', function () {
+      if ($(window).width() >= 850) {
+        $('.card-benefit .card-type > li .right .btn').text('카드 정보 더보기');
+        $('.card-benefit .card-type > li .right .description').removeClass('open');
+      }
+    });
+  </script>
 </body>
 </html>
