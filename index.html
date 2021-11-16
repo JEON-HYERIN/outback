@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-title" content="아웃백 스테이크하우스" />
   <meta name="description" content="OUTBACK STEAKHOUSE" />
-
   <title>메인 | 아웃백</title>
-
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="아웃백 스테이크하우스" />
@@ -16,7 +14,6 @@
   <meta property="og:description" content="OUTBACK STEAKHOUSE" />
   <meta property="og:image" content="./img/sns.jpg" />
   <meta property="og:url" content="https://jeon-hyerin.github.io/outback" />
-
   <!--Twitter Card-->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="아웃백 스테이크하우스" />
@@ -24,17 +21,8 @@
   <meta property="twitter:description" content="OUTBACK STEAKHOUSE" />
   <meta property="twitter:image" content="./img/sns.jpg" />
   <meta property="twitter:url" content="https://jeon-hyerin.github.io/outback" />
-
   <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.ico" />
-  <!-- Google Fonts - Noto Sans KR -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- Google Fonts - Nanum Gothic -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <!-- Google Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!-- Font Awesome -->
@@ -48,21 +36,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
   <!-- Gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/style_pc.css" media="screen and (min-width: 850.1px)" />
   <link rel="stylesheet" href="./css/style_mobile.css" media="screen and (max-width: 850.0px)" />
-
+  <!-- JS -->
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/common.js"></script>
 </head>
 <body class="main">
+
   <div id="wrapper">
     <a href="#main" id="skip-nav">본문 바로가기</a>
-
     <!-- HEADER -->
     <header id="header" class="active">
       <div class="inner">
@@ -81,29 +67,28 @@
         <a href="#" class="close-btn hidden mobile">
           <div class="material-icons">close<span class="hide">네비게이션 닫기</span></div>
         </a>
-
         <!-- NAV -->
         <nav id="gnb">
           <h2 class="hide">메인 메뉴</h2>
           <ul>
             <li>
-              <a href="./brand/outbackStory.html" data-link="brand">
+              <a href="./html/outbackStory.html" data-link="brand">
                 <span>BRAND</span>
               </a>
               <ul class="sub-menu" data-filter="brand">
-                <li><a href="./brand/outbackStory.html">OUTBACK STORY</a></li>
-                <li><a href="./brand/beefStory.html">BEEF STORY</a></li>
+                <li><a href="./html/outbackStory.html">OUTBACK STORY</a></li>
+                <li><a href="./html/beefStory.html">BEEF STORY</a></li>
                 <li><a href="#">STEAK ACADEMY</a></li>
                 <li><a href="#">OUTBACK CSR</a></li>
                 <li><a href="#">PRESS CENTER</a></li>
               </ul>
             </li>
             <li>
-              <a href="./menu/product.html" data-link="menu">
+              <a href="./html/product.html" data-link="menu">
                 <span>MENU</span>
               </a>
               <ul class="sub-menu" data-filter="menu">
-                <li><a href="./menu/product.html">T-BONE STEAK</a></li>
+                <li><a href="./html/product.html">T-BONE STEAK</a></li>
                 <li><a href="#">TOMAHAWK STEAK</a></li>
                 <li><a href="#">BLACK LABEL STEAKS</a></li>
                 <li><a href="#">STEAK &amp; FAVORITES</a></li>
@@ -115,20 +100,20 @@
               </ul>
             </li>
             <li>
-              <a href="./membership/membership.html" data-link="membership">
+              <a href="./html/membership.html" data-link="membership">
                 <span>MEMBERSHIP</span>
               </a>
               <ul class="sub-menu" data-filter="membership">
-                <li><a href="./membership/membership.html">MEMBERSHIP BENEFIT</a></li>
+                <li><a href="./html/membership.html">MEMBERSHIP BENEFIT</a></li>
                 <li><a href="#">BOOMERANG VIP</a></li>
               </ul>
             </li>
             <li>
-              <a href="./benefit/benefit.html" data-link="benefit">
+              <a href="./html/benefit.html" data-link="benefit">
                 <span>BENEFIT</span>
               </a>
               <ul class="sub-menu" data-filter="benefit">
-                <li><a href="./benefit/benefit.html">CREDIT CARDS</a></li>
+                <li><a href="./html/benefit.html">CREDIT CARDS</a></li>
                 <li><a href="#">SKT &amp; KT</a></li>
                 <li><a href="#">POINT PAYMENT</a></li>
                 <li><a href="#">VOUCHER</a></li>
@@ -157,7 +142,6 @@
             </li>
           </ul>
         </nav>
-
         <ul class="top-menu">
           <li class="pc"><a href="#">고객의 소리</a></li>
           <li><a href="#">로그인</a></li>
@@ -165,10 +149,8 @@
         </ul>
       </div>
     </header>
-
     <!-- MAIN -->
     <main id="main">
-
       <!-- VISUAL -->
       <section class="main-visual">
         <h2 class="hide">비주얼 영역</h2>
@@ -187,7 +169,6 @@
               <img src="./img/visual_bg_m4.jpg" alt="" class="mobile" />
             </div>
           </div>
-
           <div class="swiper-prev pc">
             <img src="./img/visual_prev.png" alt="이전" />
           </div>
@@ -197,9 +178,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
       <div class="inner">
-
         <!-- CF -->
         <section class="main-cf">
           <h2 class="hide">OUTBACK CF</h2>
@@ -222,7 +201,6 @@
             </p>
           </div>
         </section>
-
         <!-- PRODUCT -->
         <section class="main-product">
           <h2 class="hide">OUTBACK PRODUCT</h2>
@@ -262,7 +240,6 @@
                 <div class="image"></div>
               </div>
             </div>
-
             <div class="swiper-prev pc">
               <img src="./img/product_prev.png" alt="이전" />
             </div>
@@ -270,15 +247,12 @@
               <img src="./img/product_next.png" alt="다음" />
             </div>
             <div class="swiper-pagination mobile"></div>
-
           </div>
         </section>
-
         <!-- BENEFIT -->
         <section class="main-benefit">
           <h2 class="benefit__title">OUTBACK BENEFIT</h2>
           <p class="benefit__description">다양한 멤버십과 제휴 할인 혜택을 누리세요</p>
-
           <ul>
             <li>
               <a href="#">
@@ -312,7 +286,6 @@
             </li>
           </ul>
         </section>
-
         <!-- REWARD -->
         <section class="main-reward">
           <h2 class="hide">OUTBACK REWARD</h2>
@@ -383,7 +356,6 @@
                 </p>
               </li>
             </ul>
-
             <div class="mobile swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -439,7 +411,6 @@
             </div>
           </div>
         </section>
-
         <!-- SERVICE MENU -->
         <ul class="service-menu">
           <li class="reserve">
@@ -478,17 +449,14 @@
             </a>
           </li>
         </ul>
-
       </div>
     </main>
-
     <!-- FOOTER -->
     <footer id="footer">
       <div class="inner">
         <div class="footer__logo pc">
           <img src="./img/footer_logo.png" alt="OUTBACK STEAKHOUSE" />
         </div>
-
         <ul class="footer__menu">
           <li><a href="#">개인정보처리방침</a></li>
           <li><a href="#">홈페이지 이용약관</a></li>
@@ -498,13 +466,11 @@
           <li class="pc"><a href="#">모바일 아웃백</a></li>
           <li><a href="#">사이트맵</a></li>
         </ul>
-
         <div class="btn-group pc">
           <a href="#" class="btn">아웃백 소개</a>
           <a href="#" class="btn">채용 안내</a>
           <a href="#" class="btn">신규 입점 제의</a>
         </div>
-
         <div class="info">
           <div class="top">
             <span>대표이사 : 이상일</span>
@@ -522,7 +488,6 @@
             <span>대표번호<em>1577-0500</em>&nbsp;&nbsp;/&nbsp;&nbsp;딜리버리 주문번호<em>1811-3650</em></span>
           </div>
         </div>
-
         <ul class="sns pc">
           <li>
             <a href="#">
@@ -547,7 +512,6 @@
         </ul>
       </div>
     </footer>
-
     <!-- TO TOP BUTTON -->
     <a href="#" id="to-top" class="invisible">
       <img src="./img/btn_top.gif" alt="top" />
@@ -557,31 +521,17 @@
   <script>
     'use strict';
 
-    // 토글버튼 활성화
-    const openBtn = document.querySelector('.open-btn');
-    const closeBtn = document.querySelector('.close-btn');
-    const gnbEl = document.querySelector('#gnb');
-    const topMenu = document.querySelector('#header .top-menu');
+    // 헤더영역 
+    const header = document.querySelector('#header');
+    const headerHeight = header.getBoundingClientRect().height;
+    window.addEventListener('scroll', _.throttle(function () {
+      if (window.pageYOffset > headerHeight) {
+        toTopBtn.classList.remove('invisible');
+      } else {
+        toTopBtn.classList.add('invisible');
+      }
+    }, 300));
 
-    openBtn.addEventListener('click', function () {
-      header.classList.add('black');
-      header.classList.remove('active');
-      gnbEl.classList.add('open');
-      topMenu.classList.add('open');
-      openBtn.classList.add('hidden');
-      closeBtn.classList.remove('hidden');
-    });
-
-    closeBtn.addEventListener('click', function () {
-      header.classList.remove('black');
-      header.classList.add('active');
-      gnbEl.classList.remove('open');
-      topMenu.classList.remove('open');
-      openBtn.classList.remove('hidden');
-      closeBtn.classList.add('hidden');
-    });
-
-    // 헤더영역
     window.addEventListener('scroll', function () {
       if (window.pageYOffset > 0 && header.classList.contains('black') === false) {
         header.classList.add('active');
@@ -589,6 +539,114 @@
         header.classList.remove('active');
       }
     });
+
+    // gnb영역 이벤트 
+    const mainMenu = document.querySelector('#gnb > ul');
+    const subMenues = mainMenu.querySelectorAll('.sub-menu');
+    const mainMenuLists = document.querySelectorAll('#gnb > ul > li');
+    const anchers = document.querySelectorAll('#gnb > ul > li > a');
+    const icons = mainMenu.querySelectorAll('span.material-icons');
+
+    $('#gnb > ul > li > a').on('mouseenter focusin', function () {
+      if ($(window).width() >= 1024) {
+        var index = $('#gnb > ul > li').index($(this).parent());
+        $('#gnb > ul > li > .sub-menu').removeClass('on');
+        $('#gnb > ul > li:eq(' + index + ') > .sub-menu').addClass('on');
+      }
+    });
+
+    $('#header').on('mouseleave', function () {
+      $('#gnb > ul > li > .sub-menu').removeClass('on');
+    });
+
+    // 모바일버전 서브메뉴 오픈
+    $('#gnb > ul > li').each(function () {
+      if ($(this).find('ul').length > 0) {
+        $(this).find('> a').append('<span class="material-icons mobile" data-name="brand">navigate_next</span>');
+      }
+    });
+
+    $('#header .open-btn').on('click', function () {
+      $('#header .open-btn').addClass('hidden');
+      $('#header .close-btn').removeClass('hidden');
+      $('#gnb > ul > li.active > a').trigger('click');
+      enable();
+    });
+
+    $('#header .close-btn').on('click', function () {
+      $('#header .open-btn').removeClass('hidden');
+      $('#header .close-btn').addClass('hidden');
+      disable();
+    });
+
+    $('#gnb > ul > li > a').on('click focusin', function (e) {
+      if ($(window).width() < 1024) {
+        if ($(this).parent().find('ul').length > 0) {
+          e.preventDefault();
+          var height = 0;
+          $(this).next().find('> li').each(function () {
+            height += $(this).outerHeight(true);
+          });
+          $(this).next().css({
+            'height': height + 'px'
+          });
+          $(this).find('span.material-icons').addClass('rotate');
+          $(this).parent().siblings().find('ul').css({
+            'height': '0px'
+          });
+          $(this).parent().siblings().find('span.material-icons').removeClass('rotate');
+        }
+      }
+    });
+
+    $(window).on('resize', function () {
+      if ($(window).width() >= 1024) {
+        $('#gnb > ul > li > ul').removeAttr('style');
+        if ($('#gnb').hasClass('open') === true) {
+          disable();
+        }
+      } else if ($('#gnb').hasClass('open') === true) {
+        $('#header .open-btn').trigger('click');
+      }
+    });
+
+    // TO-TOP 버튼 클릭시 상단이동
+    const toTopBtn = document.querySelector('#to-top');
+    const wrapper = document.querySelector('#wrapper');
+    toTopBtn.addEventListener('click', function () {
+      wrapper.scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+
+    // 토글버튼 활성화
+    gnbOpen();
+
+    function gnbOpen() {
+      const header = document.querySelector('#header');
+      const openBtn = document.querySelector('.open-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const gnbEl = document.querySelector('#gnb');
+      const topMenu = document.querySelector('#header .top-menu');
+      openBtn.addEventListener('click', function () {
+        header.classList.add('black');
+        header.classList.remove('active');
+        gnbEl.classList.add('open');
+        topMenu.classList.add('open');
+        openBtn.classList.add('hidden');
+        closeBtn.classList.remove('hidden');
+      });
+
+      closeBtn.addEventListener('click', function () {
+        header.classList.add('black');
+        header.classList.add('active');
+        gnbEl.classList.remove('open');
+        topMenu.classList.remove('open');
+        openBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+      });
+    }
   </script>
+
 </body>
 </html>
